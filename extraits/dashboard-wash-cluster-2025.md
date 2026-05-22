@@ -1,9 +1,9 @@
-# Dashboard WASH Cluster State of Palestine — capture 2026-05-21
+# Dashboard WASH Cluster State of Palestine — vue filtrée sur Human Appeal
 
-![Dashboard WASH Cluster](dashboard-wash-cluster-2025.png)
+![Dashboard WASH Cluster filtré sur HA](dashboard-wash-cluster-2025.png)
 
-**Source :** Power BI public du WASH Cluster State of Palestine
-**Date de la capture :** 21 mai 2026
+**Source :** Power BI public du WASH Cluster State of Palestine, page « Water »
+**Capture :** 22 mai 2026, filtre slicer « HA » activé
 **Métadonnées :** strippées (`magick -strip`)
 
 ---
@@ -12,118 +12,89 @@
 
 **Titre exact :** *« WASH Cluster — State of Palestine — Number of people reached with appropriate drinking and domestic water services »*
 
-Hébergé sur Microsoft Power BI public (consultable sans authentification). Liens trouvés via recherche web :
-
-- https://app.powerbi.com/view?r=eyJrIjoiNDBjNmQwOTktNzFmOS00YWFkLThlYTItN2ExNWZmNzJhNTUyIiwidCI6Ijc3NDEwMTk1LTE0ZTEtNGZiOC05MDRiLWFiMTg5MjAyMzY2NyIsImMiOjh9
-- https://app.powerbi.com/view?r=eyJrIjoiZTVkYmEwNmMtZWYxNy00ODhlLWI2ZjctNjIzMzQ5OGQxNzY5IiwidCI6IjI2MmY2YTQxLTIwZTktNDE0MC04ZDNlLWZkZjVlZWNiNDE1NyIsImMiOjl9
+URL publique (page Water) :
+https://app.powerbi.com/view?r=eyJrIjoiNDBjNmQwOTktNzFmOS00YWFkLThlYTItN2ExNWZmNzJhNTUyIiwidCI6Ijc3NDEwMTk1LTE0ZTEtNGZiOC05MDRiLWFiMTg5MjAyMzY2NyIsImMiOjh9&pageName=109fa3d4608ac422357d
 
 ---
 
-## Liste complète des partenaires visibles dans le filtre « Responsive Partners »
+## Ce que montre la capture (filtre HA activé)
 
-| Acronyme | Identification probable |
-|---|---|
-| CESVI | Cooperazione E Sviluppo (✓ liste 2022) |
-| CMWU | Coastal Municipal Water Utility (autorité locale, ✓) |
-| CRS | Catholic Relief Services (✓ 2022) |
-| DCA/NCA | DanChurchAid/Norwegian Church Aid (✓ 2022) |
-| DFD | non identifié |
-| FAFD | non identifié |
-| GDD | non identifié |
-| GEM | non identifié |
-| **HA** | **Human Appeal (✓ 2022)** — sélectionné dans la capture |
-| HF | non identifié |
-| IDRF | International Development and Relief Foundation (✓ 2022) |
-| IHH | İnsani Yardım Vakfı (ONG turque, pas dans liste 2022 — entrée 2024-2025) |
-| MSF-F | Médecins Sans Frontières — France (pas dans liste 2022) |
-| MSF-OCB | MSF Operational Centre Brussels (pas dans liste 2022) |
-| MSF-S | MSF — Espagne ou Suisse (pas dans liste 2022) |
-| NPA | Norwegian People's Aid (pas dans liste 2022) |
-| NRC | Norwegian Refugee Council (✓ 2022) |
-| OCK3 | non identifié — voir analyse ci-dessous |
-| Other | catégorie résiduelle |
-| Oxfam | (✓ 2022) |
-| PAEEP | non identifié |
-| PALSTD | non identifié |
-| PARC | Palestinian Agricultural Relief Committees (✓ 2022) |
-| PCRF | Palestine Children's Relief Fund (pas dans 2022) |
-| SHAMS-OCB | non identifié (probablement composé) |
-| SI | Solidarités International (pas dans 2022) |
-| SIF | Secours Islamique France (✓ 2022) |
-| SOS | SOS Villages d'Enfants (pas dans 2022) |
-| TDH | Terre des Hommes (pas dans 2022) |
-| UAWC | Union of Agricultural Work Committees (✓ 2022) |
-| UNDP | United Nations Development Programme (✓ 2022) |
-| UNICEF | (✓ 2022, agence chef de file) |
-| UNRWA | UN Relief and Works Agency (✓ 2022) |
-| WCK | World Central Kitchen (pas dans 2022) |
-| YDRO | non identifié |
+### Carte gauche — Reached people by governorate (HA seul)
 
-→ **~36 partenaires visibles**, cohérent avec « 41 partenaires » indiqué dans la précédente version du dashboard (différentiel selon période).
+Échelle `CapPeopleReached` :
+- 1 406 (min — Rafah / North Gaza)
+- 5 983
+- 10 561
+- **15 138 (max — gouvernorat le mieux servi par HA)**
 
----
+Gaza centre, Middle Area et Khan Younis sont les zones où HA touche le plus de monde.
 
-## Sur OCK3 spécifiquement
+### Pie chart droite — Water quantity (m³) delivered by Governorate (HA seul)
 
-Aucune correspondance trouvée dans les recherches web pour cet acronyme dans le contexte humanitaire Gaza. Hypothèses :
-- Code interne du WASH Cluster pour une organisation locale palestinienne
-- Acronyme tronqué ou opérationnel (ex : « OCK » + numéro de bureau)
-- Organisation arabe dont l'acronyme transcrit donne OCK3
-
-L'identification précise reste ouverte. Ce qui est certain : c'est un **partenaire référencé** du WASH Cluster, pas une organisation extérieure.
-
----
-
-## Données quantitatives visibles dans la capture
-
-### Carte « Reached people by governorate »
-Échelle CapPeopleReached :
-- 1 406 (minimum)
-- 42 035
-- 82 665
-- 123 294
-- 163 923 (maximum)
-
-### Pie chart « Water quantity (m³) delivered by Governorate »
-
-| Gouvernorat | Volume | Pourcentage |
+| Gouvernorat | Volume HA | % du HA total |
 |---|---|---|
-| Khan Younis | 7,46 K m³ | 47,38 % |
-| Middle Area | 3,93 K m³ | 24,97 % |
-| Rafah | 2,65 K m³ | 16,84 % |
-| Gaza | 1,69 K m³ | 10,76 % |
-| **Total** | **~15,73 K m³** | 100 % |
+| Khan Younis | **21,72 m³** | 12,83 % |
+| Gaza | **90,87 m³** | 53,71 % |
+| Middle Area | **48,17 m³** | 28,47 % |
+| (Rafah + North Gaza ~5 %) | ~8 m³ | ~5 % |
+| **HA total Gaza** | **~169 m³** | 100 % |
 
-⚠️ **Important** : la ventilation se fait **par gouvernorat**, **pas par partenaire**. Le dashboard ne publie pas un classement individuel par partenaire.
+Vérification : voir [tooltip exact pour Khan Younis](#tooltip-de-vérification).
 
-### Bénéficiaires directs touchés par mois (partiellement visible)
-138 332 puis 115 566 (deux barres mensuelles)
+### Slicer « Responsive Partners »
 
----
-
-## Ce que ce dashboard prouve
-
-| Question | Réponse |
-|---|---|
-| Human Appeal est-elle dans la liste des partenaires actifs WASH Cluster en 2025-2026 ? | ✅ Oui (HA présent et sélectionnable) |
-| OCK3 est-elle un partenaire WASH Cluster référencé ? | ✅ Oui (même filtre) |
-| Le dashboard que Human Appeal a utilisé dans sa pub existe réellement ? | ✅ Très probable — la structure de la capture pub correspond à ce dashboard |
-| Le dashboard publie un classement des partenaires par volume ? | ❌ **Non** — la ventilation est par gouvernorat |
-| HA est-elle 2ᵉ ? | ❌ **Le dashboard ne le dit pas** |
+62 partenaires Gaza listés. **HA est sélectionné** (surligné en bleu clair dans la capture).
 
 ---
 
-## Ce que ça change pour l'enquête
+## Tooltip de vérification
 
-- **Constat 5** (acronyme HA) : confirmé. HA = Human Appeal dans le registre du cluster.
-- **Constat 4** (ranking #2) : **renforcé.** Même en accédant au véritable dashboard WASH Cluster, on ne trouve **pas** de classement par partenaire. La ventilation est géographique, pas par acteur. L'affirmation publicitaire « 2ᵉ » ne s'extrait pas naturellement de ce dashboard.
+Sur cette même page, en survolant le secteur « Khan Younis » du pie chart, le tooltip Power BI affiche :
 
-L'utilisateur du dashboard peut cliquer partenaire par partenaire pour voir les chiffres individuels, mais il faudrait alors faire la comparaison à la main sur 36+ partenaires. La cluster ne publie pas le résultat de cette comparaison. Human Appeal aurait pu la faire elle-même.
+```
+Governorate    Khan Younis
+Quantity       21,72 (12,83%)
+```
+
+Ce qui confirme que **« 21,71500... »** affiché sur l'étiquette du pie chart vaut littéralement **21,72 m³** — pas 21 715 m³ ni 21,72 K m³.
+
+La virgule est ici le séparateur décimal français.
+
+---
+
+## Comparaison avec le cluster total Gaza (sans filtre)
+
+| Métrique | Cluster total | HA seul | Ratio |
+|---|---|---|---|
+| Total m³ délivrés | ~152 390 | ~169 | **0,11 %** |
+| Max people reached (max gouvernorat) | 1 627 252 | 15 138 | **0,93 %** |
+
+**Constat majeur** : sur le dashboard que la publicité de Human Appeal France utilise visuellement, Human Appeal apparaît comme un contributeur **marginal**, pas comme le 2ᵉ plus grand fournisseur d'eau.
+
+---
+
+## Implications pour l'enquête
+
+Cette capture est la **preuve directe** que :
+
+1. ✅ HA est bien un partenaire actif du WASH Cluster (visible dans la liste slicer, sélectionnable)
+2. ✅ Le dashboard que la pub référence existe réellement et est public
+3. ✅ Les chiffres affichés par le dashboard pour HA sont en m³, pas en K m³ (tooltip confirme « 21,72 »)
+4. ❌ HA n'est ni 2ᵉ, ni dans le top 10 en volume m³ ([Constat 4](../constats/04-ranking-2eme-fournisseur.md))
+
+---
+
+## Reproductibilité
+
+N'importe qui peut ouvrir l'URL ci-dessus, cliquer sur « HA » dans la slicer « Responsive Partners », et vérifier ces chiffres en quelques secondes.
+
+C'est précisément ce qui rend le slogan publicitaire facilement vérifiable — et précisément ce qui le rend problématique : la pièce que la pub cite **contredit** le slogan.
 
 ---
 
 ## Liens
 
-- [Constat 4 : ranking #2 invérifiable](../constats/04-ranking-2eme-fournisseur.md)
-- [Constat 5 : acronyme HA](../constats/05-acronyme-HA-dans-pub.md)
-- [Source : Partners' Profile 2022](../sources/wash-cluster-partners-profile-2022.md)
+- [Constat 4 : ranking #2 infirmé](../constats/04-ranking-2eme-fournisseur.md)
+- [Constat 5 : HA = Human Appeal](../constats/05-acronyme-HA-dans-pub.md)
+- [Source dashboard Power BI](../sources/dashboard-powerbi-wash-cluster.md)
+- [Données extraites des 62 partenaires](../dashboard-scrape/README.md)
