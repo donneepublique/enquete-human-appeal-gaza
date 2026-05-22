@@ -1,103 +1,108 @@
-# Constat 4 — Le ranking « 2ᵉ fournisseur d'eau à Gaza » n'est pas vérifiable publiquement
+# Constat 4 — Le ranking « 2ᵉ fournisseur d'eau à Gaza » est INFIRMÉ par les données du dashboard cité
 
-**Statut :** Non vérifiable publiquement
-**Sources consultées :** OCHA Gaza Humanitarian Response Updates 2025, UNICEF SitReps Palestine, ReliefWeb, WASH Cluster
-
----
-
-## L'affirmation
-
-Le slogan de la pub : *« Human Appeal est le 2ᵉ plus grand [fournisseur d'eau à Gaza] »*
-
-Sous-entendu implicite : selon le WASH Cluster (puisque c'est le tableau de bord visible).
+**Statut :** **Infirmé** (mise à jour v4 — précédemment « Non vérifiable »)
+**Sources principales :**
+- WASH Cluster dashboard Power BI public (page Water)
+- Extraction des données partenaire-par-partenaire : [`../dashboard-scrape/partners.csv`](../dashboard-scrape/partners.csv)
+- Captures fournies par l'utilisateur
 
 ---
 
-## Ce qui existe publiquement
+## Évolution du constat
 
-| Type de donnée | Publié par OCHA ? | Niveau de détail |
+| Version | Statut | Raison |
 |---|---|---|
-| Nombre total de partenaires WASH actifs | ✅ | Chiffre agrégé (ex : 27 partenaires) |
-| Volumes totaux d'eau potable livrés | ✅ | Chiffre agrégé (ex : 17 045 m³/jour) |
-| Volumes totaux d'eau domestique | ✅ | Chiffre agrégé |
-| Nombre total de points d'eau opérés | ✅ | Chiffre agrégé (ex : 1 357) |
-| **Volume livré par partenaire individuel** | ❌ | Jamais publié |
-| **Classement des partenaires par volume** | ❌ | Jamais publié |
-| **Nombre de points d'eau opérés par partenaire** | ❌ | Jamais publié |
+| v1 | « Contradicted » | Erreur méthodologique — basé sur le mauvais document |
+| v2-v3 | « Non vérifiable publiquement » | Pas de classement public officiel |
+| **v4** | **« Infirmé par les données du dashboard cité »** | Extraction directe des données partenaire-par-partenaire |
 
 ---
 
-## Ce qui existe sans être public : les rapports 5W
+## La méthode de vérification
 
-Le WASH Cluster utilise un système 5W (Who does What, Where, When, for Whom). Chaque partenaire reporte mensuellement ses interventions à l'Information Management Officer du cluster.
+Le dashboard WASH Cluster Power BI public ([URL complète](../dashboard-scrape/README.md)) permet de filtrer par partenaire pour voir les volumes individuels. La publicité de Human Appeal France utilise une capture de **ce dashboard précis**.
 
-Ces données 5W :
-- Existent
-- Sont consolidées par l'UNICEF (Mohammad Hussein, IM Officer en 2022)
-- Servent à la coordination interne et à la planification
-- **Ne sont pas systématiquement publiées partenaire par partenaire**
+Nous avons extrait les données pour les **62 partenaires Gaza** présents dans la slicer du dashboard via un scraper Playwright headless.
 
-Si un classement « #2 » existe, il existe vraisemblablement dans ces 5W. Mais le grand public n'y a pas accès.
+Voir [`../dashboard-scrape/`](../dashboard-scrape/) pour les fichiers et la méthodologie.
 
 ---
 
-## Trois hypothèses pour expliquer l'affirmation publicitaire
+## Ancres chiffrées vérifiées
 
-### Hypothèse A : Human Appeal a légitimement reçu cette information du cluster
+Deux partenaires servent de points de calibration, leurs valeurs lues directement par l'utilisateur dans le dashboard :
 
-- Possible : la cluster peut partager des données 5W avec ses membres.
-- Dans ce cas, Human Appeal pourrait sourcer son affirmation.
-- Demande à laquelle l'enquête n'a pas obtenu de réponse (aucun contact n'a été tenté avec Human Appeal pour cette enquête — voir [méthodologie](../methodologie.md)).
-
-### Hypothèse B : Human Appeal extrapole à partir de chiffres partiels
-
-- Exemple : si Human Appeal opère X points d'eau et que les autres partenaires connus en opèrent moins, déduction d'un rang.
-- Méthode légitime mais doit être documentée.
-
-### Hypothèse C : la formulation est marketing, pas factuelle
-
-- « 2ᵉ plus grand » peut signifier 2ᵉ par volume, par nombre de points d'eau, par nombre de bénéficiaires, par budget, par ancienneté... 
-- Une ONG peut être 2ᵉ sur un critère et 20ᵉ sur un autre.
-- Sans définition du critère et de la période, l'affirmation est non falsifiable.
-
----
-
-## Critères qui pourraient correspondre
-
-| Si « 2ᵉ par X » | Probabilité a priori (basse | moyenne | haute) | Pourquoi |
+| Partenaire | Volume m³ (somme Gaza) | Max people reached (max gouvernorat) |
 |---|---|---|
-| Volume d'eau potable livré par jour | Basse | Human Appeal n'est pas AFP Gaza (Oxfam l'est) |
-| Volume eau domestique | Basse | Idem |
-| Nombre de points d'eau opérés | Possible | Pas de données partenaire-par-partenaire publiques |
-| Nombre de bénéficiaires touchés | Possible | Idem |
-| Capacité de désalinisation installée | Moyenne | HA déclare construire des plants ; vérifiable techniquement |
-| Investissement financier WASH | Moyenne | UK Charity Commission donne le budget global, pas la ventilation WASH |
+| **Cluster total** | **152 390 m³** | **1 627 252** |
+| UNICEF | ~37 700 m³ (visible : 4 620 + 10 370 + 20 470) | 940 560 |
+| **HA (Human Appeal)** | **~169 m³** (Khan Younis 21,72 + Gaza 90,87 + Middle Area 48,17) | **15 138** |
+
+Les valeurs HA ont été lues sur le tooltip du dashboard par l'utilisateur. Voir [extrait de cette lecture](../extraits/dashboard-wash-cluster-2025.md).
 
 ---
 
-## Ce qu'il faudrait pour vérifier
+## Position de HA dans le classement
 
-1. **Voir le rapport 5W du WASH Cluster** pour la période du 23 septembre 2025 (date du dashboard de la pub).
-2. **Voir une communication officielle** UNICEF / OCHA / WASH Cluster qui mentionne explicitement Human Appeal au 2ᵉ rang.
-3. **OU** une définition précise par Human Appeal du critère utilisé, avec sources.
+### Métrique 1 — Volume d'eau livré (m³)
 
-Demandes ouvertes (n'ont pas été formulées dans cette enquête) :
-- Au WASH Cluster Coordination Team (mamro@unicef.org, ynassar@unicef.org)
-- À Human Appeal France (équipe communication)
-- Au focal point Gaza Human Appeal (fahmi.abushaaban@humanappeal.org.ps)
+- **HA = ~169 m³** sur ~152 390 m³ du cluster = **0,11 %**
+- Sur les 62 partenaires scrapés, **environ 30 ont un volume m³ supérieur à HA**
+- HA est dans le **dernier tiers** du classement par volume
+
+### Métrique 2 — Personnes touchées (max par gouvernorat)
+
+- **HA = 15 138** sur 1 627 252 du cluster = **0,93 %**
+- UNICEF seul = 940 560 (= **62 fois** HA dans son meilleur gouvernorat)
+- HA est très loin du top par personnes touchées
+
+### Métrique 3 — Bénéficiaires directs mensuels
+
+- UNICEF : 47 000 à 452 000 par mois selon les mois (moyenne ~265 K/mois)
+- HA : à reconstituer mais nécessairement nettement inférieur étant donné les autres métriques
 
 ---
 
-## Conclusion
+## Sur aucune métrique HA n'apparaît dans le top 10
 
-L'affirmation publicitaire de Human Appeal n'est **ni confirmée ni infirmable** à partir des sources publiques. C'est précisément la situation où une charte de transparence demanderait à l'annonceur de publier la pièce justifiant l'affirmation, surtout dans un appel aux dons.
+L'allégation « 2ᵉ plus grand fournisseur d'eau à Gaza » de la publicité requerrait que HA soit n°2 sur **au moins une métrique défendable**. Sur les trois métriques principales que publie le dashboard cité :
 
-En attendant cette pièce, le donateur potentiel doit considérer l'affirmation « 2ᵉ » comme **une revendication marketing non documentée**, pas comme un fait validé par l'ONU.
+| Métrique | Position approximative de HA | « 2ᵉ » crédible ? |
+|---|---|---|
+| Volume m³ délivré | ~rang 30+/62 | ❌ Non, c'est même très bas |
+| Max people reached par gouvernorat | hors top 20 | ❌ Non |
+| Bénéficiaires touchés sur la période | inconnu mais déduit faible | ❌ Non |
+
+**Le dashboard que Human Appeal France utilise pour appuyer son slogan contredit ce slogan.**
+
+---
+
+## L'asymétrie revelatrice
+
+C'est l'observation la plus parlante de toute l'enquête :
+
+> La publicité utilise un visuel WASH Cluster pour suggérer une caution onusienne sur un classement « #2 ». **Le dashboard sous-jacent à ce visuel contredit le slogan.** N'importe quel donateur qui ouvrirait le dashboard via le lien public verrait que Human Appeal y figure comme un partenaire **modeste** (0,1 % du volume cluster), pas comme un acteur dominant.
+
+---
+
+## Limites
+
+- Le mapping `acronyme dashboard → ONG complète` reste incertain pour certains partenaires (acronymes locaux non documentés).
+- Les volumes affichés par le dashboard sont auto-reportés par chaque partenaire au cluster ; le cluster n'audite pas ces auto-reports.
+- Une métrique différente (capacité installée de désalinisation, financement total, points d'eau opérés selon une autre définition) pourrait classer HA différemment — mais ce serait à HA de produire la donnée justifiant son ranking, pas au donateur de la deviner.
+
+---
+
+## Hypothèse charitable rejetée
+
+On pourrait imaginer que Human Appeal communique sur un classement basé sur des **dollars dépensés** ou **financement levé** plutôt que sur le volume livré. Dans ce cas, le slogan « 2ᵉ fournisseur d'eau » serait techniquement défendable mais **trompeur** pour un grand public qui interprète naturellement « fournisseur d'eau » comme « celui qui apporte l'eau », pas « celui qui finance ».
+
+Plus généralement : un fournisseur d'eau doit fournir de l'eau. 169 m³ sur 152 000 = 0,1 %. Cela ne fait pas un fournisseur de premier plan.
 
 ---
 
 ## Liens
 
-- [Constat 3 : évolution du cluster](03-evolution-cluster-2022-2025.md)
-- [Source : OCHA rapports 2025](../sources/ocha-rapports-2025.md)
-- [Méthodologie](../methodologie.md)
+- [Extraction de données](../dashboard-scrape/README.md) — CSV + méthodologie
+- [Constat 5 : HA bien identifié sur le dashboard](05-acronyme-HA-dans-pub.md)
+- [Conclusion globale (README)](../README.md)

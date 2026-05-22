@@ -14,37 +14,17 @@ Ce fichier documente les erreurs factuelles présentes dans les versions antéri
 
 ### Source de l'erreur
 
-La v1 s'appuyait uniquement sur le *Gaza WASH Contingency Plan* de novembre 2022, dont l'annexe 9.3 « WASH Implementing Partners » liste 26 organisations. Human Appeal n'y figure pas, ce qui a conduit (à tort) à la conclusion que Human Appeal n'était pas membre du cluster.
+La v1 s'appuyait uniquement sur le *Gaza WASH Contingency Plan* de novembre 2022 (annexe 9.3 « WASH Implementing Partners » qui liste 26 organisations). Human Appeal n'y figure pas → conclusion (à tort) que HA n'est pas membre du cluster.
 
-**Pourquoi cette source ne suffisait pas :**
-L'annexe 9.3 du plan de contingence est une **liste opérationnelle restreinte** des partenaires qui ont déclaré disposer de capacités budgétisées pour les 4 scénarios de contingence (eau, hygiène, latrines, etc.). Ce n'est **pas** le registre des membres du cluster.
+**Pourquoi cette source ne suffisait pas :** l'annexe 9.3 est une **liste opérationnelle restreinte** des partenaires budgétisés pour les scénarios de contingence. Pas le registre des membres.
 
 ### Source correcte
 
-Le document de référence pour la liste des membres du cluster est le **WASH Cluster Partners' Profile, juillet 2022** (UN-OCHA / UNICEF). Dans ce document :
+Le document de référence est le **WASH Cluster Partners' Profile, juillet 2022** (UN-OCHA / UNICEF). Page 35 : profil officiel de Human Appeal.
 
-- Page 35 : profil officiel de Human Appeal (HA) avec adresse Gaza, focal point, et programme WASH déclaré
-- Page 6 : logo Human Appeal sur la planche visuelle des 61 partenaires 2022
+### Identification
 
-### Comment l'erreur a été identifiée
-
-Par une question méthodologique de l'interlocuteur de cette enquête :
-
-> *« mais 2022 ils peuvent dire que c'est dans la rapport plus recents? existent ils ? »*
-
-Cette question a conduit à élargir la recherche au-delà du seul plan de contingence, à découvrir le Partners' Profile (publié au même moment, juillet/août 2022, mais à un autre endroit), et à identifier la véritable position de Human Appeal.
-
-### Corrections appliquées
-
-Tous les constats de la v2 prennent en compte le fait que Human Appeal est bien un partenaire reconnu du cluster.
-
-Le constat principal a été **inversé** : passe de *« Human Appeal n'est pas dans la liste officielle »* (faux) à *« Human Appeal est un partenaire officiel du WASH Cluster »* (vrai).
-
-Le constat secondaire est **renforcé** : *« Le ranking #2 n'est pas vérifiable publiquement »* reste valable, et c'est désormais le cœur de l'enquête.
-
-### Commit GitHub
-
-Voir le commit `fa3d013` sur https://github.com/donneepublique/enquete-human-appeal-gaza qui matérialise cette correction.
+Par une question du user : *« mais 2022 ils peuvent dire que c'est dans la rapport plus recents? existent ils ? »* — qui m'a poussé à élargir au-delà du seul plan de contingence.
 
 ---
 
@@ -52,19 +32,35 @@ Voir le commit `fa3d013` sur https://github.com/donneepublique/enquete-human-app
 
 ### Évolution structurelle
 
-La v2 tenait dans un seul fichier README.md. La v3 restructure l'enquête en dossier journalistique :
+Passage d'un seul README à un dossier journalistique multi-fichiers (constats/, sources/, extraits/, méthodologie, corrections).
 
-- Un README synthèse + index
-- Un dossier `constats/` avec 6 constats détaillés
-- Un dossier `sources/` avec description critique de chaque source
-- Un dossier `extraits/` avec reproductions verbatim des passages clés
-- Des fichiers `methodologie.md` et `corrections.md`
+Aucun constat factuel modifié — uniquement approfondissement.
 
-### Ce qui change
+---
 
-Les constats sont approfondis (plus de citations verbatim, plus de comparaisons inter-partenaires, plus de distinction entre statut institutionnel et auto-déclaration).
+## v3 → v4 (22 mai 2026, même jour)
 
-Aucun constat factuel n'a été modifié — seule la mise en forme évolue.
+### Mise à jour majeure du Constat 4 — ranking « #2 »
+
+**v3 statuait :** « Non vérifiable publiquement » (le WASH Cluster ne publie pas de ranking par partenaire).
+
+**v4 statue :** « **Infirmé par les données du dashboard cité par la pub elle-même** ».
+
+### Pourquoi cette mise à jour
+
+Le user a trouvé que le dashboard cité dans la pub est public et permet de filtrer par partenaire. Il a lu un tooltip qui confirme que Human Appeal délivre seulement **~169 m³** sur **152 390 m³** du cluster (= 0,11 %).
+
+Pour confirmer que HA n'est pas le 2ᵉ sur la métrique m³, j'ai écrit un scraper Playwright qui clique sur chaque partenaire dans la slicer du dashboard et lit les valeurs. Résultat : sur 62 partenaires, environ 30 dépassent HA en volume.
+
+### Erreur intermédiaire
+
+Dans mon analyse, j'ai d'abord lu les chiffres HA comme « 160 000 m³ » au lieu de « 160 m³ » (mauvaise interprétation du format de nombre français : la virgule est décimale, pas séparateur de milliers). Le user m'a corrigé : *« c'est 21,72 a khan younis pas 21K »*. Sans cette correction, je serais arrivé à une conclusion fausse.
+
+### Limites résiduelles de la v4
+
+- Le scraper a un problème de timing pour ~6 partenaires sur 62 (étiquettes décalées d'une ou deux positions). **Les valeurs sont réelles**, les labels parfois bancals.
+- Le mapping `acronyme dashboard → nom complet` reste incertain pour certains partenaires (OCK3, GDD, GEM, PAEEP, etc.).
+- Une métrique alternative (capacité installée, financement levé, etc.) pourrait classer HA différemment — mais ce serait à HA de produire cette pièce.
 
 ---
 
@@ -72,8 +68,17 @@ Aucun constat factuel n'a été modifié — seule la mise en forme évolue.
 
 > Une enquête factuelle qui se corrige publiquement est plus fiable qu'une enquête qui défend ses premières conclusions. La transparence sur les erreurs n'invalide pas le travail — elle le valide.
 
+Cette enquête a vu trois inversions de conclusion notables :
+- v1 → v2 : « HA pas dans cluster » devient « HA est dans le cluster »
+- v3 → v4 : « ranking #2 non vérifiable » devient « ranking #2 infirmé »
+- Lecture de chiffres : « HA = 160K m³ » devient « HA = 160 m³ »
+
+Chaque correction a été déclenchée par une **objection du user**, pas par une introspection. C'est précieux à noter : un enquêteur seul aurait probablement maintenu les premières conclusions.
+
 ---
 
 ## Voir aussi
 
 - [Méthodologie](methodologie.md)
+- [Constat 4 (la conclusion principale, mise à jour)](constats/04-ranking-2eme-fournisseur.md)
+- [Extraction du dashboard](dashboard-scrape/README.md)

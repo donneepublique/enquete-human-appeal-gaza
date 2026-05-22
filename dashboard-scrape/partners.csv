@@ -1,0 +1,173 @@
+partner,governorate,value_raw,pct,max_people_scale,status
+__baseline_cluster__,Middle Area,"49,03K","31,28","1,627,252",ok
+__baseline_cluster__,Khan Younis,"46,33K","29,55","1,627,252",ok
+__baseline_cluster__,Gaza,"44,12K","28,14","1,627,252",ok
+__baseline_cluster__,North Gaza,"12,91K","8,24","1,627,252",ok
+AAH,Middle Area,"2,92K","27,08","371,688",ok
+AAH,Khan Younis,"3,17K","29,4","371,688",ok
+AAH,Gaza,"2,81K","26,03","371,688",ok
+AAH,North Gaza,"1,6K","14,87","371,688",ok
+ACTED,(no data),,,"33,382",ok
+AFSC,Middle Area,30,"3,11","78,822",ok
+AFSC,Khan Younis,473,"49,02","78,822",ok
+AFSC,Gaza,437,"45,28","78,822",ok
+AH,Middle Area,"49,03K","31,28","1,627,252",ok
+AH,Khan Younis,"46,33K","29,55","1,627,252",ok
+AH,Gaza,"44,12K","28,14","1,627,252",ok
+AH,North Gaza,"12,91K","8,24","1,627,252",ok
+AIOCP,Middle Area,"1,66K","58,78","123,693",ok
+AIOCP,Gaza,"1,16K","41,04","123,693",ok
+ANERA,Middle Area,"0,5K","13,97","351,983",ok
+ANERA,Khan Younis,"0,49K","13,85","351,983",ok
+ANERA,Gaza,"1,5K","42,21","351,983",ok
+ANERA,North Gaza,"1,07K","29,97","351,983",ok
+BLDA,Middle Area,"330,8000000000002","36,58","70,179",ok
+BLDA,Khan Younis,"427,3000000000002","47,25","70,179",ok
+BLDA,Gaza,"143,79000000000002","15,9","70,179",ok
+CARE,(no data),,,"4,165",ok
+CCP-Japan,Middle Area,"0,4K","13,84","225,565",ok
+CCP-Japan,Khan Younis,"1,26K","44,13","225,565",ok
+CCP-Japan,Gaza,"1,2K","42,03","225,565",ok
+CESVI,Middle Area,350,"42,17","56,644",ok
+CESVI,Khan Younis,160,"19,28","56,644",ok
+CESVI,Gaza,314,"37,83","56,644",ok
+CMWU,Middle Area,20,"22,6","7,504",ok
+CMWU,Khan Younis,21,"23,73","7,504",ok
+CMWU,Gaza,45,"50,85","7,504",ok
+CMWU,North Gaza,"2,5","2,82","7,504",ok
+CRS,Khan Younis,"2,17K","88,04","119,233",ok
+CRS,Rafah,"0,23K","9,37","119,233",ok
+DCA/NCA,Khan Younis,160,"25,89","37,124",ok
+DCA/NCA,Gaza,448,"72,49","37,124",ok
+DCA/NCA,North Gaza,10,"1,62","37,124",ok
+DFD,Khan Younis,225,"88,24","31,284",ok
+DFD,Gaza,30,"11,76","31,284",ok
+FAFD,(no data),,,999,ok
+GDD,Middle Area,"0,12K","6,7","137,333",ok
+GDD,Gaza,"1,37K","76,54","137,333",ok
+GDD,North Gaza,"0,3K","16,76","137,333",ok
+GEM,Middle Area,"0,55K","13,76","173,100",ok
+GEM,Khan Younis,"0,61K","15,26","173,100",ok
+GEM,Gaza,"1,93K","48,54","173,100",ok
+GEM,North Gaza,"0,77K","19,25","173,100",ok
+HA,Middle Area,"1,1K","62,64","8,292",ok
+HA,Khan Younis,"0,53K","30,34","8,292",ok
+HA,Gaza,"0,11K","6,26","8,292",ok
+HF,Middle Area,"49,03K","31,28","1,627,252",ok
+HF,Khan Younis,"46,33K","29,55","1,627,252",ok
+HF,Gaza,"44,12K","28,14","1,627,252",ok
+HF,North Gaza,"12,91K","8,24","1,627,252",ok
+IDRF,Middle Area,"48,167","28,47","15,138",ok
+IDRF,Khan Younis,"21,715000000000003","12,83","15,138",ok
+IDRF,Gaza,"90,866","53,71","15,138",ok
+IHH,Khan Younis,"0,35K","13,61","288,153",ok
+IHH,Gaza,"1,91K","73,97","288,153",ok
+IHH,North Gaza,"0,28K","10,85","288,153",ok
+IMC,Middle Area,"258,70000000000005","32,67","41,330",ok
+IMC,Khan Younis,"484,20000000000005","61,14","41,330",ok
+IMC,Gaza,49,"6,19","41,330",ok
+IRC,Khan Younis,220,"75,86","36,664",ok
+IRC,Gaza,50,"17,24","36,664",ok
+IRW,(no data),,,"17,600",ok
+IWWAA,Middle Area,"49,03K","31,28","1,627,252",ok
+IWWAA,Khan Younis,"46,33K","29,55","1,627,252",ok
+IWWAA,Gaza,"44,12K","28,14","1,627,252",ok
+IWWAA,North Gaza,"12,91K","8,24","1,627,252",ok
+MAAN,Gaza,490,"80,33","73,500",ok
+MAAN,North Gaza,120,"19,67","73,500",ok
+MAP-UK,Middle Area,"1,44K","39,11","248,896",ok
+MAP-UK,Khan Younis,"1,81K","49,07","248,896",ok
+MAP-UK,Gaza,"0,38K","10,32","248,896",ok
+MC,Middle Area,45,"8,82","74,418",ok
+MC,Khan Younis,285,"55,88","74,418",ok
+MC,Gaza,"158,60000000000002","31,1","74,418",ok
+MECA,(no data),,,"8,572",ok
+Mentor,Middle Area,"1,54K","19,69","215,465",ok
+Mentor,Khan Younis,"2,93K","37,33","215,465",ok
+Mentor,Gaza,"2,53K","32,28","215,465",ok
+Mentor,North Gaza,"0,64K","8,14","215,465",ok
+MSF-F,Middle Area,40,"30,77","11,000",ok
+MSF-F,Khan Younis,90,"69,23","11,000",ok
+MSF-OCB,Middle Area,"0,53K","12,61","38,900",ok
+MSF-OCB,Khan Younis,"0,71K","16,83","38,900",ok
+MSF-OCB,Gaza,"1,7K","39,98","38,900",ok
+MSF-OCB,North Gaza,"1,26K","29,66","38,900",ok
+MSF-S,Middle Area,22,"5,68","34,367",ok
+MSF-S,Khan Younis,"225,20000000000005","58,16","34,367",ok
+MSF-S,Gaza,"130,5","33,7","34,367",ok
+NPA,Middle Area,268,"19,58","94,509",ok
+NPA,Khan Younis,449,"32,8","94,509",ok
+NPA,Gaza,652,"47,63","94,509",ok
+NRC,Gaza,"23,309999999999995","58,09","3,666",ok
+NRC,North Gaza,"16,82","41,91","3,666",ok
+OCK3,Middle Area,216,"10,86","133,567",ok
+OCK3,Khan Younis,"818,7","41,17","133,567",ok
+OCK3,Gaza,"691,6","34,78","133,567",ok
+OCK3,North Gaza,"262,1","13,18","133,567",ok
+Other,Middle Area,"3,88K","24,93","155,898",ok
+Other,Khan Younis,"7,43K","47,75","155,898",ok
+Other,Rafah,"2,65K","17,02","155,898",ok
+Other,Gaza,"1,6K","10,29","155,898",ok
+Oxfam,(no data),,,"17,556",ok
+PAEEP,Middle Area,"141,79999999999998","26,64","33,357",ok
+PAEEP,Khan Younis,90,"16,91","33,357",ok
+PAEEP,Gaza,"244,39999999999998","45,92","33,357",ok
+PAEEP,North Gaza,56,"10,52","33,357",ok
+PALSTD,Middle Area,"49,03K","31,28","1,627,252",ok
+PALSTD,Khan Younis,"46,33K","29,55","1,627,252",ok
+PALSTD,Gaza,"44,12K","28,14","1,627,252",ok
+PALSTD,North Gaza,"12,91K","8,24","1,627,252",ok
+PARC,Khan Younis,90,"69,23","10,900",ok
+PARC,Gaza,40,"30,77","10,900",ok
+PCRF,Middle Area,"0,47K","10,86","481,495",ok
+PCRF,Khan Younis,"0,71K","16,45","481,495",ok
+PCRF,Gaza,"3,06K","70,7","481,495",ok
+PEF,(no data),,,"17,924",ok
+PFSA,(no data),,,"24,000",ok
+Project HOPE,Middle Area,"84,61619047699999","34,3","20,600",ok
+Project HOPE,Khan Younis,"54,079523813","21,92","20,600",ok
+Project HOPE,Gaza,108,"43,78","20,600",ok
+PSCF,Middle Area,"49,03K","31,28","1,627,252",ok
+PSCF,Khan Younis,"46,33K","29,55","1,627,252",ok
+PSCF,Gaza,"44,12K","28,14","1,627,252",ok
+PSCF,North Gaza,"12,91K","8,24","1,627,252",ok
+PUI,(no data),,,581,ok
+PWJ,(no data),,,"2,433",ok
+QRCS,Middle Area,58,"60,06","9,499",ok
+QRCS,Gaza,"38,57","39,94","9,499",ok
+RAHMA,Middle Area,"0,45K","20,51","222,015",ok
+RAHMA,Khan Younis,"0,41K","18,78","222,015",ok
+RAHMA,Gaza,"1,34K","60,71","222,015",ok
+SCI,Khan Younis,"78,83000000000003","87,14","13,001",ok
+SCI,Gaza,"11,629999999999997","12,86","13,001",ok
+SHAMS-OCD,Middle Area,"1,03K","26,75","152,981",ok
+SHAMS-OCD,Khan Younis,"1,7K","44,27","152,981",ok
+SHAMS-OCD,Gaza,"0,71K","18,4","152,981",ok
+SHAMS-OCD,North Gaza,"0,4K","10,32","152,981",ok
+SI,(no data),,,"6,466",ok
+SIF,Middle Area,"258,58","45,11","36,123",ok
+SIF,Khan Younis,"120,28","20,98","36,123",ok
+SIF,Rafah,66,"11,51","36,123",ok
+SIF,Gaza,48,"8,37","36,123",ok
+SIF,North Gaza,"80,35","14,02","36,123",ok
+SOS,(no data),,,"24,706",ok
+TDH,(no data),,,600,ok
+UAWC,Middle Area,40,"21,05","24,959",ok
+UAWC,Khan Younis,150,"78,95","24,959",ok
+UNDP,Middle Area,39,"12,7","27,299",ok
+UNDP,Khan Younis,"30,5","9,93","27,299",ok
+UNDP,Gaza,"217,44000000000005","70,8","27,299",ok
+UNICEF,Middle Area,"0,36K","14,72","25,573",ok
+UNICEF,Khan Younis,"0,69K","28,45","25,573",ok
+UNICEF,Gaza,"1,37K","56,52","25,573",ok
+UNRWA,Middle Area,"20,47K","54,01","940,560",ok
+UNRWA,Khan Younis,"4,62K","12,19","940,560",ok
+UNRWA,Gaza,"10,37K","27,36","940,560",ok
+WCK,Middle Area,"49,03K","31,28","1,627,252",ok
+WCK,Khan Younis,"46,33K","29,55","1,627,252",ok
+WCK,Gaza,"44,12K","28,14","1,627,252",ok
+WCK,North Gaza,"12,91K","8,24","1,627,252",ok
+YDRO,Middle Area,"0,78K","12,78","149,053",ok
+YDRO,Khan Younis,"1,36K","22,24","149,053",ok
+YDRO,Gaza,"1,54K","25,15","149,053",ok
+YDRO,North Gaza,"2,4K","39,1","149,053",ok

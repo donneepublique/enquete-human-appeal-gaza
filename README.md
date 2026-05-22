@@ -2,54 +2,106 @@
 
 > Vérification factuelle d'une publicité Instagram de Human Appeal France affirmant que l'ONG est le « 2ᵉ plus grand fournisseur d'eau à Gaza » selon le WASH Cluster (UN-OCHA).
 
-**Date de l'enquête :** 22 mai 2026
-**Statut :** v2 (après correction d'une erreur factuelle de la v1)
+**Date :** 22 mai 2026
+**Statut :** v4 — conclusion confirmée par extraction directe des données du dashboard cité par la pub.
 
 ---
 
 ## Synthèse en une page
 
-La publicité fait deux affirmations :
+La publicité fait deux affirmations distinctes :
 
-1. **Human Appeal est partenaire du WASH Cluster ONU pour Gaza.** ✅ **Vrai.** Profil officiel page 35 du *WASH Cluster Partners' Profile, juillet 2022* (UNICEF / UN-OCHA).
-2. **Human Appeal est le 2ᵉ plus grand fournisseur d'eau à Gaza.** ⚠ **Non vérifiable publiquement.** Aucun document OCHA / UNICEF / WASH Cluster public ne classe les partenaires par volume. Le ranking pourrait exister dans des données 5W internes mais n'est pas publié.
+| Affirmation | Statut | Pourquoi |
+|---|---|---|
+| Human Appeal est partenaire du WASH Cluster ONU pour Gaza | ✅ **Vrai** | Profil officiel page 35 du *WASH Cluster Partners' Profile, juillet 2022* (UNICEF / UN-OCHA) |
+| Human Appeal est le **2ᵉ plus grand fournisseur d'eau** à Gaza | ❌ **Infirmé** | Les données du dashboard cité par la pub elle-même contredisent ce ranking |
 
-**Nuance critique** : être « partenaire WASH Cluster » signifie avoir signé une lettre type d'adhésion validée par l'UNICEF. **Ce n'est pas un label de qualité ni un audit d'activité.** Le contenu de chaque profil partenaire est rédigé par l'ONG elle-même, l'UNICEF compile sans amender.
-
-**Conclusion** : la pub mélange un fait vrai (statut de membre) avec un chiffre non démontré (#2), en utilisant un visuel ONU qui suggère une caution institutionnelle plus large que ce que la cluster valide réellement.
-
----
-
-## Comment lire ce dossier
-
-| Section | Contenu |
-|---|---|
-| [`README.md`](README.md) | Cette synthèse |
-| [`constats/`](constats/) | Les 6 constats détaillés, un par fichier |
-| [`sources/`](sources/) | Description critique de chaque source utilisée |
-| [`extraits/`](extraits/) | Reproductions verbatim des passages clés des documents UN-OCHA |
-| [`methodologie.md`](methodologie.md) | Démarche, limites, biais |
-| [`corrections.md`](corrections.md) | Historique des erreurs corrigées dans cette enquête |
-
-## Constats
-
-1. [Human Appeal **est** un partenaire officiel du WASH Cluster](constats/01-partenariat-cluster.md) — **Confirmé**
-2. [Mais n'est pas dans les instances de coordination](constats/02-instances-coordination.md) — Membre simple
-3. [Le WASH Cluster a beaucoup évolué entre 2022 et 2025](constats/03-evolution-cluster-2022-2025.md) — 61 → 77 partenaires
-4. [Le ranking « 2ᵉ fournisseur » n'est pas vérifiable publiquement](constats/04-ranking-2eme-fournisseur.md) — Pièce manquante
-5. [Le « HA » du tableau de bord n'est pas formellement identifié](constats/05-acronyme-HA-dans-pub.md) — Plausible non démontré
-6. [Contexte juridique et chaîne de partenariats locaux](constats/06-contexte-juridique.md) — Contesté
+**Le chiffre qui tue le slogan :** sur le dashboard WASH Cluster (page Water), Human Appeal a livré **~169 m³ d'eau** sur **152 390 m³** au total du cluster Gaza. C'est **0,11 %**. Sur 62 partenaires scrapés, environ 30 dépassent HA en volume.
 
 ---
 
-## Pourquoi cette enquête ?
+## Démarche
 
-Les ONG humanitaires ont besoin de dons. Les dons reposent sur la confiance. Une publicité qui affiche un visuel onusien pour appuyer une affirmation de rang (« 2ᵉ ») non publiquement vérifiable pose une question de transparence — pas une question de bonne foi.
+1. **Identifier la source citée par la pub** : la pub utilise un visuel du dashboard public WASH Cluster (page Water).
+2. **Lire ce que dit le dashboard sur HA** : tooltip user montre HA Khan Younis = 21,72 m³, HA Gaza = 90,87 m³, HA Middle Area = 48,17 m³.
+3. **Comparer HA aux autres partenaires** : extraction par scraping Playwright des 62 partenaires Gaza. Voir [`dashboard-scrape/`](dashboard-scrape/).
+4. **Conclure** : HA est un contributeur **marginal** (~0,1 % du volume cluster), pas un acteur de premier plan.
 
-L'objectif n'est pas de discréditer Human Appeal, qui est bien une ONG humanitaire active à Gaza reconnue comme partenaire par l'ONU. L'objectif est de séparer **ce qui est démontré** de **ce qui est revendiqué**, pour qu'un donateur puisse décider en connaissance.
+---
+
+## Structure du dossier
+
+```
+enquete-human-appeal-gaza/
+├── README.md                   ← ce fichier (synthèse + index)
+├── methodologie.md             démarche, limites, biais
+├── corrections.md              historique des erreurs (v1 → v4)
+│
+├── constats/                   les 6 constats détaillés
+│   ├── 01-partenariat-cluster.md             ✅ Confirmé
+│   ├── 02-instances-coordination.md          Membre simple
+│   ├── 03-evolution-cluster-2022-2025.md     61 → 77 partenaires
+│   ├── 04-ranking-2eme-fournisseur.md        ❌ INFIRMÉ
+│   ├── 05-acronyme-HA-dans-pub.md            ✅ HA = Human Appeal
+│   └── 06-contexte-juridique.md              Contesté
+│
+├── sources/                    description critique des sources
+│   ├── README.md
+│   ├── wash-cluster-partners-profile-2022.md
+│   ├── wash-cluster-contingency-plan-2022.md
+│   ├── ocha-rapports-2025.md
+│   └── sources-tierces.md
+│
+├── extraits/                   reproductions verbatim
+│   ├── dashboard-wash-cluster-2025.md
+│   ├── dashboard-wash-cluster-2025.png
+│   ├── page-35-profil-human-appeal.md
+│   ├── page-74-lettre-adhesion.md
+│   ├── page-75-coordination-team-unicef.md
+│   ├── pages-8-10-instances-coordination.md
+│   └── liste-partenaires-2022.md
+│
+├── dashboard-scrape/           extraction des données du dashboard PowerBI
+│   ├── README.md               méthodologie de l'extraction
+│   ├── partners.csv            62 partenaires × données par gouvernorat
+│   └── partners_raw.json       sortie brute du scraper
+│
+└── scripts/                    code source de l'extraction
+    ├── scrape-dashboard.py     scraper Playwright
+    └── analyze-partners.py     calcul de classements
+```
+
+---
+
+## Conclusion journalistique
+
+**Sur le statut institutionnel** : Human Appeal *est* effectivement reconnu comme partenaire du WASH Cluster par les Nations Unies depuis 2022. Cela est documenté et vérifiable. La première version de cette enquête a contesté ce statut à tort ; voir [`corrections.md`](corrections.md).
+
+**Sur le ranking « #2 »** : il est **infirmé par les données mêmes que la publicité référence visuellement**. Le dashboard Power BI du WASH Cluster montre Human Appeal comme un contributeur modeste (~0,1 % du volume d'eau du cluster), pas comme un acteur dominant.
+
+**Sur la transparence publicitaire** : la pub crée une impression de caution onusienne en utilisant le visuel d'un tableau de bord ONU. Cette impression est **partiellement justifiée** (HA *est* membre du cluster) et **partiellement trompeuse** (le tableau de bord ne dit pas ce que la pub lui fait dire — au contraire, il le contredit).
+
+**Pour le donateur** :
+- ✅ Human Appeal est bien une ONG humanitaire reconnue par l'ONU pour Gaza
+- ❌ Le chiffre « #2 » qui justifie le ton de la collecte n'est pas démontré, et le dashboard cité indique le contraire
+- ❓ Les fonds passent partiellement via des partenaires intermédiaires locaux dont certains sont controversés (voir [Constat 6](constats/06-contexte-juridique.md))
+
+---
+
+## Reproductibilité
+
+Tout le matériel est public. Les sources primaires, le code de scraping et les données brutes sont dans ce repo. N'importe qui peut :
+
+1. Ouvrir le dashboard WASH Cluster ([lien](dashboard-scrape/README.md))
+2. Cliquer sur "HA" dans la slicer
+3. Lire les chiffres
+4. Comparer aux autres partenaires
+5. Reproduire les constats
+
+C'est le principe de la vérification factuelle : pas asséner une vérité, mais documenter une démarche reproductible.
 
 ---
 
 ## Avertissement
 
-Travail de vérification factuelle indépendant, conduit le 22 mai 2026 à partir de sources publiquement accessibles. Aucun lien avec Human Appeal, le WASH Cluster, l'UNICEF, OCHA, ni avec aucune organisation politique ou religieuse. Toute correction documentée sera intégrée — voir [`corrections.md`](corrections.md).
+Travail de vérification factuelle indépendant, conduit le 22 mai 2026 à partir de sources publiquement accessibles. Aucun lien avec Human Appeal, le WASH Cluster, l'UNICEF, OCHA, ni avec aucune organisation politique ou religieuse. Toute correction documentée sera intégrée.
