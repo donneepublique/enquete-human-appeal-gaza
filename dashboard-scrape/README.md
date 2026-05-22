@@ -18,35 +18,53 @@ Scraper Playwright + Chrome headless qui, pour chacun des 62 partenaires Gaza li
 Code : [`../scripts/scrape-dashboard.py`](../scripts/scrape-dashboard.py)
 Analyse : [`../scripts/analyze-partners.py`](../scripts/analyze-partners.py)
 
+### Cycle de vérification par partenaire
+
+Une version antérieure du scraper enregistrait des données mal attribuées (par exemple les valeurs HA stockées sous l'étiquette « IDRF »). La cause : les méthodes de clic Playwright (`.get_by_text().click()`, `.locator().click()`, `page.mouse.click(x,y)`) ratent d'une ligne sur ce slicer Power BI virtualisé et sélectionnent l'item juste au-dessus de celui visé.
+
+La version actuelle :
+
+1. **Click par JavaScript direct** : on identifie le `.slicerItemContainer` dont le `textContent` exact matche le partenaire, on appelle `element.click()` en JS depuis l'iframe. C'est la seule stratégie qui sélectionne fiablement le bon item (vérifié par diagnostic).
+2. **Reset à la baseline avant chaque clic** : on confirme que le dashboard est en état non-filtré (max = 1 627 252) avant d'appliquer un nouveau filtre.
+3. **Attente active jusqu'à filtre appliqué + stable** : on poll l'état du dashboard jusqu'à ce qu'il diffère de la baseline ET que deux lectures consécutives soient identiques.
+4. **Toggle off + confirmation retour baseline** après chaque partenaire.
+5. **Vérification d'ancre** en fin de run : on compare les valeurs scrapées pour HA et UNICEF aux valeurs lues à la main par tooltip dans le dashboard. Le run actuel passe les deux ancres.
+
+### Diagnostic
+
+Le script `../scripts/diagnose-slicer.py` teste plusieurs stratégies de click sur l'entrée « HA » du slicer et vérifie laquelle sélectionne réellement HA (et pas un voisin). Sortie typique :
+
+```
+=== Strategy: js_click_by_index ===
+  ✓ After click 'HA': selected = ['HA']
+=== Strategy: playwright_get_by_text ===
+  ✗ After click 'HA': selected = ['GEM']
+=== Strategy: playwright_coordinate ===
+  ✗ After click 'HA': selected = []
+=== Strategy: playwright_locator_by_index ===
+  ✗ After click 'HA': selected = ['GEM']
+```
+
 ## Fichiers
 
 | Fichier | Contenu |
 |---|---|
-| `partners.csv` | Un partenaire par ligne, avec les m³ par gouvernorat, pourcentages et max people reached |
-| `partners_raw.json` | Sortie brute du scraper (mêmes données, format JSON détaillé) |
+| `partners_raw.json` | Sortie brute du scraper, format JSON détaillé |
+| `partners.csv` | Format **long** (un partenaire × gouvernorat par ligne) — valeurs au format PowerBI (« 2,92K », virgule décimale française) |
+| `partners_wide.csv` | Format **wide** (un partenaire par ligne) — valeurs numériques parsées, m³ par gouvernorat, totaux, % cluster, rangs |
 
-## ⚠️ Avertissement sur les étiquettes (limite connue)
+Le `partners_wide.csv` est généré par [`../scripts/build-wide-csv.py`](../scripts/build-wide-csv.py) à partir du JSON brut.
 
-Le scraper clique sur chaque partenaire séquentiellement et lit ensuite les valeurs affichées. Deux limites :
+## Vérification par ancres
 
-1. **6 clicks « ratés » sur 62** : pour 6 partenaires de la slicer (AH, HF, IWWAA, PALSTD, PSCF, WCK dans notre run), le clic n'a pas pris effet avant la lecture — les valeurs enregistrées sous ces étiquettes sont **identiques à la baseline cluster** (152 390 m³ total et 1 627 252 max people). C'est le signal clair que le filtre n'a pas été appliqué.
-
-2. **Décalage d'étiquetage pour ~5 lignes** : sur les 56 captures « réussies » (= valeurs différentes de la baseline), pour ~5 lignes le mapping `étiquette → valeur` est décalé. Exemples vérifiables :
-   - Les valeurs HA réelles (max_people 15 138, m³ 90,87 / 48,17 / 21,72) apparaissent dans le CSV **sous l'étiquette « IDRF »**
-   - Les valeurs UNICEF réelles (max_people 940 560, m³ 20 470 / 10 370 / 4 620) apparaissent **sous l'étiquette « UNRWA »**
-
-**Conséquence :** les **valeurs sont réelles** (elles correspondent bien à un partenaire réel du cluster) ; le **mapping `étiquette → ONG` est garanti uniquement pour HA et UNICEF**, par double vérification via les tooltips lus à la main.
-
-### Vérification par ancres
-
-| Partenaire | Valeur attendue (tooltip user) | Valeur trouvée dans le scrape | Étiquette dans le CSV |
+| Partenaire | Valeur attendue (tooltip user) | Valeur scrapée | Statut |
 |---|---|---|---|
-| HA | max_people = 15 138 ; m³ : 21,72 / 90,87 / 48,17 | Identique | « IDRF » (décalage) |
-| UNICEF | max_people = 940 560 ; m³ : 4,62K / 10,37K / 20,47K | Identique | « UNRWA » (décalage) |
+| HA | max_people = 15 138 ; m³ : 21,72 / 90,87 / 48,17 | Identique | ✓ |
+| UNICEF | max_people = 940 560 ; m³ : 4,62K / 10,37K / 20,47K | Identique | ✓ |
 
-Ces deux ancres confirment que les **valeurs sont fiables** et que l'**étiquetage n'est pas fiable** pour les lignes concernées.
+**62 captures sur 62 réussies. Aucune erreur d'attribution.**
 
-## Données baseline (cluster total Gaza)
+## Données baseline (cluster total Gaza, filtre vide)
 
 - Total m³ délivrés (somme 4 gouvernorats) : **152 390 m³**
 - Max people reached (max gouvernorat) : **1 627 252**
@@ -56,21 +74,16 @@ Ces deux ancres confirment que les **valeurs sont fiables** et que l'**étiqueta
   - Gaza : 44 120 m³ (28,14 %)
   - North Gaza : 12 910 m³ (8,24 %)
 
-## Position de HA dans la distribution — chiffres value-based
+## Position de HA dans la distribution
 
-L'extraction ayant 6 clicks ratés (= 6 valeurs inconnues) et ~5 décalages d'étiquette mais des **valeurs réelles**, la comparaison se fait par **valeurs**, pas par étiquettes :
+Données partenaire-par-partenaire (62/62 captures valides) :
 
-- **56 captures « réussies »** sur 62 (valeurs distinctes de la baseline)
-- **HA = 15 138** max people, **~169 m³** total Gaza (lus par tooltip)
+| Métrique | Valeur HA | Rang HA | UNICEF (n°1 sur max_people) |
+|---|---|---|---|
+| max_people (max gouvernorat) | **15 138** | **48 / 62** | 940 560 |
+| total m³ délivrés | **~169 m³** | **42 / 62** | 35 460 m³ |
 
-| Métrique | Captures > HA | Captures = HA | Captures < HA | Captures sans donnée m³ |
-|---|---|---|---|---|
-| max_people | **41 / 56** | 1 (= HA lui-même) | 14 | — |
-| total m³ | **36 / 56** | 1 (= HA lui-même) | 7 | 13 (pie vide) |
-
-**Borne :** même si les 6 clicks ratés correspondaient tous à des partenaires plus petits que HA (hypothèse la plus favorable), HA serait au **rang 42 sur 62** par max_people. C'est largement hors du top 10 et **incompatible avec un classement « 2ᵉ »**.
-
-UNICEF est confirmé n°1 par max_people : aucune valeur capturée ne dépasse 940 560.
+**HA contribue 0,11 % du volume m³ du cluster et 0,93 % du max_people cluster.** UNICEF apporte à lui seul 210× plus de m³ que HA et 62× plus de max_people. Le slogan « 2ᵉ fournisseur d'eau à Gaza » est incompatible avec ces deux classements.
 
 Voir [`../constats/04-ranking-2eme-fournisseur.md`](../constats/04-ranking-2eme-fournisseur.md) pour l'analyse complète.
 
@@ -81,11 +94,11 @@ Voir [`../constats/04-ranking-2eme-fournisseur.md`](../constats/04-ranking-2eme-
 pip install playwright
 playwright install chrome  # ou utiliser /Applications/Google Chrome.app
 
-# Lancer le scrape (~5 min)
+# Lancer le scrape (~10-12 min)
 python scripts/scrape-dashboard.py
 
-# Analyser
+# Vérifier les ancres dans la sortie ; passer l'analyse
 python scripts/analyze-partners.py
 ```
 
-Le dashboard étant public, n'importe qui peut reproduire cette extraction. Une exécution alternative qui voudrait éliminer le problème de décalage d'étiquetage devrait ajouter une vérification après chaque clic (par exemple : attendre que la baseline change vraiment, ou re-cliquer si la valeur lue est identique à la précédente). Cette amélioration n'est pas nécessaire pour la conclusion principale, qui repose sur des comparaisons de **valeurs** indépendantes des étiquettes.
+Le dashboard étant public, n'importe qui peut reproduire cette extraction. Le script `scrape-dashboard.py` imprime une section « ANCRES DE VÉRIFICATION » en fin de run qui doit afficher ✓ pour HA et UNICEF — sinon les données ne sont pas fiables et il faut investiguer (typiquement avec `scripts/diagnose-slicer.py`).

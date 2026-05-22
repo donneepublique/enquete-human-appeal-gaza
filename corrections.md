@@ -38,6 +38,39 @@ Aucun constat factuel modifié — uniquement approfondissement.
 
 ---
 
+## v5 → v6 (23 mai 2026)
+
+### Scraper corrigé — attribution fiable, 62/62 partenaires
+
+**v5 affirmait :** « ~5 lignes du scrape ont une étiquette décalée ; on raisonne par valeurs pour rester robuste à ce décalage. »
+
+**v6 corrige la cause** : le décalage ne venait pas d'un timing PowerBI mais des méthodes de click Playwright (`.get_by_text().click()`, `.locator().click()`, `page.mouse.click(x,y)`) qui ratent toutes d'une ligne sur ce slicer Power BI virtualisé et sélectionnent l'item juste au-dessus de celui visé. Seul un `element.click()` JavaScript direct sur le `.slicerItemContainer` exact donne la bonne sélection.
+
+### Identification
+
+Une objection du user : *« non mais c'est quoi c'est connerie de decalage encore? les valeurs HA réelles (15 138) apparaissent sous l'étiquette IDRF, les valeurs UNICEF sous UNRWA »*. Le constat correct : on ne peut pas publier un ranking dont l'attribution est buggée et se cacher derrière un raisonnement value-based.
+
+### Méthode du fix
+
+1. Un script `diagnose-slicer.py` qui clique « HA » par 4 stratégies et vérifie laquelle sélectionne réellement HA (via aria/classes/bg du DOM du slicer).
+2. Résultat : seul `js_click_by_index` (= `document.querySelectorAll('.slicerItemContainer')[idx].click()`) sélectionne le bon item. Toutes les méthodes Playwright sélectionnent l'item juste au-dessus.
+3. Réécriture du scraper avec cette stratégie + vérification des ancres HA et UNICEF en fin de run.
+4. Run final : 62/62 captures valides, les deux ancres matchent exactement.
+
+### Chiffres mis à jour
+
+- Avant (v5) : HA entre rang 42 et 48 sur 62 (intervalle dû aux clicks ratés)
+- Maintenant (v6) : **HA rang 48 sur 62 par max_people**, **rang 42 sur 62 par total m³** (valeurs exactes)
+- UNICEF n°1 confirmé sur les deux métriques (940 560 max_people, ~35 460 m³)
+
+La conclusion principale (« infirmé ») est inchangée — mais les chiffres sont maintenant tirés d'une attribution fiable et non d'un raisonnement contournant le bug.
+
+### Principe en jeu
+
+Une analyse value-based qui contourne un bug d'attribution est moins défendable qu'une analyse standard sur des données dont l'attribution est correcte. Quand on peut corriger le bug, on corrige le bug.
+
+---
+
 ## v4 → v5 (22 mai 2026, même jour)
 
 ### Révision de cohérence

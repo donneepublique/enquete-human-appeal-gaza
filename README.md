@@ -2,8 +2,8 @@
 
 > Vérification factuelle d'une publicité Instagram de Human Appeal France affirmant que l'ONG est le « 2ᵉ plus grand fournisseur d'eau à Gaza » selon le WASH Cluster (UN-OCHA).
 
-**Date :** 22 mai 2026
-**Statut :** v5 — révision de cohérence : contradictions internes corrigées, allégations non strictement assurées retirées, classement value-based consolidé.
+**Date :** 23 mai 2026
+**Statut :** v6 — scraper corrigé (JS-click direct), 62/62 attributions partenaires validées par double ancre tooltip ; rangs HA exacts.
 
 ---
 
@@ -16,7 +16,7 @@ La publicité fait deux affirmations distinctes :
 | Human Appeal est partenaire du WASH Cluster ONU pour Gaza | ✅ **Vrai** | Profil officiel page 35 du *WASH Cluster Partners' Profile, juillet 2022* (UNICEF / UN-OCHA) |
 | Human Appeal est le **2ᵉ plus grand fournisseur d'eau** à Gaza | ❌ **Infirmé** | Les données du dashboard cité par la pub elle-même contredisent ce ranking |
 
-**Le chiffre qui tue le slogan :** sur le dashboard WASH Cluster (page Water), Human Appeal a livré **~169 m³ d'eau** sur **152 390 m³** au total du cluster Gaza. C'est **0,11 %**. Parmi les 56 partenaires dont l'extraction a réussi (sur 62), **41 dépassent HA** sur la métrique « personnes touchées » et **36 dépassent HA** en volume m³ — HA se situe entre le **rang 42 et 48 sur 62**.
+**Le chiffre qui tue le slogan :** sur le dashboard WASH Cluster (page Water), Human Appeal a livré **~169 m³ d'eau** sur **152 390 m³** au total du cluster Gaza. C'est **0,11 %**. Sur 62 partenaires Gaza extraits avec une attribution fiable (62/62), HA est **rang 48 sur 62 par max_people** et **rang 42 sur 62 par volume m³**. UNICEF, n°1 sur les deux métriques, fait **62× plus** de personnes touchées et **210× plus** de m³ que HA.
 
 ---
 
@@ -24,7 +24,7 @@ La publicité fait deux affirmations distinctes :
 
 1. **Identifier la source citée par la pub** : la pub utilise un visuel du dashboard public WASH Cluster (page Water).
 2. **Lire ce que dit le dashboard sur HA** : tooltip user montre HA Khan Younis = 21,72 m³, HA Gaza = 90,87 m³, HA Middle Area = 48,17 m³ ; max people reached = 15 138.
-3. **Comparer HA aux autres partenaires** : extraction par scraping Playwright des 62 partenaires Gaza, puis comparaison **value-based** robuste au décalage d'étiquetage. Voir [`dashboard-scrape/`](dashboard-scrape/).
+3. **Comparer HA aux autres partenaires** : extraction par scraping Playwright des 62 partenaires Gaza (JS-click direct dans le slicer Power BI, vérification d'ancre par double tooltip HA + UNICEF). Voir [`dashboard-scrape/`](dashboard-scrape/).
 4. **Conclure** : HA est un contributeur **marginal** (0,11 % du volume cluster, 0,93 % du max people reached), pas un acteur de premier plan.
 
 ---

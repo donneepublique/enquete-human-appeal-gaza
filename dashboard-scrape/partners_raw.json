@@ -90,34 +90,6 @@
   "AH": {
     "pie": {
       "Middle Area": {
-        "value_raw": "49,03K",
-        "pct": "31,28"
-      },
-      "Khan Younis": {
-        "value_raw": "46,33K",
-        "pct": "29,55"
-      },
-      "Gaza": {
-        "value_raw": "44,12K",
-        "pct": "28,14"
-      },
-      "North Gaza": {
-        "value_raw": "12,91K",
-        "pct": "8,24"
-      }
-    },
-    "scale": [
-      "140,293",
-      "437,685",
-      "735,077",
-      "1,032,468",
-      "1,329,860",
-      "1,627,252"
-    ]
-  },
-  "AIOCP": {
-    "pie": {
-      "Middle Area": {
         "value_raw": "1,66K",
         "pct": "58,78"
       },
@@ -132,7 +104,7 @@
       "123,693"
     ]
   },
-  "ANERA": {
+  "AIOCP": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,5K",
@@ -159,7 +131,7 @@
       "351,983"
     ]
   },
-  "BLDA": {
+  "ANERA": {
     "pie": {
       "Middle Area": {
         "value_raw": "330,8000000000002",
@@ -182,14 +154,14 @@
       "70,179"
     ]
   },
-  "CARE": {
+  "BLDA": {
     "pie": {},
     "scale": [
       "2,546",
       "4,165"
     ]
   },
-  "CCP-Japan": {
+  "CARE": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,4K",
@@ -211,7 +183,7 @@
       "225,565"
     ]
   },
-  "CESVI": {
+  "CCP-Japan": {
     "pie": {
       "Middle Area": {
         "value_raw": "350",
@@ -234,7 +206,7 @@
       "56,644"
     ]
   },
-  "CMWU": {
+  "CESVI": {
     "pie": {
       "Middle Area": {
         "value_raw": "20",
@@ -261,7 +233,7 @@
       "7,504"
     ]
   },
-  "CRS": {
+  "CMWU": {
     "pie": {
       "Khan Younis": {
         "value_raw": "2,17K",
@@ -278,7 +250,7 @@
       "119,233"
     ]
   },
-  "DCA/NCA": {
+  "CRS": {
     "pie": {
       "Khan Younis": {
         "value_raw": "160",
@@ -300,7 +272,7 @@
       "37,124"
     ]
   },
-  "DFD": {
+  "DCA/NCA": {
     "pie": {
       "Khan Younis": {
         "value_raw": "225",
@@ -316,14 +288,14 @@
       "31,284"
     ]
   },
-  "FAFD": {
+  "DFD": {
     "pie": {},
     "scale": [
       "666",
       "999"
     ]
   },
-  "GDD": {
+  "FAFD": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,12K",
@@ -344,7 +316,7 @@
       "137,333"
     ]
   },
-  "GEM": {
+  "GDD": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,55K",
@@ -371,7 +343,7 @@
       "173,100"
     ]
   },
-  "HA": {
+  "GEM": {
     "pie": {
       "Middle Area": {
         "value_raw": "1,1K",
@@ -393,35 +365,7 @@
       "8,292"
     ]
   },
-  "HF": {
-    "pie": {
-      "Middle Area": {
-        "value_raw": "49,03K",
-        "pct": "31,28"
-      },
-      "Khan Younis": {
-        "value_raw": "46,33K",
-        "pct": "29,55"
-      },
-      "Gaza": {
-        "value_raw": "44,12K",
-        "pct": "28,14"
-      },
-      "North Gaza": {
-        "value_raw": "12,91K",
-        "pct": "8,24"
-      }
-    },
-    "scale": [
-      "140,293",
-      "437,685",
-      "735,077",
-      "1,032,468",
-      "1,329,860",
-      "1,627,252"
-    ]
-  },
-  "IDRF": {
+  "HA": {
     "pie": {
       "Middle Area": {
         "value_raw": "48,167",
@@ -443,7 +387,7 @@
       "15,138"
     ]
   },
-  "IHH": {
+  "HF": {
     "pie": {
       "Khan Younis": {
         "value_raw": "0,35K",
@@ -464,6 +408,53 @@
       "145,443",
       "216,798",
       "288,153"
+    ]
+  },
+  "IDRF": {
+    "pie": {
+      "Middle Area": {
+        "value_raw": "76,6",
+        "pct": "12,4"
+      },
+      "Khan Younis": {
+        "value_raw": "154",
+        "pct": "24,94"
+      },
+      "Gaza": {
+        "value_raw": "260",
+        "pct": "42,1"
+      },
+      "North Gaza": {
+        "value_raw": "115",
+        "pct": "18,62"
+      }
+    },
+    "scale": [
+      "1,166",
+      "13,791",
+      "26,416",
+      "39,041",
+      "51,666"
+    ]
+  },
+  "IHH": {
+    "pie": {
+      "Khan Younis": {
+        "value_raw": "10",
+        "pct": "7,94"
+      },
+      "Gaza": {
+        "value_raw": "70",
+        "pct": "55,56"
+      },
+      "North Gaza": {
+        "value_raw": "46",
+        "pct": "36,51"
+      }
+    },
+    "scale": [
+      "9,533",
+      "21,760"
     ]
   },
   "IMC": {
@@ -514,34 +505,6 @@
   },
   "IWWAA": {
     "pie": {
-      "Middle Area": {
-        "value_raw": "49,03K",
-        "pct": "31,28"
-      },
-      "Khan Younis": {
-        "value_raw": "46,33K",
-        "pct": "29,55"
-      },
-      "Gaza": {
-        "value_raw": "44,12K",
-        "pct": "28,14"
-      },
-      "North Gaza": {
-        "value_raw": "12,91K",
-        "pct": "8,24"
-      }
-    },
-    "scale": [
-      "140,293",
-      "437,685",
-      "735,077",
-      "1,032,468",
-      "1,329,860",
-      "1,627,252"
-    ]
-  },
-  "MAAN": {
-    "pie": {
       "Gaza": {
         "value_raw": "490",
         "pct": "80,33"
@@ -556,7 +519,7 @@
       "73,500"
     ]
   },
-  "MAP-UK": {
+  "MAAN": {
     "pie": {
       "Middle Area": {
         "value_raw": "1,44K",
@@ -580,7 +543,7 @@
       "248,896"
     ]
   },
-  "MC": {
+  "MAP-UK": {
     "pie": {
       "Middle Area": {
         "value_raw": "45",
@@ -599,13 +562,13 @@
       "74,418"
     ]
   },
-  "MECA": {
+  "MC": {
     "pie": {},
     "scale": [
       "8,572"
     ]
   },
-  "Mentor": {
+  "MECA": {
     "pie": {
       "Middle Area": {
         "value_raw": "1,54K",
@@ -633,7 +596,7 @@
       "215,465"
     ]
   },
-  "MSF-F": {
+  "Mentor": {
     "pie": {
       "Middle Area": {
         "value_raw": "40",
@@ -649,7 +612,7 @@
       "11,000"
     ]
   },
-  "MSF-OCB": {
+  "MSF-F": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,53K",
@@ -673,7 +636,7 @@
       "38,900"
     ]
   },
-  "MSF-S": {
+  "MSF-OCB": {
     "pie": {
       "Middle Area": {
         "value_raw": "22",
@@ -696,7 +659,7 @@
       "34,367"
     ]
   },
-  "NPA": {
+  "MSF-S": {
     "pie": {
       "Middle Area": {
         "value_raw": "268",
@@ -718,7 +681,7 @@
       "94,509"
     ]
   },
-  "NRC": {
+  "NPA": {
     "pie": {
       "Gaza": {
         "value_raw": "23,309999999999995",
@@ -734,7 +697,7 @@
       "3,666"
     ]
   },
-  "OCK3": {
+  "NRC": {
     "pie": {
       "Middle Area": {
         "value_raw": "216",
@@ -760,7 +723,7 @@
       "133,567"
     ]
   },
-  "Other": {
+  "OCK3": {
     "pie": {
       "Middle Area": {
         "value_raw": "3,88K",
@@ -786,13 +749,13 @@
       "155,898"
     ]
   },
-  "Oxfam": {
+  "Other": {
     "pie": {},
     "scale": [
       "17,556"
     ]
   },
-  "PAEEP": {
+  "Oxfam": {
     "pie": {
       "Middle Area": {
         "value_raw": "141,79999999999998",
@@ -818,35 +781,7 @@
       "33,357"
     ]
   },
-  "PALSTD": {
-    "pie": {
-      "Middle Area": {
-        "value_raw": "49,03K",
-        "pct": "31,28"
-      },
-      "Khan Younis": {
-        "value_raw": "46,33K",
-        "pct": "29,55"
-      },
-      "Gaza": {
-        "value_raw": "44,12K",
-        "pct": "28,14"
-      },
-      "North Gaza": {
-        "value_raw": "12,91K",
-        "pct": "8,24"
-      }
-    },
-    "scale": [
-      "140,293",
-      "437,685",
-      "735,077",
-      "1,032,468",
-      "1,329,860",
-      "1,627,252"
-    ]
-  },
-  "PARC": {
+  "PAEEP": {
     "pie": {
       "Khan Younis": {
         "value_raw": "90",
@@ -862,7 +797,7 @@
       "10,900"
     ]
   },
-  "PCRF": {
+  "PALSTD": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,47K",
@@ -882,6 +817,52 @@
       "170,054",
       "325,774",
       "481,495"
+    ]
+  },
+  "PARC": {
+    "pie": {
+      "Middle Area": {
+        "value_raw": "269",
+        "pct": "10,3"
+      },
+      "Khan Younis": {
+        "value_raw": "995",
+        "pct": "38,11"
+      },
+      "North Gaza": {
+        "value_raw": "550,5999999999999",
+        "pct": "21,09"
+      }
+    },
+    "scale": [
+      "715",
+      "29,428",
+      "58,141",
+      "86,853",
+      "115,566"
+    ]
+  },
+  "PCRF": {
+    "pie": {
+      "Middle Area": {
+        "value_raw": "7,44K",
+        "pct": "41,96"
+      },
+      "Khan Younis": {
+        "value_raw": "8,63K",
+        "pct": "48,65"
+      },
+      "Gaza": {
+        "value_raw": "1,37K",
+        "pct": "7,7"
+      }
+    },
+    "scale": [
+      "9,100",
+      "55,104",
+      "101,108",
+      "147,112",
+      "193,116"
     ]
   },
   "PEF": {
@@ -919,46 +900,18 @@
     ]
   },
   "PSCF": {
-    "pie": {
-      "Middle Area": {
-        "value_raw": "49,03K",
-        "pct": "31,28"
-      },
-      "Khan Younis": {
-        "value_raw": "46,33K",
-        "pct": "29,55"
-      },
-      "Gaza": {
-        "value_raw": "44,12K",
-        "pct": "28,14"
-      },
-      "North Gaza": {
-        "value_raw": "12,91K",
-        "pct": "8,24"
-      }
-    },
-    "scale": [
-      "140,293",
-      "437,685",
-      "735,077",
-      "1,032,468",
-      "1,329,860",
-      "1,627,252"
-    ]
-  },
-  "PUI": {
     "pie": {},
     "scale": [
       "581"
     ]
   },
-  "PWJ": {
+  "PUI": {
     "pie": {},
     "scale": [
       "2,433"
     ]
   },
-  "QRCS": {
+  "PWJ": {
     "pie": {
       "Middle Area": {
         "value_raw": "58",
@@ -974,7 +927,7 @@
       "9,499"
     ]
   },
-  "RAHMA": {
+  "QRCS": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,45K",
@@ -995,7 +948,7 @@
       "222,015"
     ]
   },
-  "SCI": {
+  "RAHMA": {
     "pie": {
       "Khan Younis": {
         "value_raw": "78,83000000000003",
@@ -1011,7 +964,7 @@
       "13,001"
     ]
   },
-  "SHAMS-OCD": {
+  "SCI": {
     "pie": {
       "Middle Area": {
         "value_raw": "1,03K",
@@ -1039,13 +992,13 @@
       "152,981"
     ]
   },
-  "SI": {
+  "SHAMS-OCD": {
     "pie": {},
     "scale": [
       "6,466"
     ]
   },
-  "SIF": {
+  "SI": {
     "pie": {
       "Middle Area": {
         "value_raw": "258,58",
@@ -1077,19 +1030,19 @@
       "36,123"
     ]
   },
-  "SOS": {
+  "SIF": {
     "pie": {},
     "scale": [
       "24,706"
     ]
   },
-  "TDH": {
+  "SOS": {
     "pie": {},
     "scale": [
       "600"
     ]
   },
-  "UAWC": {
+  "TDH": {
     "pie": {
       "Middle Area": {
         "value_raw": "40",
@@ -1105,7 +1058,7 @@
       "24,959"
     ]
   },
-  "UNDP": {
+  "UAWC": {
     "pie": {
       "Middle Area": {
         "value_raw": "39",
@@ -1127,7 +1080,7 @@
       "27,299"
     ]
   },
-  "UNICEF": {
+  "UNDP": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,36K",
@@ -1147,7 +1100,7 @@
       "25,573"
     ]
   },
-  "UNRWA": {
+  "UNICEF": {
     "pie": {
       "Middle Area": {
         "value_raw": "20,47K",
@@ -1171,35 +1124,7 @@
       "940,560"
     ]
   },
-  "WCK": {
-    "pie": {
-      "Middle Area": {
-        "value_raw": "49,03K",
-        "pct": "31,28"
-      },
-      "Khan Younis": {
-        "value_raw": "46,33K",
-        "pct": "29,55"
-      },
-      "Gaza": {
-        "value_raw": "44,12K",
-        "pct": "28,14"
-      },
-      "North Gaza": {
-        "value_raw": "12,91K",
-        "pct": "8,24"
-      }
-    },
-    "scale": [
-      "140,293",
-      "437,685",
-      "735,077",
-      "1,032,468",
-      "1,329,860",
-      "1,627,252"
-    ]
-  },
-  "YDRO": {
+  "UNRWA": {
     "pie": {
       "Middle Area": {
         "value_raw": "0,78K",
@@ -1224,6 +1149,55 @@
       "74,971",
       "112,012",
       "149,053"
+    ]
+  },
+  "WCK": {
+    "pie": {
+      "Middle Area": {
+        "value_raw": "459,93000000000006",
+        "pct": "60,65"
+      },
+      "Khan Younis": {
+        "value_raw": "252,35000000000008",
+        "pct": "33,28"
+      },
+      "Rafah": {
+        "value_raw": "26,02",
+        "pct": "3,43"
+      }
+    },
+    "scale": [
+      "3,333",
+      "27,753",
+      "52,174",
+      "76,594"
+    ]
+  },
+  "YDRO": {
+    "pie": {
+      "Middle Area": {
+        "value_raw": "30",
+        "pct": "9,4"
+      },
+      "Khan Younis": {
+        "value_raw": "189,3",
+        "pct": "59,29"
+      },
+      "Gaza": {
+        "value_raw": "70",
+        "pct": "21,92"
+      },
+      "North Gaza": {
+        "value_raw": "30",
+        "pct": "9,4"
+      }
+    },
+    "scale": [
+      "900",
+      "8,564",
+      "16,228",
+      "23,891",
+      "31,555"
     ]
   }
 }

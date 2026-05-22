@@ -38,7 +38,7 @@ Quand l'utilisateur a filtré le dashboard sur HA et lu le tooltip, il a obtenu 
 - Middle Area : 48,17 m³ (28,47 %)
 - Max people reached (max gouvernorat) : 15 138
 
-Le scraping automatique a retrouvé exactement ces valeurs au slot étiqueté « HA » (à un décalage technique près — voir [méthodologie](../dashboard-scrape/README.md)).
+Le scraping automatique (62/62 attributions fiables — voir [méthodologie](../dashboard-scrape/README.md)) retrouve exactement ces valeurs sous l'étiquette « HA ».
 
 ### 3. Cohérence avec le profil UN-OCHA 2022
 
