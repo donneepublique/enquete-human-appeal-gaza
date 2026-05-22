@@ -1,53 +1,73 @@
 # Sources de l'enquête
 
-Index des sources utilisées dans cette enquête, classées par force probante.
+Index des sources utilisées, classées par force probante pour les conclusions de la v4.
 
 ---
 
-## Sources primaires — documents UN-OCHA
+## Sources primaires — par ordre de centralité
 
-| Document | Date | Pourquoi c'est important |
-|---|---|---|
-| [WASH Cluster Partners' Profile](wash-cluster-partners-profile-2022.md) | juillet 2022 | **Document central** — confirme Human Appeal comme partenaire |
-| [Gaza WASH Contingency Plan](wash-cluster-contingency-plan-2022.md) | novembre 2022 | A causé l'erreur de la v1 — n'est PAS un registre des membres |
-| [OCHA Gaza Humanitarian Response Updates 2025](ocha-rapports-2025.md) | 2025 | Chiffres opérationnels publics, sans ventilation par partenaire |
+### 1. Dashboard Power BI public WASH Cluster (page Water)
+
+C'est **LA** source qui infirme le slogan publicitaire. Le dashboard que la pub référence visuellement contient lui-même les chiffres qui contredisent l'affirmation « 2ᵉ fournisseur ».
+
+→ [`dashboard-powerbi-wash-cluster.md`](dashboard-powerbi-wash-cluster.md)
+→ Données extraites : [`../dashboard-scrape/`](../dashboard-scrape/)
+
+### 2. WASH Cluster Partners' Profile (juillet 2022)
+
+Document UN-OCHA / UNICEF qui établit que Human Appeal *est* officiellement partenaire du cluster (page 35). Source du Constat 1.
+
+→ [`wash-cluster-partners-profile-2022.md`](wash-cluster-partners-profile-2022.md)
+
+### 3. Gaza WASH Contingency Plan (novembre 2022)
+
+Document UN-OCHA — utilisé à tort par la v1 comme registre des membres. À noter dans le dossier pour transparence sur l'erreur de v1.
+
+→ [`wash-cluster-contingency-plan-2022.md`](wash-cluster-contingency-plan-2022.md)
+
+### 4. OCHA Gaza Humanitarian Response Updates 2025
+
+Rapports bi-hebdomadaires UN-OCHA qui donnent les **agrégats** (nombre de partenaires actifs, volumes totaux livrés). Ne ventilent pas par partenaire — précisément la raison pour laquelle la v3 statuait « non vérifiable ». Le dashboard de la source 1 a ensuite permis de descendre au partenaire.
+
+→ [`ocha-rapports-2025.md`](ocha-rapports-2025.md)
+
+### 5. Sources tierces
+
+UK Charity Commission, Wikipedia, ReliefWeb (plateforme d'hébergement), Middle East Forum (partisane), 5Pillars UK, WFP.
+
+→ [`sources-tierces.md`](sources-tierces.md)
 
 ---
 
-## Sources tierces
-
-Voir [`sources-tierces.md`](sources-tierces.md) pour la description complète et critique de :
-- ReliefWeb (plateforme d'hébergement, pas autorité)
-- Wikipedia
-- UK Charity Commission
-- Middle East Forum (source partisane)
-- 5Pillars UK
-- WFP (site officiel)
-
----
-
-## Hiérarchie de la force probante
+## Hiérarchie de la force probante (révisée v4)
 
 ```
-1. Documents primaires UN-OCHA (Partners' Profile, OCHA updates)
+1. Dashboard Power BI WASH Cluster (page Water) — données chiffrées au partenaire
    ↓
-2. Filings publics autorités statutaires (Charity Commission UK)
+2. WASH Cluster Partners' Profile 2022 — registre officiel des membres
    ↓
-3. Communications officielles WFP/UNICEF/UNRWA
+3. OCHA Updates 2025 — chiffres agrégés (pas par partenaire)
    ↓
-4. Reporting journalistique vérifié
+4. Filings statutaires Charity Commission UK
    ↓
-5. Communications NGO auto-publiées (incl. via ReliefWeb)
+5. Communications officielles UNICEF/WFP/UNRWA
    ↓
-6. Think tanks et publications militantes (MEF, etc.) — utilisables pour les faits sourcés à des documents publics, à manier avec précaution pour les interprétations
+6. Reporting journalistique vérifié
+   ↓
+7. Communications NGO auto-publiées (incl. via ReliefWeb)
+   ↓
+8. Think tanks et publications militantes (MEF, etc.)
 ```
 
 ---
 
 ## Ce qui manque pour aller plus loin
 
-1. **Rapports 5W internes du WASH Cluster** — donneraient la ventilation par partenaire et permettraient de vérifier le ranking #2.
-2. **Réponse officielle de Human Appeal France** au sujet de la source du « #2 ».
-3. **Confirmation directe du WASH Cluster Coordination Team** (UNICEF) sur l'éventuel ranking communiqué à Human Appeal.
+L'enquête v4 a obtenu ce qu'il fallait pour conclure. Pour aller au-delà, il faudrait :
 
-Ces démarches n'ont pas été engagées dans le cadre de cette enquête. Voir [méthodologie](../methodologie.md).
+1. **Réponse officielle de Human Appeal France** sur la source de l'affirmation « 2ᵉ » — démarche journalistique non engagée dans cette enquête.
+2. **Audit indépendant des volumes** reportés par chaque partenaire au cluster — n'existe probablement pas.
+3. **Identification des acronymes ambigus** (OCK3, GDD, GEM, etc.) — nécessite de demander au WASH Cluster Coordination Team (UNICEF).
+4. **Données 5W internes** ventilées par partenaire et par période — données opérationnelles internes au cluster, pas publiées.
+
+Ces démarches dépassent le cadre d'une vérification factuelle à partir de sources publiques.

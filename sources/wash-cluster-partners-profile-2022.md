@@ -9,66 +9,62 @@
 
 ---
 
-## Pourquoi ce document est central pour cette enquête
+## Rôle dans l'enquête
 
-C'est le **registre officiel des organisations membres du WASH Cluster Palestine** au moment de sa publication. Il liste 61 organisations avec une fiche dédiée pour chacune, et inclut :
+C'est la **source qui établit le Constat 1** : Human Appeal est officiellement reconnu comme partenaire du WASH Cluster par l'UNICEF.
 
-- Une vue d'ensemble (page 7)
-- Les instances de coordination (SAG, AFP, AWG, pages 8-10)
-- Les profils individuels des 61 partenaires (pages 13-73)
-- Le modèle de lettre d'adhésion (page 74)
-- Les coordonnées de l'équipe de coordination UNICEF (page 75)
+Page 35 contient le profil officiel « Human Appeal (HA) » avec adresse Gaza vérifiable, focal point nommé, programme WASH déclaré.
 
-C'est la source primaire qui établit le statut institutionnel de Human Appeal.
+⚠ **Important** : cette source documente l'**adhésion** (statut institutionnel), pas l'**ampleur opérationnelle**. Pour l'ampleur, c'est le [dashboard Power BI](dashboard-powerbi-wash-cluster.md) qui fait foi (source 1).
 
 ---
 
-## Structure des profils partenaires
+## Structure du document
 
-Chaque profil suit le même template :
-
-| Champ | Source |
+| Pages | Contenu |
 |---|---|
-| Type d'organisation | Auto-déclaré |
-| Site web | Auto-déclaré |
-| Adresse | Auto-déclaré |
-| Champs d'opération (Gaza / Cisjordanie) | Auto-déclaré, coché |
-| Mission/vision | Texte libre auto-rédigé |
-| Domaines WASH d'intervention | Auto-déclaré, cases cochées sur 6 options |
-| Programme WASH | Texte libre auto-rédigé |
-| Focal points | Nom, titre, e-mail, téléphone |
+| 1-3 | Sommaire |
+| 4 | Acronymes |
+| 6 | Planche visuelle des logos partenaires (HA y figure) |
+| 7 | Vue d'ensemble (61 partenaires en 2022) |
+| 8-10 | Instances de coordination (SAG, AFP, AWG) |
+| 13-73 | Profils individuels des 61 partenaires |
+| 74 | Modèle de lettre d'adhésion |
+| 75 | Coordonnées de l'équipe de coordination UNICEF |
 
 ---
 
-## Modèle d'autorité
+## Modèle d'autorité (rappel important)
 
-Comme détaillé dans le [Constat 1](../constats/01-partenariat-cluster.md) :
+- **Compilation/publication** : UNICEF (équipe coord. State of Palestine)
+- **Décision d'inscription** : UNICEF, sur la base d'une lettre type signée par l'organisation candidate (page 74)
+- **Contenu de chaque profil partenaire** : rédigé par l'organisation elle-même
+- **Audit indépendant des activités** : aucun n'est mentionné dans ce document
 
-- **Compilation/édition/publication :** UNICEF (équipe de coordination, page 75)
-- **Décision d'inscription :** UNICEF, sur la base d'une lettre type signée par l'organisation (page 74)
-- **Contenu de chaque profil :** rédigé par l'organisation elle-même
-- **Audit indépendant des activités :** aucun n'est mentionné dans ce document
+→ Le statut de « partenaire WASH Cluster » n'est **pas un label de qualité**. C'est l'inscription à un mécanisme de coordination, accordée sur déclaration.
 
 ---
 
-## Force probante
+## Force probante (révisée v4)
 
-| Question | Que prouve ce document ? |
+| Question | Que prouve cette source ? |
 |---|---|
-| Human Appeal est-elle membre du cluster ? | **Oui, à juillet 2022** |
-| Human Appeal a-t-elle un bureau à Gaza ? | Très probable (adresse + focal point e-mail vérifiable) |
-| Human Appeal fait-elle ce qu'elle dit faire ? | **Le document ne le prouve pas** — c'est auto-déclaré |
-| Human Appeal est-elle dans la coordination du cluster ? | **Non**, ni SAG, ni AFP, ni AWG |
-| Human Appeal est-elle classée à un rang particulier ? | **Le document ne classe pas les partenaires** |
+| Human Appeal est-elle officiellement membre du cluster ? | ✅ Oui, à juillet 2022 |
+| Human Appeal a-t-elle un bureau et une équipe à Gaza ? | Très probable (adresse + focal point + e-mail vérifiable) |
+| Human Appeal mène-t-elle effectivement les activités décrites dans son profil ? | ⚠ Auto-déclaré, non audité par la cluster |
+| Human Appeal est-elle dans les instances de coordination du cluster ? | ❌ Non (ni SAG, ni AFP, ni AWG) |
+| Human Appeal est-elle « 2ᵉ fournisseur d'eau » ? | ❌ **Cette source ne dit rien sur le ranking.** Le [dashboard Power BI](dashboard-powerbi-wash-cluster.md) infirme cette affirmation. |
 
 ---
 
-## Limites du document pour cette enquête
+## Limites de cette source pour l'enquête
 
-1. **Daté de juillet 2022** — antérieur à l'escalade d'octobre 2023. Le rôle de Human Appeal a pu évoluer depuis.
-2. **Auto-déclaration** — le contenu des fiches n'est pas audité.
+1. **Daté de juillet 2022** — la pub est de 2025-2026. Le rôle de HA a pu évoluer depuis.
+2. **Auto-déclaration** — le contenu des profils n'est pas audité.
 3. **Pas de données quantitatives** — aucun volume, aucun nombre de bénéficiaires, aucun budget.
-4. **Pas de ranking** — le document n'établit aucune hiérarchie entre partenaires.
+4. **Pas de ranking** — le document ne classe pas les partenaires.
+
+C'est précisément pour dépasser ces limites que la v4 s'appuie sur le [dashboard Power BI](dashboard-powerbi-wash-cluster.md), qui donne des chiffres récents et par partenaire.
 
 ---
 
