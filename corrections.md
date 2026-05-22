@@ -69,6 +69,12 @@ La conclusion principale (« infirmé ») est inchangée — mais les chiffres s
 
 Une analyse value-based qui contourne un bug d'attribution est moins défendable qu'une analyse standard sur des données dont l'attribution est correcte. Quand on peut corriger le bug, on corrige le bug.
 
+### Constat 6 supprimé
+
+Le Constat 6 (« Statut juridique et modèle opérationnel ») a été **retiré de l'enquête**. Raison : il était hors-sujet par rapport à la question précise traitée — le statut administratif de Human Appeal (charity UK n° 1154288, sans enquête statutaire) et son recours à des partenaires locaux **n'invalident ni ne valident** le ranking « 2ᵉ fournisseur d'eau ». Le fichier précisait d'ailleurs lui-même cette absence de pertinence.
+
+Les éléments factuels utiles (numéro de charity, absence d'enquête, traitement des sources partisanes) restent référencés dans [`sources/sources-tierces.md`](sources/sources-tierces.md). Conserver un constat hors-sujet — même soigneusement neutre — affaiblissait la lisibilité de l'enquête en suggérant que le statut juridique faisait partie des éléments à charge contre HA. Il ne l'a jamais été.
+
 ---
 
 ## v4 → v5 (22 mai 2026, même jour)

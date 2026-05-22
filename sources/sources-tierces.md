@@ -57,11 +57,11 @@ Ces publications ne sont **pas** des autorités neutres. Elles s'appuient en par
 
 Cette enquête **n'incorpore aucune allégation politique** issue de ces sources comme fait établi. Si le donateur souhaite s'informer sur ces controverses, la démarche correcte est :
 
-1. Lire le registre Charity Commission UK (autorité réglementaire neutre) ;
+1. Lire le registre Charity Commission UK (autorité réglementaire neutre) — Human Appeal y est enregistrée sous le n° **1154288** depuis mai 2014, **aucune enquête statutaire ouverte** au moment de cette enquête ;
 2. Lire la position publique de Human Appeal ;
 3. Lire les publications critiques en gardant à l'esprit qu'elles **ne sont pas** des autorités d'enquête.
 
-Voir [Constat 6](../constats/06-contexte-juridique.md) pour le traitement de ce volet.
+Le statut juridique et les allégations politiques sont **hors-sujet** par rapport à la question précise de cette enquête (« HA est-il le 2ᵉ fournisseur d'eau à Gaza ? »). Ils sont signalés ici uniquement pour le donateur qui voudrait creuser le contexte plus large.
 
 ---
 
