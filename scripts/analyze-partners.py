@@ -1,48 +1,37 @@
 """
-Analyse with shift correction.
-The scraper's data labeled 'X' is actually for the partner BEFORE X
-when click N was processed but read happened before update.
-Strategy:
-  - Read raw JSON
-  - Compute total m3 per slot
-  - Detect baseline slots (click failed)
-  - Shift labels backward by 1 to align reading to actual selected partner
+Analyse value-based des données scrapées.
+
+L'étiquetage du scraper est décalé pour ~5 lignes sur 56 (et 6 clicks ratés
+produisent la baseline). Plutôt que de tenter de reconstruire le mapping
+étiquette → ONG, on raisonne en VALEURS : combien de partenaires capturés
+ont une valeur supérieure / égale / inférieure à HA, telle que lue par
+tooltip dans le dashboard.
+
+Cette approche est robuste au problème d'étiquetage et donne une borne
+inférieure sur le rang de HA.
 """
 import json
-import re
 from pathlib import Path
 
-raw = json.loads(Path("/tmp/pbi-data/partners_raw.json").read_text())
+ROOT = Path(__file__).resolve().parent.parent
+RAW_PATH = ROOT / "dashboard-scrape" / "partners_raw.json"
 
-PARTNERS_ORDER = [
-    "AAH", "ACTED", "AFSC", "AH", "AIOCP", "ANERA", "BLDA", "CARE", "CCP-Japan", "CESVI",
-    "CMWU", "CRS", "DCA/NCA", "DFD", "FAFD", "GDD", "GEM", "HA", "HF", "IDRF",
-    "IHH", "IMC", "IRC", "IRW", "IWWAA", "MAAN", "MAP-UK", "MC", "MECA", "Mentor",
-    "MSF-F", "MSF-OCB", "MSF-S", "NPA", "NRC", "OCK3", "Other", "Oxfam", "PAEEP", "PALSTD",
-    "PARC", "PCRF", "PEF", "PFSA", "Project HOPE", "PSCF", "PUI", "PWJ", "QRCS", "RAHMA",
-    "SCI", "SHAMS-OCD", "SI", "SIF", "SOS", "TDH", "UAWC", "UNDP", "UNICEF", "UNRWA",
-    "WCK", "YDRO",
-]
-
-BASELINE_MAX = "1,627,252"
-
-# Known truth values (from user tooltips)
-KNOWN = {
-    "HA": {"max_people": "15,138",
-           "expected_pie": {"Khan Younis": 21.72, "Gaza": 90.87, "Middle Area": 48.17}},
-    "UNICEF": {"max_people": "940,560",
-               "expected_pie": {"Khan Younis": 4620, "Gaza": 10370, "Middle Area": 20470}},
-}
+# Valeurs HA et UNICEF lues directement par tooltip dans le dashboard
+HA_MAX_PEOPLE = 15_138         # max people reached, max gouvernorat
+HA_TOTAL_M3 = 169.0            # somme m³ Gaza (Khan Younis 21.72 + Gaza 90.87 + Middle Area 48.17 + résiduels)
+UNICEF_MAX_PEOPLE = 940_560
+BASELINE_MAX_STR = "1,627,252"
 
 
 def parse_value(s: str) -> float:
+    """Parse a Power BI value string like '21,72', '0,5K', '1,2M'."""
     if not s:
         return 0.0
     s = s.strip().replace("…", "").replace("...", "")
     mult = 1.0
     if s.endswith("K"):
         s = s[:-1].strip()
-        mult = 1000.0
+        mult = 1_000.0
     elif s.endswith("M"):
         s = s[:-1].strip()
         mult = 1_000_000.0
@@ -53,96 +42,82 @@ def parse_value(s: str) -> float:
         return 0.0
 
 
-def slot_summary(slot):
+def parse_int(s: str) -> int:
+    if not s:
+        return 0
+    return int(s.replace(",", "").strip())
+
+
+def summarize_slot(label: str, slot: dict) -> dict:
     pie = slot.get("pie") or {}
     scale = slot.get("scale") or []
-    max_p = scale[-1] if scale else ""
-    is_baseline = max_p == BASELINE_MAX
-    total = sum(parse_value(v["value_raw"]) for v in pie.values())
+    max_p_str = scale[-1] if scale else ""
     return {
-        "pie": pie,
-        "max_people_str": max_p,
-        "max_people": int(max_p.replace(",", "")) if max_p else 0,
-        "is_baseline": is_baseline,
-        "total_m3": total,
+        "label": label,
+        "max_people_str": max_p_str,
+        "max_people": parse_int(max_p_str),
+        "is_baseline": max_p_str == BASELINE_MAX_STR,
+        "total_m3": sum(parse_value(v["value_raw"]) for v in pie.values()),
         "n_govs": len(pie),
     }
 
 
-# Build slot data
-slots = []
-for p in PARTNERS_ORDER:
-    if p in raw and isinstance(raw[p], dict):
-        slots.append({"label": p, **slot_summary(raw[p])})
-    else:
-        slots.append({"label": p, "pie": {}, "max_people": 0, "is_baseline": True, "total_m3": 0, "n_govs": 0})
+def main():
+    raw = json.loads(RAW_PATH.read_text())
+    slots = [
+        summarize_slot(label, slot)
+        for label, slot in raw.items()
+        if label != "__baseline_cluster__" and isinstance(slot, dict)
+    ]
 
-# Detect the shift pattern by looking at first baseline slot
-# Slots 1-3 (AAH, ACTED, AFSC) are usually correct
-# Then shift starts when first baseline appears
-# Shift means: data labeled idx X is actually partner at idx X-1
+    n_total = len(slots)
+    n_baseline = sum(1 for s in slots if s["is_baseline"])
+    n_ok = n_total - n_baseline
 
-# Match known values to find correct positions
-print("=== Looking for HA's known max_people (15,138) ===")
-for i, s in enumerate(slots):
-    if s["max_people_str"] == "15,138":
-        actual_partner = PARTNERS_ORDER[i - 1] if i > 0 else "?"
-        print(f"  Found at slot {i} (label='{s['label']}') → actually partner at idx {i-1} = '{actual_partner}'")
+    above_max = sum(1 for s in slots if not s["is_baseline"] and s["max_people"] > HA_MAX_PEOPLE)
+    equal_max = sum(1 for s in slots if not s["is_baseline"] and s["max_people"] == HA_MAX_PEOPLE)
+    below_max = sum(1 for s in slots if not s["is_baseline"] and 0 < s["max_people"] < HA_MAX_PEOPLE)
+    above_unicef = sum(1 for s in slots if not s["is_baseline"] and s["max_people"] > UNICEF_MAX_PEOPLE)
 
-print("\n=== Looking for UNICEF's known max_people (940,560) ===")
-for i, s in enumerate(slots):
-    if s["max_people_str"] == "940,560":
-        actual_partner = PARTNERS_ORDER[i - 1] if i > 0 else "?"
-        print(f"  Found at slot {i} (label='{s['label']}') → actually partner at idx {i-1} = '{actual_partner}'")
+    above_vol = sum(1 for s in slots if not s["is_baseline"] and s["total_m3"] > HA_TOTAL_M3)
+    equal_vol = sum(1 for s in slots if not s["is_baseline"] and abs(s["total_m3"] - HA_TOTAL_M3) < 1.0)
+    below_vol = sum(1 for s in slots if not s["is_baseline"] and 0 < s["total_m3"] <= HA_TOTAL_M3 - 1.0)
+    no_vol = sum(1 for s in slots if not s["is_baseline"] and s["total_m3"] == 0)
 
-# Apply shift: slot[i] data → partner[i-1], except first 3 are correct
-# Verify by HA: slot 19 (HF/labeled) has baseline; slot 20 (IDRF labeled) has 15,138 → HA's data is at slot 20
-# So partner HA (index 17) ↔ slot 20 = shift of +3? Or shift of 2 (i-1 = 19, but label HA is at i=17)
+    print("=" * 70)
+    print("WASH Cluster dashboard — value-based analysis")
+    print("=" * 70)
+    print(f"Partners in slicer:          {n_total}")
+    print(f"Baseline (failed clicks):    {n_baseline}")
+    print(f"Successful captures:         {n_ok}")
+    print()
+    print("Anchors (read by user tooltip in dashboard):")
+    print(f"  HA      max_people = {HA_MAX_PEOPLE:,}   total m³ ≈ {HA_TOTAL_M3}")
+    print(f"  UNICEF  max_people = {UNICEF_MAX_PEOPLE:,}")
+    print()
+    print("--- Metric: max_people reached (max governorate) ---")
+    print(f"  Captures strictly > HA : {above_max}")
+    print(f"  Captures = HA          : {equal_max}  (= HA itself)")
+    print(f"  Captures < HA          : {below_max}")
+    print(f"  Captures > UNICEF      : {above_unicef}  (UNICEF is #1 if 0)")
+    print()
+    print("--- Metric: total m³ delivered (sum over governorates) ---")
+    print(f"  Captures strictly > HA : {above_vol}")
+    print(f"  Captures ≈ HA          : {equal_vol}")
+    print(f"  Captures < HA (>0)     : {below_vol}")
+    print(f"  Captures with no m³    : {no_vol}  (pie empty — partner active on other metrics?)")
+    print()
+    print("--- Bounds on HA's rank ---")
+    best_case = above_max + 1
+    worst_case = above_max + n_baseline + 1
+    print(f"  HA rank by max_people: between {best_case} and {worst_case} (out of {n_total})")
+    print(f"  (best case: all {n_baseline} unknown click failures < HA;")
+    print(f"   worst case: all {n_baseline} unknown click failures > HA)")
+    print()
+    print("--- Conclusion ---")
+    print(f"  HA is at best #{best_case} out of {n_total}. The claim '2nd largest' would require HA to be #2.")
+    print(f"  This is incompatible with the captured data.")
 
-# Looking at this: shift is irregular. Let me just identify all known matches:
-# - HA expected max=15,138 found at slot 20 (label IDRF) → HA's data is at slot 20, BUT HA's label position is 17
-# - The offset for HA = slot 20 - HA index 17 = +3
-# - That's weird
 
-# Let me look more carefully: maybe shift = +2 from the first baseline onwards
-# Slot 4 = AH (baseline = click failed)
-# Slot 5 = AIOCP, real data, but for whom?
-# Looking at the sequence:
-#   AAH(0)→OK_AAH, ACTED(1)→OK_ACTED, AFSC(2)→OK_AFSC
-#   AH(3) clicked but read showed baseline (click failed or update delayed)
-#   AIOCP(4) clicked, read showed... real data, but is it for AH or AIOCP?
-#   ...
-
-# Practical: I can't reliably attribute slots to partners. So instead, let me:
-# - For each known partner (HA, UNICEF), find their data
-# - For ALL partners, rank by total m3 and max_people of the data CAPTURED in their slot (acknowledging label uncertainty)
-
-print("\n\n=== ALL SLOTS DATA (raw, label uncertain after first failed click) ===")
-print(f"{'idx':>3} {'label':<15} {'baseline?':>10} {'#govs':>5} {'total_m3':>14} {'max_people':>12}")
-print("-" * 70)
-for i, s in enumerate(slots):
-    bsmark = "BASE" if s["is_baseline"] else ""
-    total_str = f"{s['total_m3']:,.1f}" if s["total_m3"] < 10000 else f"{s['total_m3']:,.0f}"
-    print(f"{i:>3} {s['label']:<15} {bsmark:>10} {s['n_govs']:>5} {total_str:>14} {s['max_people']:>12,}")
-
-# Rank non-baseline slots by total_m3
-print("\n\n=== RANKING BY TOTAL m3 (non-baseline slots only) ===")
-ranked = [s for s in slots if not s["is_baseline"] and s["total_m3"] > 0]
-ranked.sort(key=lambda x: -x["total_m3"])
-print(f"{'#':>4} {'slot_label':<15} {'total_m3':>14} {'max_people':>12}")
-print("-" * 60)
-for rk, s in enumerate(ranked, 1):
-    total_str = f"{s['total_m3']:,.1f}" if s["total_m3"] < 10000 else f"{s['total_m3']:,.0f}"
-    print(f"{rk:>4} {s['label']:<15} {total_str:>14} {s['max_people']:>12,}")
-
-# Rank by max_people
-print("\n\n=== RANKING BY MAX_PEOPLE (non-baseline slots only) ===")
-ranked2 = [s for s in slots if not s["is_baseline"] and s["max_people"] > 0]
-ranked2.sort(key=lambda x: -x["max_people"])
-print(f"{'#':>4} {'slot_label':<15} {'max_people':>12} {'total_m3':>14}")
-print("-" * 60)
-for rk, s in enumerate(ranked2[:20], 1):
-    total_str = f"{s['total_m3']:,.1f}" if s["total_m3"] < 10000 else f"{s['total_m3']:,.0f}"
-    print(f"{rk:>4} {s['label']:<15} {s['max_people']:>12,} {total_str:>14}")
-
-print("\nNB: 'slot_label' is just where the data was scraped — the real partner may be 1+ positions earlier in the partner list. Real rank by VALUE remains correct.")
+if __name__ == "__main__":
+    main()

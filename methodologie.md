@@ -41,9 +41,9 @@ Force probante décroissante :
    (qu'elles soient sur le site de l'ONG ou hébergées sur ReliefWeb)
    ↓
 6. Think tanks et publications militantes
-   (Middle East Forum, etc. — utilisables pour les faits sourcés
-    à des documents publics, à manier avec précaution pour les
-    interprétations politiques)
+   (sources politiquement orientées : non reprises comme faits
+    dans cette enquête ; mentionnées seulement pour signaler
+    leur existence quand un débat public le justifie)
 ```
 
 ---
@@ -74,9 +74,11 @@ L'enquête s'appuie uniquement sur des sources publiquement accessibles en ligne
 
 Pour une enquête plus approfondie, ces contacts seraient l'étape suivante.
 
-### Limite 2 — Pas d'accès aux données 5W internes
+### Limite 2 — Pas d'accès aux données 5W brutes internes
 
-Le WASH Cluster utilise un système 5W (Who-does-What-Where) qui contiendrait probablement les données partenaire-par-partenaire. Ces données ne sont pas publiques. Sans elles, la position « 2ᵉ » de Human Appeal n'est ni vérifiable ni infirmable.
+Le WASH Cluster utilise un système 5W (Who-does-What-Where) pour collecter les contributions de chaque partenaire. Les **rapports 5W détaillés** (séries temporelles complètes, ventilation par activité) ne sont pas publics.
+
+En revanche, le **dashboard Power BI public** du cluster (page Water) publie une **ventilation par partenaire** des deux métriques principales — volume d'eau (m³) délivré par gouvernorat et personnes touchées par gouvernorat. C'est cette ventilation publique qui permet à la v4 d'infirmer le ranking « 2ᵉ ». Voir [`constats/04`](constats/04-ranking-2eme-fournisseur.md).
 
 ### Limite 3 — Documents primaires datés
 

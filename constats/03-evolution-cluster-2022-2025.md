@@ -46,14 +46,14 @@ Le visuel zoomé dans la pub (« 1 370 points d'eau, 13 996 m³/jour, 7 347 m³/
 
 ## Ce que ces chiffres ne disent PAS
 
-Les rapports OCHA agrégent. Ils ne disent jamais :
+Les rapports textuels OCHA agrègent. Ils ne disent jamais :
 - Quel partenaire a livré combien
 - Quel partenaire opère combien de points d'eau
 - Quel est le top 5 / top 10 par volume
 
-Cette ventilation par partenaire existe vraisemblablement dans les rapports internes 5W (Who-does-What-Where) que la cluster utilise pour la coordination. Mais ces 5W ne sont pas publiés.
+Cette ventilation par partenaire est en revanche **publiée par le cluster lui-même**, sur son **dashboard Power BI public** (page Water), via une slicer « Responsive Partners » qui permet de filtrer par partenaire. C'est cette source qui permet, en v4, d'aller au-delà des agrégats OCHA et de descendre au partenaire individuel.
 
-C'est précisément le document qui permettrait de vérifier l'affirmation « 2ᵉ ». Sans lui, voir [Constat 4](04-ranking-2eme-fournisseur.md).
+Voir [Constat 4](04-ranking-2eme-fournisseur.md) pour l'exploitation de cette ventilation.
 
 ---
 

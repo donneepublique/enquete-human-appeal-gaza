@@ -38,6 +38,40 @@ Aucun constat factuel modifié — uniquement approfondissement.
 
 ---
 
+## v4 → v5 (22 mai 2026, même jour)
+
+### Révision de cohérence
+
+Trois types de corrections ont été apportées en v5 sans changer la conclusion principale :
+
+**1. Contradictions internes résolues**
+
+- `methodologie.md` Limite 2 indiquait que la position « 2ᵉ » de HA n'est « ni vérifiable ni infirmable » à défaut des données 5W, ce qui contredisait la conclusion v4. Reformulée : les rapports 5W bruts ne sont pas publics, mais la ventilation par partenaire **est** publiée sur le dashboard Power BI (qui suffit à infirmer le ranking).
+- `constats/03` affirmait que la ventilation par partenaire « n'est pas publiée », ce qui contredisait également la v4. Reformulée pour pointer vers le dashboard.
+
+**2. Allégations non strictement assurées retirées (Constat 6)**
+
+Le Constat 6 reprenait des allégations du **Middle East Forum** (transferts vers l'« Islamic Zakat Society », caractérisation « proxy Hamas », réseau « Union of Good »). Ces allégations émanent d'une **source partisane**, ne sont **pas confirmées** par une autorité judiciaire ou réglementaire, et la Charity Commission UK n'a pas ouvert d'enquête statutaire.
+
+La règle « ne reprendre que des faits strictement assurés » impose de ne **pas** les reproduire comme faits. Le Constat 6 a été réécrit pour conserver uniquement :
+- le statut juridique vérifié (charity UK n° 1154288, enregistrée en mai 2014, absence d'enquête statutaire),
+- le modèle opérationnel via partenaires locaux (documenté dans le profil WASH Cluster lui-même),
+- la mention que des controverses existent, sans les reprendre comme faits.
+
+Les chiffres précis (« 4,7 M£ depuis 2020 », « ~90 M£ revenus FY 2024 ») ont aussi été retirés faute de pouvoir les vérifier ligne-à-ligne dans les comptes annuels — le renvoi vers le registre Charity Commission est plus honnête.
+
+**3. Classement consolidé par valeur (Constat 4)**
+
+Le classement précédent disait « environ 30 partenaires dépassent HA en volume ». Cette formulation reposait sur les étiquettes du scraper, dont la fiabilité est imparfaite (~5 lignes décalées). Une analyse par **valeurs capturées** (indépendante des étiquettes) donne un chiffre plus précis et plus robuste :
+- **41 sur 56 captures réussies dépassent HA** en max people reached
+- **36 sur 56 captures réussies dépassent HA** en m³ délivré
+- HA est entre le **rang 42 et 48 sur 62** (selon ce que sont les 6 clicks ratés)
+- UNICEF est confirmé n°1 (aucune capture ne dépasse 940 560)
+
+La conclusion reste la même mais avec une borne précise. La méthode est aussi plus défendable car elle ne dépend pas du mapping étiquette → ONG.
+
+---
+
 ## v3 → v4 (22 mai 2026, même jour)
 
 ### Mise à jour majeure du Constat 4 — ranking « #2 »
@@ -68,12 +102,13 @@ Dans mon analyse, j'ai d'abord lu les chiffres HA comme « 160 000 m³ » au lie
 
 > Une enquête factuelle qui se corrige publiquement est plus fiable qu'une enquête qui défend ses premières conclusions. La transparence sur les erreurs n'invalide pas le travail — elle le valide.
 
-Cette enquête a vu trois inversions de conclusion notables :
+Cette enquête a vu trois inversions de conclusion notables et une révision de cohérence :
 - v1 → v2 : « HA pas dans cluster » devient « HA est dans le cluster »
 - v3 → v4 : « ranking #2 non vérifiable » devient « ranking #2 infirmé »
 - Lecture de chiffres : « HA = 160K m³ » devient « HA = 160 m³ »
+- v4 → v5 : retrait des allégations partisanes non strictement assurées ; classement value-based plus précis
 
-Chaque correction a été déclenchée par une **objection du user**, pas par une introspection. C'est précieux à noter : un enquêteur seul aurait probablement maintenu les premières conclusions.
+Les trois premières ont été déclenchées par une **objection du user**. La quatrième par une **demande explicite de relecture critique** de tous les points. C'est précieux à noter : un enquêteur seul aurait probablement maintenu ses premières conclusions et conservé des points faiblement étayés au nom de « la nuance ».
 
 ---
 

@@ -33,7 +33,7 @@ Rapports bi-hebdomadaires UN-OCHA qui donnent les **agrégats** (nombre de parte
 
 ### 5. Sources tierces
 
-UK Charity Commission, Wikipedia, ReliefWeb (plateforme d'hébergement), Middle East Forum (partisane), 5Pillars UK, WFP.
+UK Charity Commission (autorité statutaire — utilisée), ReliefWeb (plateforme d'hébergement — utilisée comme telle), Wikipedia (point d'entrée), WFP (consulté), sources partisanes (signalées mais **non reprises** comme faits).
 
 → [`sources-tierces.md`](sources-tierces.md)
 
@@ -56,7 +56,7 @@ UK Charity Commission, Wikipedia, ReliefWeb (plateforme d'hébergement), Middle 
    ↓
 7. Communications NGO auto-publiées (incl. via ReliefWeb)
    ↓
-8. Think tanks et publications militantes (MEF, etc.)
+8. Think tanks et publications militantes (sources partisanes — non reprises comme faits)
 ```
 
 ---

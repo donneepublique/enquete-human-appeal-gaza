@@ -1,5 +1,25 @@
 # Sources tierces (non onusiennes)
 
+Cette page documente les sources tierces consultées et précise pour chacune ce qu'elle est utilisable pour établir — et ce qu'elle **n'est pas** utilisable pour établir.
+
+---
+
+## UK Charity Commission
+
+**URL :** https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5038915/full-print
+**Nature :** Autorité statutaire britannique de régulation des organisations caritatives.
+
+**Force probante :** Élevée pour ce que la Commission contrôle effectivement (enregistrement, dépôt des comptes annuels, ouverture d'enquêtes statutaires). Faible pour ce qu'elle ne contrôle pas (qualité opérationnelle, partenaires locaux à l'étranger).
+
+| Élément | Statut |
+|---|---|
+| Human Appeal est légalement enregistrée comme charity UK | ✅ Établi |
+| Numéro 1154288, enregistrement en mai 2014 | ✅ Établi |
+| Comptes financiers annuels publics | ✅ Disponibles sur la page de registre |
+| Statut d'enquête statutaire à ce jour | Aucune enquête statutaire ouverte au moment de cette enquête |
+| Activités opérationnelles à Gaza | Hors champ de contrôle de la Commission |
+| Probité des partenaires locaux à l'étranger | Hors champ de contrôle de la Commission |
+
 ---
 
 ## ReliefWeb
@@ -7,75 +27,47 @@
 **URL :** https://reliefweb.int/
 **Nature :** Plateforme d'**hébergement** opérée par UN-OCHA pour le partage d'informations humanitaires.
 
-**Important — ce que ReliefWeb n'est pas :**
-- Pas une autorité de validation des informations
-- Pas une source éditoriale qui certifie les contenus
-- Plus de 4 000 organisations différentes publient sur ReliefWeb : agences ONU, ONG, gouvernements donateurs, médias
+**Force probante :** Variable selon l'auteur du document. ReliefWeb n'audite pas et ne certifie pas les contenus déposés. Plus de 4 000 organisations différentes y publient — agences ONU, ONG, gouvernements donateurs, médias.
 
 **Conséquence pour cette enquête :**
-Quand Human Appeal publie son *« One Year On Gaza Humanitarian Impact Report »* sur ReliefWeb, c'est **un dépôt auto-publié**, pas une certification par ONU/OCHA. Cela ne distingue pas en force probante d'une publication directe sur humanappeal.org.
+Quand Human Appeal publie un rapport sur ReliefWeb, c'est un **dépôt auto-publié**, pas une certification par ONU/OCHA. La force probante est la même qu'une publication directe sur humanappeal.org.
 
 ---
 
-## Wikipedia — page Human Appeal
+## Wikipedia
 
-**URL :** https://en.wikipedia.org/wiki/Human_Appeal
+**Force probante :** Faible — point d'entrée, jamais preuve.
 
-Utile pour des informations factuelles basiques (fondation 1991, siège Manchester, structure internationale) mais :
-- Pas une source primaire
-- Contenu sujet à changements selon contributeurs
-- Pour cette enquête, sert de point d'entrée, pas de preuve
+Pages consultées comme contexte :
+- [Human Appeal](https://en.wikipedia.org/wiki/Human_Appeal)
+- [Water supply and sanitation in the State of Palestine](https://en.wikipedia.org/wiki/Water_supply_and_sanitation_in_the_State_of_Palestine)
+- [Gaza Strip](https://en.wikipedia.org/wiki/Gaza_Strip)
 
----
-
-## UK Charity Commission
-
-**URL :** https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5038915/full-print
-**Nature :** Autorité statutaire britannique de régulation des organisations caritatives.
-
-**Ce que ça prouve / ne prouve pas :**
-
-| Élément | Statut |
-|---|---|
-| Human Appeal est légalement enregistrée comme charity UK | ✅ Prouvé |
-| Numéro 1154288, enregistrée mai 2014 | ✅ Prouvé |
-| Comptes financiers publics (revenus, dépenses) | ✅ Disponibles |
-| Aucune enquête statutaire ouverte à ce jour | ✅ Constaté |
-| Activités opérationnelles à Gaza | ❌ Le Charity Commission ne valide pas les activités terrain |
-| Probité des partenaires locaux | ❌ Le CC examine la gouvernance, pas chaque partenaire |
+Aucune affirmation factuelle de cette enquête ne s'appuie uniquement sur Wikipedia.
 
 ---
 
-## Middle East Forum (MEF)
+## Sources partisanes — précautions
 
-**URL :** https://www.meforum.org/human-appeal
-**Fondateur :** Daniel Pipes
-**Nature :** Think tank conservateur américain orienté politique étrangère Moyen-Orient.
+Il existe en ligne plusieurs publications, notamment du think tank américain **Middle East Forum** (fondé par Daniel Pipes, orientation conservatrice, focus politique sur le Moyen-Orient), qui formulent des **allégations politiques** sur Human Appeal.
 
-**Précautions méthodologiques :**
+**Position de cette enquête :**
 
-C'est une **source politiquement orientée**, pas une organisation neutre d'enquête. Ses publications doivent être manipulées avec la même prudence que celles d'organisations militantes opposées.
+Ces publications ne sont **pas** des autorités neutres. Elles s'appuient en partie sur des données factuelles publiques (filings du Charity Commission, sites archivés), mais leur **interprétation politique** est faite par une partie engagée.
 
-**Ce qui est néanmoins utilisable :**
-- Les chiffres tirés des dépôts publics du Charity Commission UK (donc factuels et reproductibles)
-- Les références à des documents publics (filings, sites archivés)
+Cette enquête **n'incorpore aucune allégation politique** issue de ces sources comme fait établi. Si le donateur souhaite s'informer sur ces controverses, la démarche correcte est :
 
-**Ce qui n'est PAS utilisable comme fait :**
-- La caractérisation politique des partenaires locaux (« proxy Hamas » est une qualification politique, pas un constat juridique)
-- Les inférences sur les intentions
-- Les associations par contiguïté (« staff X a connu Y donc... »)
+1. Lire le registre Charity Commission UK (autorité réglementaire neutre) ;
+2. Lire la position publique de Human Appeal ;
+3. Lire les publications critiques en gardant à l'esprit qu'elles **ne sont pas** des autorités d'enquête.
 
-**Position de Human Appeal :**
-Human Appeal a publié plusieurs réponses publiques niant les allégations. Voir la [Statement on Transparency](https://humanappealusa.org/news/2026/2/statement-from-human-appeal) (Human Appeal USA, février 2026).
+Voir [Constat 6](../constats/06-contexte-juridique.md) pour le traitement de ce volet.
 
 ---
 
-## 5Pillars (UK)
+## Couverture communautaire et médiatique générale
 
-**URL :** https://5pillarsuk.com/
-**Nature :** Publication britannique destinée à la communauté musulmane.
-
-A couvert l'affaire d'un fundraiser de Human Appeal USA (Khaled Beydoun). Source utile pour la couverture communautaire britannique, mais elle aussi orientée éditorialement.
+Diverses publications britanniques, américaines et arabophones couvrent ponctuellement les activités de Human Appeal ou les controverses qui la concernent. Aucune n'est utilisée dans cette enquête comme source de fait pour les conclusions principales, car celles-ci s'appuient toutes sur des **sources primaires** (dashboard WASH Cluster, Partners' Profile UN-OCHA, registre Charity Commission).
 
 ---
 
@@ -83,15 +75,6 @@ A couvert l'affaire d'un fundraiser de Human Appeal USA (Khaled Beydoun). Source
 
 **URL :** https://www.wfp.org/emergencies/palestine-emergency
 
-Le partenariat WFP-Human Appeal pour 1,4 million de repas (mai 2024) n'apparaît **pas** sur le site officiel WFP, où l'on trouve seulement les partenariats opérationnels majeurs et les contributions de donateurs gouvernementaux. Le partenariat est mentionné sur ReliefWeb dans un communiqué auto-publié par Human Appeal.
+Un partenariat WFP–Human Appeal pour des distributions de repas a été annoncé dans un communiqué auto-publié sur ReliefWeb. Le site officiel du WFP ne le mentionne pas explicitement. Cela **n'invalide pas** ce partenariat (le WFP travaille avec de nombreux partenaires non listés individuellement) mais cela **ne le confirme pas non plus de manière indépendante**.
 
-Cela ne signifie pas que le partenariat est fictif — WFP travaille avec des centaines de partenaires non systématiquement listés sur son site. Mais cela signifie que le partenariat ne peut pas être **indépendamment vérifié** depuis WFP.
-
----
-
-## Wikipedia — pour les chiffres de contexte Gaza WASH
-
-Quelques pages utiles pour le contexte (mais à utiliser uniquement comme point d'entrée) :
-
-- [Water supply and sanitation in the State of Palestine](https://en.wikipedia.org/wiki/Water_supply_and_sanitation_in_the_State_of_Palestine)
-- [Gaza Strip](https://en.wikipedia.org/wiki/Gaza_Strip)
+Cette enquête ne s'appuie pas sur ce partenariat, qui est sans rapport direct avec l'allégation « 2ᵉ fournisseur d'eau » et n'a pas pu être vérifié auprès du WFP.

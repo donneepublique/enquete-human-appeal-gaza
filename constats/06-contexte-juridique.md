@@ -1,79 +1,67 @@
-# Constat 6 — Contexte juridique et chaîne de partenariats locaux
+# Constat 6 — Statut juridique et modèle opérationnel
 
-**Statut :** Mixte. Statut juridique vérifié ; allégations critiques contestées et émanant de sources partisanes.
+**Statut :** Faits administratifs vérifiés. Les **allégations politiques** circulant dans des publications partisanes ne sont **pas reprises** ici, faute de pouvoir les confirmer par une source d'autorité.
 
 ---
 
 ## Statut légal vérifié
 
-| Élément | Valeur |
-|---|---|
-| Nom légal UK | Human Appeal |
-| Numéro Charity Commission UK | 1154288 |
-| Date d'enregistrement | mai 2014 (nouvelle structure ; ancienne charity Human Appeal International depuis 1991) |
-| Statut d'enquête Charity Commission | **Aucune enquête statutaire ouverte** |
-| Revenus déclarés FY 2024 | ~90 M£ (selon comptes annuels publics) |
+| Élément | Valeur | Source |
+|---|---|---|
+| Nom légal UK | Human Appeal | Registre Charity Commission |
+| Numéro Charity Commission UK | 1154288 | Registre public |
+| Date d'enregistrement (n° 1154288) | mai 2014 (la structure caritative actuelle ; activité humanitaire revendiquée depuis 1991) | Registre public |
+| Statut d'enquête Charity Commission | **Aucune enquête statutaire (« statutory inquiry ») ouverte** au moment de cette enquête | Registre public |
 
-Source : [register-of-charities.charitycommission.gov.uk](https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5038915/full-print)
+Source vérifiable : [register-of-charities.charitycommission.gov.uk — Human Appeal (1154288)](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5038915/full-print)
 
----
-
-## Critiques publiques
-
-### Middle East Forum (MEF) — source partisane
-
-Le Middle East Forum, **think tank conservateur américain fondé par Daniel Pipes**, publie depuis 2024 un dossier critique sur Human Appeal. Principales allégations :
-
-1. Transferts financiers vers l'*Islamic Zakat Society* de Gaza (~4,7 M£ depuis 2020) que MEF décrit comme une organisation « proche du Hamas ».
-2. Transferts vers l'*Al-Zakat Committee of Jerusalem* (~3 M£).
-3. Allégations historiques sur des liens via le réseau *Union of Good* (années 2000).
-4. Allégations sur certains anciens dirigeants.
-
-**Précautions méthodologiques** :
-- MEF est une **source politiquement orientée**, pas une autorité judiciaire ou journalistique neutre.
-- Plusieurs allégations s'appuient sur des **données publiques** (filings Charity Commission) — donc les transferts financiers sont factuels.
-- L'**interprétation** de ces transferts (« proxy Hamas » vs « partenaire local sous contrôle ») est contestée.
-- Human Appeal **dément publiquement** les liens avec le Hamas, et la Charity Commission UK n'a pas ouvert d'enquête statutaire.
-
-Source : [meforum.org/human-appeal](https://www.meforum.org/human-appeal)
-
-### Conclusion sur ce volet
-
-Les transferts vers des partenaires locaux gazaouis sont **factuels et publics**. Leur **caractérisation politique** est **contestée**. La Charity Commission UK n'a pas conclu qu'ils étaient illégaux.
+Les comptes annuels (Trustees' Annual Report + Accounts) sont déposés chaque année auprès de la Charity Commission et accessibles publiquement sur la même page de registre. Ils permettent à toute personne intéressée de retracer les flux financiers déclarés par l'organisation. Nous renvoyons à la source primaire plutôt que de citer des chiffres de revenus qui changent d'année en année.
 
 ---
 
 ## Modèle opérationnel — partenaires locaux
 
-Comme la plupart des ONG internationales actives à Gaza, Human Appeal opère **via des partenaires intermédiaires locaux** :
-- Sociétés zakat
-- Organisations communautaires
-- Sous-contractants logistiques
+Comme la plupart des ONG internationales actives à Gaza, Human Appeal opère **via des partenaires intermédiaires locaux** : sociétés zakat, organisations communautaires, sous-contractants logistiques. C'est documenté dans son propre profil WASH Cluster (page 35) qui mentionne explicitement « our country-level staff and contacts » et la collaboration avec les municipalités locales.
 
-Ce modèle est **standard en humanitaire** dans les contextes où l'accès direct est restreint. Il introduit cependant une **opacité** entre le don collecté en Europe et la livraison finale au bénéficiaire.
+Ce modèle est **standard dans l'humanitaire d'urgence** quand l'accès direct du personnel international est restreint. Il introduit toutefois une **opacité** entre le don collecté en Europe et la livraison finale au bénéficiaire — opacité qui n'est ni propre à Human Appeal ni intrinsèquement problématique, mais qui mérite d'être connue du donateur.
 
-Pour le sujet précis de cette enquête (l'affirmation « 2ᵉ fournisseur d'eau »), cela ouvre une question méthodologique :
+Pour l'objet précis de cette enquête (l'affirmation « 2ᵉ fournisseur d'eau »), ce modèle ouvre une question méthodologique légitime :
 
-> Quand Human Appeal dit livrer X m³ d'eau, est-ce que ces volumes sont livrés directement par ses équipes ou via des partenaires locaux dont elle finance les opérations ?
+> Lorsque le dashboard WASH Cluster attribue X m³ d'eau à Human Appeal, ces volumes sont-ils livrés directement par les équipes HA ou par des partenaires intermédiaires financés par HA ?
 
-Le profil WASH Cluster page 35 ne distingue pas. Ce serait une demande légitime de transparence vis-à-vis des donateurs.
+Le dashboard ne distingue pas ces deux cas. Cette question est sans objet sur le ranking de HA dans le cluster (les chiffres restent les chiffres) mais utile pour comprendre ce que le donateur finance concrètement.
+
+---
+
+## Pourquoi nous ne reprenons pas les allégations partisanes
+
+Il existe en ligne plusieurs publications, notamment du think tank américain **Middle East Forum**, qui formulent des **allégations politiques** sur des liens présumés entre Human Appeal et des organisations désignées « proxy Hamas ». Ces publications s'appuient en partie sur des données factuelles publiques (filings du Charity Commission, qui sont effectivement publics) mais leur **interprétation politique** est :
+
+- formulée par une **source ouvertement orientée**,
+- **non confirmée** par une autorité judiciaire ou réglementaire,
+- **contestée** publiquement par Human Appeal,
+- **non assortie d'une enquête statutaire** ouverte par la Charity Commission UK au moment de cette enquête.
+
+Cette enquête a pour règle de **ne reprendre que des faits strictement assurés**. Une allégation issue d'une source partisane et non confirmée par une autorité ne remplit pas ce critère. Nous la signalons donc comme **existante** mais **non reprise comme fait**.
+
+Pour le donateur curieux de cette controverse, la démarche correcte est :
+1. Lire le registre Charity Commission UK (autorité réglementaire) pour le statut administratif et financier ;
+2. Lire les communications officielles de Human Appeal pour leur position ;
+3. Lire les publications critiques en gardant à l'esprit qu'elles ne sont **pas** des autorités neutres.
 
 ---
 
 ## Pourquoi ce constat figure dans l'enquête
 
-Cette enquête porte sur **une affirmation publicitaire précise** : la position « 2ᵉ ». Le contexte juridique et le modèle opérationnel n'invalident ni ne valident cette affirmation. Mais ils sont pertinents pour le **donateur** qui souhaite comprendre :
+Cette enquête porte sur **une affirmation publicitaire précise** : la position « 2ᵉ ». Le statut juridique et le modèle opérationnel n'invalident ni ne valident cette affirmation. Mais ils sont pertinents pour le **donateur** qui souhaite comprendre :
 
-1. Ce qu'il finance directement vs indirectement
-2. Quelle est la chaîne de confiance entre son don et le bénéficiaire final
-3. Quels débats existent autour de l'organisation
-
-L'objectif n'est **pas** de prendre position sur les allégations politiques, mais de les **signaler** comme partie du contexte que tout donateur informé devrait connaître.
+1. Que **Human Appeal est légalement enregistrée comme charity UK** et que la Charity Commission n'a pas ouvert d'enquête statutaire à son sujet ;
+2. Que **les opérations à Gaza passent en partie par des partenaires locaux**, comme pour la plupart des INGOs ;
+3. Que **des controverses existent**, sans qu'elles aient pour le moment été tranchées par une autorité.
 
 ---
 
 ## Liens
 
-- [UK Charity Commission — page Human Appeal](https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/5038915/full-print)
-- [Middle East Forum — dossier critique (source partisane)](https://www.meforum.org/human-appeal)
-- [Sources tierces détaillées](../sources/sources-tierces.md)
+- [UK Charity Commission — page Human Appeal (1154288)](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5038915/full-print)
+- [Sources tierces — précautions méthodologiques](../sources/sources-tierces.md)

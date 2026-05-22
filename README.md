@@ -3,7 +3,7 @@
 > Vérification factuelle d'une publicité Instagram de Human Appeal France affirmant que l'ONG est le « 2ᵉ plus grand fournisseur d'eau à Gaza » selon le WASH Cluster (UN-OCHA).
 
 **Date :** 22 mai 2026
-**Statut :** v4 — conclusion confirmée par extraction directe des données du dashboard cité par la pub.
+**Statut :** v5 — révision de cohérence : contradictions internes corrigées, allégations non strictement assurées retirées, classement value-based consolidé.
 
 ---
 
@@ -16,16 +16,16 @@ La publicité fait deux affirmations distinctes :
 | Human Appeal est partenaire du WASH Cluster ONU pour Gaza | ✅ **Vrai** | Profil officiel page 35 du *WASH Cluster Partners' Profile, juillet 2022* (UNICEF / UN-OCHA) |
 | Human Appeal est le **2ᵉ plus grand fournisseur d'eau** à Gaza | ❌ **Infirmé** | Les données du dashboard cité par la pub elle-même contredisent ce ranking |
 
-**Le chiffre qui tue le slogan :** sur le dashboard WASH Cluster (page Water), Human Appeal a livré **~169 m³ d'eau** sur **152 390 m³** au total du cluster Gaza. C'est **0,11 %**. Sur 62 partenaires scrapés, environ 30 dépassent HA en volume.
+**Le chiffre qui tue le slogan :** sur le dashboard WASH Cluster (page Water), Human Appeal a livré **~169 m³ d'eau** sur **152 390 m³** au total du cluster Gaza. C'est **0,11 %**. Parmi les 56 partenaires dont l'extraction a réussi (sur 62), **41 dépassent HA** sur la métrique « personnes touchées » et **36 dépassent HA** en volume m³ — HA se situe entre le **rang 42 et 48 sur 62**.
 
 ---
 
 ## Démarche
 
 1. **Identifier la source citée par la pub** : la pub utilise un visuel du dashboard public WASH Cluster (page Water).
-2. **Lire ce que dit le dashboard sur HA** : tooltip user montre HA Khan Younis = 21,72 m³, HA Gaza = 90,87 m³, HA Middle Area = 48,17 m³.
-3. **Comparer HA aux autres partenaires** : extraction par scraping Playwright des 62 partenaires Gaza. Voir [`dashboard-scrape/`](dashboard-scrape/).
-4. **Conclure** : HA est un contributeur **marginal** (~0,1 % du volume cluster), pas un acteur de premier plan.
+2. **Lire ce que dit le dashboard sur HA** : tooltip user montre HA Khan Younis = 21,72 m³, HA Gaza = 90,87 m³, HA Middle Area = 48,17 m³ ; max people reached = 15 138.
+3. **Comparer HA aux autres partenaires** : extraction par scraping Playwright des 62 partenaires Gaza, puis comparaison **value-based** robuste au décalage d'étiquetage. Voir [`dashboard-scrape/`](dashboard-scrape/).
+4. **Conclure** : HA est un contributeur **marginal** (0,11 % du volume cluster, 0,93 % du max people reached), pas un acteur de premier plan.
 
 ---
 
@@ -35,7 +35,7 @@ La publicité fait deux affirmations distinctes :
 enquete-human-appeal-gaza/
 ├── README.md                   ← ce fichier (synthèse + index)
 ├── methodologie.md             démarche, limites, biais
-├── corrections.md              historique des erreurs (v1 → v4)
+├── corrections.md              historique des erreurs (v1 → v5)
 │
 ├── constats/                   les 6 constats détaillés
 │   ├── 01-partenariat-cluster.md             ✅ Confirmé
@@ -43,7 +43,7 @@ enquete-human-appeal-gaza/
 │   ├── 03-evolution-cluster-2022-2025.md     61 → 77 partenaires
 │   ├── 04-ranking-2eme-fournisseur.md        ❌ INFIRMÉ
 │   ├── 05-acronyme-HA-dans-pub.md            ✅ HA = Human Appeal
-│   └── 06-contexte-juridique.md              Contesté
+│   └── 06-contexte-juridique.md              Statut administratif vérifié
 │
 ├── sources/                    description critique des sources
 │   ├── README.md
@@ -82,9 +82,9 @@ enquete-human-appeal-gaza/
 **Sur la transparence publicitaire** : la pub crée une impression de caution onusienne en utilisant le visuel d'un tableau de bord ONU. Cette impression est **partiellement justifiée** (HA *est* membre du cluster) et **partiellement trompeuse** (le tableau de bord ne dit pas ce que la pub lui fait dire — au contraire, il le contredit).
 
 **Pour le donateur** :
-- ✅ Human Appeal est bien une ONG humanitaire reconnue par l'ONU pour Gaza
+- ✅ Human Appeal est bien une ONG humanitaire reconnue par l'ONU pour Gaza et enregistrée comme charity au Royaume-Uni
 - ❌ Le chiffre « #2 » qui justifie le ton de la collecte n'est pas démontré, et le dashboard cité indique le contraire
-- ❓ Les fonds passent partiellement via des partenaires intermédiaires locaux dont certains sont controversés (voir [Constat 6](constats/06-contexte-juridique.md))
+- ❓ Comme la plupart des INGOs à Gaza, Human Appeal opère en partie via des partenaires intermédiaires locaux ; ce n'est pas inhabituel mais cela introduit une opacité légitime à connaître (voir [Constat 6](constats/06-contexte-juridique.md))
 
 ---
 
