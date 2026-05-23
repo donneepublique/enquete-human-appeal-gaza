@@ -32,37 +32,79 @@ Le claim « 100M+ litres » est donc présenté comme la **preuve quantitative**
 
 ---
 
-## Comparaison aux autres partenaires du cluster (la métrique pertinente)
+## Comparaison aux autres partenaires du cluster
+
+### La donnée dont on dispose : 2025 uniquement
 
 Le **dashboard officiel WASH Cluster State of Palestine**, intitulé *« Flash Appeal Indicators 2025 »*, daté *« As of 04 November »*, indique en pied de page : *« Creation date: February 2025 — Sources: Partners reporting — Feedback : mohahussein@unicef.org »* (= Mohammad Hussein, *WASH Cluster Information Management Officer*, identifié page 75 du *Partners' Profile 2022*).
 
-**Période couverte par le dashboard** : 1er janvier → 4 novembre 2025 = ~9,1 mois.
+**Période couverte par ce dashboard** : 1er janvier → 4 novembre 2025 = ~9,1 mois.
 
-**Pour la même période, le dashboard enregistre :**
+**Pour cette période, le dashboard enregistre pour HA :**
 
-| Partenaire | m³ délivrés | en litres | % du cluster | rang |
+| Partenaire | m³ délivrés (2025) | en litres | % du cluster | rang |
 |---|---|---|---|---|
 | UNICEF | 35 460 | 35,46 M L | 23,3 % | 1ᵉʳ |
-| (autres top partenaires) | — | — | — | — |
 | **HA** | **169** | **0,169 M L** | **0,11 %** | **42 / 62** par m³ |
 
-Pour comparer le claim public au record cluster sur la même base temporelle, on **normalise par mois** :
+### Le problème de comparaison temporelle (et ses limites)
 
-| Référence | Volume | Période | Rate mensuel |
+Le claim HA est cumulatif **depuis octobre 2023**, soit **~31 mois** à mai 2026. HA déclare elle-même que sa plant de désalinisation est **fermée depuis mai 2024**. Donc la période où la plant a réellement contribué au volume cumulé est **~7 mois** (Oct 2023 → mai 2024), pas 31. Après mai 2024, HA opère par d'autres moyens (trucks, distributions), ce qui correspond au profil capturé par le dashboard 2025.
+
+**Trois cadres de normalisation, trois lectures :**
+
+| Hypothèse de production | Période active | Rate mensuel impliqué | Comparaison cluster |
 |---|---|---|---|
-| Claim HA UK (« 102M L since Oct 2023 ») | 102 M L | ~31 mois | **3 290 000 L/mois** |
-| Claim HA USA (« 114M L ») | 114 M L | ~31 mois | **3 680 000 L/mois** |
-| **Record cluster WASH 2025 pour HA** | 0,169 M L | 9,1 mois | **18 300 L/mois** |
+| Lisse sur 31 mois (Oct 2023 → mai 2026) | 31 mois | ~3,3 M L/mois | ~200× le rate HA 2025 (18 300 L/mois) — **mais peu réaliste** car la plant n'opérait pas tout du long |
+| Concentrée sur les 7 mois plant active (Oct 2023 → mai 2024) | 7 mois | **~14,3 M L/mois** | **~860× le rate HA 2025** ; **~85 % du rate cluster entier 2025** (~16,7 M L/mois total 62 partenaires) |
+| Concentrée sur 12 mois (par hypothèse charitable maximale) | 12 mois | ~8,3 M L/mois | ~50 % du rate cluster entier 2025 |
 
-**Le rate impliqué par le claim public est ~180× supérieur au rate enregistré par le cluster.** Si HA avait délivré au cours des 9,1 mois du dashboard 2025 le volume que son claim implique pour cette même fenêtre (≈ 30 M L), HA représenterait **20 % du volume total de TOUS les 62 partenaires** du cluster pour 2025.
+**Tous ces cadres aboutissent au même type de problème** : pour que le claim « 100M+ L » soit vrai, HA aurait dû — pendant sa période active — délivrer un volume mensuel **du même ordre de grandeur que l'ensemble du cluster combiné** en 2025 (62 partenaires dont UNICEF, UNRWA, etc.).
 
-**C'est précisément cette dissonance qui rend incohérent le slogan « 2ᵉ plus grand » (Constat 4) et le qualificatif « leading clean water provider » (Constat 7) :**
+### Comparaison 2024 — ce qu'on a, ce qu'on n'a pas
 
-- Si on prend le chiffre HA au sérieux comme un volume « delivered » au sens de la WASH Cluster, HA devrait être le **1er ou 2ᵉ** acteur du cluster.
-- Le cluster lui-même classe HA **42ᵉ-48ᵉ sur 62**.
-- HA invoque pourtant l'autorité du cluster (visuel dashboard dans la pub Instagram, mention explicite *« according to the UN WASH Cluster »* dans le post du 13 mai 2026) pour étayer son ranking.
+**Le dashboard PowerBI WASH Cluster est 2025-only** (pas de slicer année, pas de filtre temporel). Il n'existe pas de version publique du même dashboard pour 2024. Donc on ne peut pas obtenir directement la ventilation par partenaire pour 2024.
 
-Les deux cadres ne sont pas conciliables.
+**En revanche**, le WASH Cluster State of Palestine publie des **newsletters mensuelles** (signées par l'équipe de coordination UNICEF — Tomlinson coordinateur, Deniel/Nassar pour Gaza). Deux PDF 2024 sont récupérables (oct + nov 2024). Ils donnent des **agrégats cluster** (pas de ventilation par partenaire en m³), notamment :
+
+| Métrique 2024 | Oct 2024 | Nov 2024 |
+|---|---|---|
+| Production totale Gaza (m³/jour) | 99 275 | 89 306 |
+| dont groundwater | 58 740 | 44 016 |
+| dont Mekorot pipeline | 35 729 | 33 554 |
+| **dont desalination plants (tout le cluster)** | **4 806** | **11 737** |
+| dont UAE plant | 0 (en réparation) | 0 |
+| Partenaires water trucking actifs | 27 | 29 |
+| Membres du cluster (total) | — | 76 |
+
+**Constat factuel sec** : à oct/nov 2024, l'**ensemble** des plants de désalinisation du cluster produisait 4 800 → 11 700 m³/jour. La newsletter d'octobre précise : *« Tous les private desalination plants à Gaza ont cessé leurs opérations en octobre 2024 »* — cohérent avec la fermeture mai 2024 que HA reconnaît elle-même pour sa plant.
+
+### Vérification arithmétique du claim « 100M L »
+
+Le claim *« plus de 100 millions de litres »* = **100 000 m³**. Si concentré sur les ~7 mois actifs de la plant HA (Oct 2023 → mai 2024, ~213 jours), cela impose :
+
+> **100 000 m³ / 213 jours = ~470 m³/jour de HA seul**
+
+À comparer avec les agrégats cluster 2024 :
+- Production desalination **du cluster entier** oct 2024 = 4 806 m³/jour
+- Production desalination **du cluster entier** nov 2024 = 11 737 m³/jour
+
+Donc HA, **à elle seule pendant sa période active**, aurait représenté **4 à 10 % de la capacité desalination de l'ensemble du cluster** dans les chiffres officiels 2024. Techniquement plausible pour un opérateur de plant individuel — mais cela ferait de HA un acteur **identifiable** du desalination cluster, ce qui devrait laisser une trace dans la documentation officielle.
+
+### Ce que les newsletters cluster 2024 disent — et ne disent pas — sur HA
+
+Les deux newsletters mensuelles 2024 (oct + nov) nomment explicitement plusieurs partenaires opérateurs : **UNICEF, UNRWA, CMWU, PWA (Palestinian Water Authority), Ma'an**. **Human Appeal n'est nommée dans aucune des deux newsletters**, ni dans les Gaza Humanitarian Response Updates OCHA 2024 examinés.
+
+Cela ne **prouve pas** que HA n'a pas produit le volume revendiqué — les newsletters ne nomment pas tous les partenaires individuellement. Mais cela retire un soutien : un opérateur produisant 470 m³/jour de desalination dans un cluster qui en produisait au total ~5-12 000 m³/jour devrait apparaître dans la documentation cluster avec quelque visibilité. Il n'apparaît pas.
+
+### Ce qui reste vrai indépendamment de la fenêtre temporelle
+
+**Sur la période où le dashboard cluster publie ses chiffres (2025) :**
+- HA = 169 m³, **0,11 %** du cluster, rang **42 / 62** par m³ et **48 / 62** par max_people.
+- C'est la **même métrique cluster** que celle dont la pub utilise visuellement le dashboard.
+- Le qualificatif *« leading clean water provider »* (post HA du 13 mai 2026) qui invoque explicitement *« according to the UN WASH Cluster »* est donc **non soutenu** par la donnée cluster disponible (2025).
+
+L'incohérence entre le claim « 100M+ L cumulé » et le ranking 2025 ne se résout pas seule. Soit le claim englobe des volumes que le cluster ne reconnaît pas, soit la prod massive d'Oct 2023 → mai 2024 a effectivement existé mais avec un cluster bien plus actif à l'époque (à vérifier sur 2024), soit le claim est gonflé. Dans aucun cas la comparaison ne soutient « leading provider » sur la base du dashboard que HA invoque.
 
 ---
 
@@ -104,9 +146,9 @@ Le passage à l'unité « millions de litres cumulés » coïncide avec le dépl
 
 | Question | Réponse |
 |---|---|
-| Le chiffre « 100M+ litres » est-il physiquement plausible ? | **Oui**, dans une large fourchette d'hypothèses d'uptime. Non réfutable comme valeur absolue. |
-| Le chiffre est-il indépendamment vérifiable ? | **Non.** Aucun audit, aucun document tiers, aucun rapport UN/OCHA ne le confirme. |
-| Soutient-il le positionnement « leading clean water provider » ? | **Non, par les propres données du cluster que HA invoque.** Le cluster classe HA 42ᵉ-48ᵉ/62. |
+| Le chiffre « 100M+ litres » est-il physiquement plausible ? | **Oui**, dans une fourchette d'hypothèses. Concentré sur 7 mois actifs il impliquerait ~470 m³/jour pour HA seul, soit 4-10 % du desal cluster 2024. |
+| Le chiffre est-il indépendamment vérifiable ? | **Non.** Aucun audit, aucun rapport UN/OCHA ne le confirme. Les newsletters cluster 2024 ne nomment pas HA. |
+| Soutient-il le positionnement « leading clean water provider » ? | **Non, par les propres données du cluster que HA invoque.** Le cluster classe HA 42/62 par m³ et 48/62 par max_people en 2025. |
 | Le claim était-il présent dans la communication initiale ? | **Non.** Absent en Feb 2024 et Oct 2024. Apparaît en 2025-2026 quand le cadrage devient comparatif. |
 | Trois pages HA donnent-elles le même chiffre ? | **Non.** 102 M / 114 M / « more than 100 M » : écart interne de ~12 M L. |
 
@@ -131,5 +173,6 @@ Le visuel du cluster est utilisé pour donner une caution à un cadrage que ce m
 - [Extrait — rapport HA Feb 2024](../extraits/HA-feedback-feb2024.md)
 - [Extrait — page country HA Palestine](../extraits/HA-palestine-country-page.md)
 - [Source — dashboard Power BI WASH Cluster](../sources/dashboard-powerbi-wash-cluster.md)
+- [Source — newsletters WASH Cluster 2024](../sources/wash-cluster-newsletters-2024.md)
 - [Constat 4 — ranking « 2ᵉ » infirmé](04-ranking-2eme-fournisseur.md)
 - [Constat 8 — claims sur la plant](08-plant-desalinisation-claims.md)
