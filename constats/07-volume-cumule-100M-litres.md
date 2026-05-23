@@ -14,15 +14,21 @@
 
 ## Le claim et son cadrage
 
-Trois pages Human Appeal exposent en mai 2026 un volume cumulé d'eau « delivered » à Gaza depuis octobre 2023 :
+Le volume cumulé d'eau « livrée à Gaza » est revendiqué par HA selon **six chiffres différents** allant de 15,8 à 154 millions de litres — y compris deux chiffres sur la **même page d'appel**. Voir [extraits/claims-FR-humanappeal-france.md](../extraits/claims-FR-humanappeal-france.md) pour les reproductions verbatim.
 
-| Source HA | Chiffre | Période |
+| Source HA | Chiffre | Période revendiquée |
 |---|---|---|
-| UK — appeals/gaza-emergency-appeal | « Over 102 million litres of clean drinking water delivered » | « since October 2023 » |
-| USA — donate/projects/.../gaza-water | « 114 068 000 liters of clean water delivered » | « Since 2023 » |
-| USA — news 13 mai 2026 | « More than 100 million litres of clean water have been delivered » | « since October 2023 » |
+| humanappeal.fr appels-aux-dons (FR) | **« 15,8 millions de litres livrés »** | « depuis le 9 octobre 2023 » |
+| humanappeal.fr news 10 oct 2025 (FR) | **« plus de 20,2 millions de litres »** | « deux dernières années » |
+| humanappeal.org.uk appeals/gaza-emergency-appeal (UK) | **« Over 102 million litres »** | « since October 2023 » |
+| humanappealusa.org gaza-water (USA) | **« 114 068 000 liters »** | « Since 2023 » |
+| Vidéo Facebook @HumanAppealFrance | **« 120 millions de litres distribués »** | non précisé |
+| humanappeal.fr appels-aux-dons (FR) — **même page** que le « 15,8 M L » | **« Déjà plus de 154 millions de litres »** | non précisé |
+| humanappeal.fr news 2024 (FR) | « 154 millions de litres » | dans un article « depuis 1 an » |
 
-Le chiffre apparaît à chaque fois comme une métrique d'**impact dominant** — dans le format gras des pages d'appel, sous une rubrique « Impact Since October 2023 », à côté d'autres chiffres absolus impressionnants (« 24 million items of aid », « 10 million hot meals »). Il fonctionne comme une preuve quantitative de l'importance opérationnelle de HA.
+**Range : 15,8 → 154 M L = facteur ~10×.** Et **15,8 M L et 154 M L apparaissent sur la même page** d'appel à dons.
+
+Le chiffre apparaît à chaque fois comme une métrique d'**impact dominant** — dans le format gras des pages d'appel, sous une rubrique « Impact Since October 2023 » (UK/USA) ou en encart visuel (FR), à côté d'autres chiffres absolus impressionnants. Il fonctionne comme une preuve quantitative de l'importance opérationnelle de HA.
 
 Le post du 13 mai 2026 explicite le cadrage comparatif que ces chiffres sous-tendent :
 
@@ -105,6 +111,63 @@ Cela ne **prouve pas** que HA n'a pas produit le volume revendiqué — les news
 - Le qualificatif *« leading clean water provider »* (post HA du 13 mai 2026) qui invoque explicitement *« according to the UN WASH Cluster »* est donc **non soutenu** par la donnée cluster disponible (2025).
 
 L'incohérence entre le claim « 100M+ L cumulé » et le ranking 2025 ne se résout pas seule. Soit le claim englobe des volumes que le cluster ne reconnaît pas, soit la prod massive d'Oct 2023 → mai 2024 a effectivement existé mais avec un cluster bien plus actif à l'époque (à vérifier sur 2024), soit le claim est gonflé. Dans aucun cas la comparaison ne soutient « leading provider » sur la base du dashboard que HA invoque.
+
+---
+
+## Le rapport HA *Décembre 2025* — confrontation directe au cluster
+
+Source : [*Rapport Décembre 2025 — Urgence Gaza*](../extraits/HA-rapport-decembre-2025.md), PDF officiel HA France 13 pages (auteur métadonnée : « HUMAN APPEAL HAUTS-DE-FRANCE », créé le 14 janvier 2026).
+
+Ce rapport publie pour décembre 2025 **6 040 000 litres d'eau potable distribués**, avec une **ventilation hebdomadaire vérifiée arithmétiquement** :
+
+| Semaine | Litres | Localisation |
+|---|---|---|
+| 1 (1-7 déc) | 1 080 000 L | Bande de Gaza |
+| 2 (8-14 déc) | 1 435 000 L | Bande de Gaza |
+| 3 (15-21 déc) | 1 445 000 L | Bande de Gaza |
+| 4 (22-31 déc) | 2 080 000 L | Bande de Gaza |
+| **Total** | **6 040 000 L** ✓ | — |
+
+### Confrontation au cluster
+
+| Référence | Volume | Période |
+|---|---|---|
+| Rapport HA décembre 2025 | **6 040 m³** (6,04 M L) | 1 mois |
+| Dashboard WASH Cluster pour HA | **169 m³** (0,17 M L) | 9,1 mois (Jan-Nov 2025) |
+
+**HA revendique en un seul mois ~36× le cumul que le cluster lui attribue sur les 9 mois précédents.** Annualisé, 6 040 × 12 = **72 480 m³/an** = **48 % du volume du cluster entier 2025** (152 390 m³ pour 62 partenaires combinés).
+
+### Confrontation à la capacité physique HA elle-même
+
+Selon la propre [page country HA Palestine](../extraits/HA-palestine-country-page.md) :
+
+- Plant Rafah : **shut down depuis mai 2024** → contribution 0 L à décembre 2025
+- Water trucks : 36 500 L/jour × 31 jours = **1,13 M L max en décembre**
+
+**Pour atteindre 6,04 M L en décembre 2025, il faut ~5,3× la capacité truck annoncée**. Soit :
+- HA opère plusieurs camions en parallèle (plausible, jamais quantifié)
+- L'eau provient de tiers (CMWU, plants UNICEF, PWA) que HA transporte uniquement (= rôle de **distribution logistique**, pas de production)
+- Le chiffre est gonflé
+
+### Distribuer ≠ produire — le verrou sémantique
+
+Le mot consistent dans la communication HA est **« distribué »** (FR) / **« delivered »** (UK/USA). Pas « produit » ni « extrait ».
+
+Si HA achète/reçoit l'eau de **CMWU, plants UNICEF, ou municipalités** et la transporte dans ses camions vers les points de distribution, elle peut techniquement compter ces litres comme « distribués ». Dans ce cas :
+
+- HA est un **opérateur logistique** (transport, citernes de stockage, points de distribution).
+- HA n'est **pas** un **producteur** d'eau au sens infrastructurel.
+- La caution « rapport WASH Cluster » qu'HA invoque mesure ce que le cluster **attribue** à chaque partenaire dans son 5W — pas ce qu'un partenaire transporte d'eau produite par un tiers.
+
+Les **photos du rapport décembre 2025** confirment ce rôle : grandes citernes blanches de stockage avec bannière *« WATER DISTRIBUTION GAZA EMERGENCY 2025 »*, queues à des points de distribution, banderoles *« MAKESHIFT »* (improvisé) sur les cliniques et écoles. **Aucune photo de plant de désalinisation HA en activité** dans les 13 pages — cohérent avec la déclaration HA que sa plant est *« shut down »* depuis mai 2024.
+
+**Conséquence pour le donateur** : quand HA dit *« 154 millions de litres distribués »* et *« 2ᵉ organisation mondiale qui distribue l'eau à Gaza selon le rapport WASH Cluster »*, le donateur comprend que HA **apporte** cette eau via sa propre infrastructure productive. Or :
+
+1. La plant est fermée depuis 24 mois ;
+2. Les volumes annoncés dépassent ce que les trucks HA peuvent porter seuls ;
+3. La métrique du cluster (où HA est rang 42/62) est précisément la métrique qui mesure ce que chaque partenaire **apporte effectivement** au système.
+
+Le décalage entre ces faits et le récit publicitaire est le verrou central de ce constat.
 
 ---
 

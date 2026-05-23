@@ -18,8 +18,11 @@ Les deux affirmations sont des **positionnements superlatifs/de statut** qui ne 
 | USA donate/projects/water-sanitation/gaza-water | *« 52,000 liters of clean water every hour »* |
 | USA news 13 mai 2026 | *« 52,000 litres of clean water per hour »* |
 | PDF Feb 2024 | *« Our desalination plant, the largest in southern Gaza is back up and running, providing 52,000 liters of water per hour »* |
+| **humanappeal.fr appels-aux-dons** (FR) | *« Human Appeal a mis en place une usine de dessalement d'eau à Rafah, offrant quotidiennement **2 400 m³ d'eau potable** à la communauté »* (= **100 m³/h en moyenne 24h**, soit ~2× la capacité revendiquée en anglais) |
 
 Le claim « largest in southern Gaza » apparaît explicitement dans le PDF de février 2024 et est implicite dans les pages d'appel qui désignent la plant comme **la** plant HA (singulier, défini).
+
+À noter : entre les pages HA anglaises (52 m³/h, soit ~1,25 M L/jour à 24h) et la page HA française (2 400 m³/jour, soit 100 m³/h en moyenne), **la capacité revendiquée varie d'un facteur ~2** pour la même infrastructure. La page country (HA USA) précise par ailleurs une capacité « nominale » à **80 m³/h** et opérationnelle à **52 m³/h** (Oct 2023 – mai 2024 uniquement, à 6 h/jour). **Trois capacités différentes pour la même plant** selon le site HA consulté.
 
 ---
 

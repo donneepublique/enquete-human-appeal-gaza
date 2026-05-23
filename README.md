@@ -35,7 +35,7 @@ Les affirmations factuelles précises que la publicité avance pour justifier le
 | 4 | [« 2ᵉ plus grand fournisseur d'eau à Gaza »](constats/04-ranking-2eme-fournisseur.md) | ❌ **Infirmé** — rang 48/62 par personnes touchées, rang 42/62 par m³ |
 | 7 | [« Plus de 100 millions de litres d'eau » livrés](constats/07-volume-cumule-100M-litres.md) | ❌ **Non démontré** — impliquerait 4-10 % du desal cluster 2024 ; HA jamais nommée dans les newsletters cluster 2024 |
 | 8 | [« Largest desalination plant in southern Gaza »](constats/08-plant-desalinisation-claims.md) | ❌ **Faux** — South Gaza Plant (EU/UNICEF) ~9-12× plus grande ; HA dit elle-même que sa plant est fermée depuis mai 2024 |
-| 9 | [« In Gaza since 1991 » / « 35 years in Palestine »](constats/09-dates-presence-gaza.md) | ❌ **Trompeur** — HA déclare à l'ONU (WASH Cluster 2022) « operational in Palestine since 2018 » ; bureau Gaza ouvert en 2016 |
+| 9 | [« In Gaza since 1991 » / « 35 years in Palestine »](constats/09-dates-presence-gaza.md) | ❌ **Manque de transparence** — 6 dates incompatibles selon les pages HA (1991 / 1992 / 2016 / 2018) ; pas de chronologie cohérente offerte au donateur |
 
 ### Contexte et questionnements
 
@@ -91,7 +91,7 @@ enquete-human-appeal-gaza/
 │   ├── 05-acronyme-HA-dans-pub.md            ✅ HA = Human Appeal
 │   ├── 07-volume-cumule-100M-litres.md       ❌ « 100M+ litres » positionné comme leading provider ; cluster dit l'inverse
 │   ├── 08-plant-desalinisation-claims.md     ❌ « Largest in southern Gaza » faux ; plant fermée depuis mai 2024
-│   └── 09-dates-presence-gaza.md             ❌ « Since 1991 in Gaza » trompeur — HA déclare « since 2018 » à l'ONU
+│   └── 09-dates-presence-gaza.md             ❌ 6 dates incompatibles selon les pages HA ; pas de chronologie cohérente
 │
 ├── sources/                    description critique des sources primaires et tierces
 │   ├── README.md
@@ -115,7 +115,13 @@ enquete-human-appeal-gaza/
 │   ├── HA-gaza-emergency-feedback-feb2024.pdf
 │   ├── claims-water-cumulatif-2026.md   ← claims « 100M+ litres » mai 2026
 │   ├── HA-palestine-country-page.md     ← page pays HA (admet plant shut down mai 2024)
-│   └── claims-dates-presence-gaza.md    ← toutes les variantes de dates de présence Gaza
+│   ├── claims-dates-presence-gaza.md    ← toutes les variantes de dates de présence Gaza
+│   ├── claims-FR-humanappeal-france.md  ← 6 chiffres litres + 3 capacités plant + 6 formulations 2ᵉ (humanappeal.fr)
+│   ├── humanappeal-fr-snippet-2eme-mondiale.png       ← Google snippet « 2ᵉ organisation mondiale »
+│   ├── google-search-2eme-fournisseur.png             ← recherche Google « 2ᵉ fournisseur »
+│   ├── humanappeal-fr-100000-litres-par-jour.png      ← page « 100 000 litres / jour » (5 stations AIOCP)
+│   ├── HA-rapport-decembre-2025.md                    ← analyse rapport HA déc 2025 (6 M L mois vs 169 m³ cluster 9 mois)
+│   └── HA-rapport-gaza-decembre-2025.pdf              ← PDF original (13 pages, auteur : HA Hauts-de-France)
 │
 ├── dashboard-scrape/           données extraites du dashboard Power BI
 │   ├── README.md               méthodologie de l'extraction

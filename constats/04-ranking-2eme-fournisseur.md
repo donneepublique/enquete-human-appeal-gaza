@@ -5,6 +5,22 @@
 - WASH Cluster dashboard Power BI public (page Water)
 - Lectures directes par tooltip utilisateur (ancres HA et UNICEF)
 - Extraction automatique des données partenaire-par-partenaire : [`../dashboard-scrape/partners.csv`](../dashboard-scrape/partners.csv)
+- Compilation verbatim des claims FR/UK/USA : [`../extraits/claims-FR-humanappeal-france.md`](../extraits/claims-FR-humanappeal-france.md)
+
+---
+
+## Formulations exactes du claim selon les pages HA
+
+| Source | Formulation verbatim |
+|---|---|
+| **humanappeal.fr appels-aux-dons** | *« Human Appeal, désormais reconnue comme la **2ᵉ organisation mondiale** qui distribue de l'eau à Gaza **selon le dernier rapport WASH Cluster** »* |
+| **Instagram @humanappealfrance** | *« Human Appeal est aujourd'hui la **2ᵉ organisation au monde** à distribuer de l'eau potable dans la bande de Gaza en 2025, d'après le dernier… »* |
+| **humanappeal.fr news 10 oct 2025** | *« 2ᵉ parmi les organisations distribuant de l'eau potable »* — *« selon le rapport du WASH Cluster »* |
+| **Vidéo Facebook HA France (~mai 2026)** | *« Human Appeal est le 2ᵉ plus grand distributeur d'eau »* |
+| **Facebook HA USA** | *« Human Appeal is now the 2nd largest provider of drinking water in Gaza »* |
+| **News HA USA 13 mai 2026** | *« Human Appeal is ranked among the leading clean water providers in Gaza according to the UN WASH Cluster »* |
+
+Toutes ces formulations invoquent comme source d'autorité **le « rapport WASH Cluster »** — qui dans cette enquête est identifié comme le dashboard Power BI *Flash Appeal Indicators 2025*. La version française est la plus forte : *« 2ᵉ organisation mondiale »* — pas seulement à Gaza, mais au monde.
 
 ---
 
