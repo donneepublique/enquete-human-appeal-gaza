@@ -34,6 +34,7 @@ Les affirmations factuelles précises que la publicité avance pour justifier le
 |---|---|---|
 | 4 | [« 2ᵉ plus grand fournisseur d'eau à Gaza »](constats/04-ranking-2eme-fournisseur.md) | ❌ **Infirmé** — rang 48/62 par personnes touchées, rang 42/62 par m³ |
 | 7 | [« Plus de 100 millions de litres d'eau » livrés](constats/07-volume-cumule-100M-litres.md) | ❌ **Non démontré** — 180× le record du cluster entier |
+| 8 | [« Largest desalination plant in southern Gaza »](constats/08-plant-desalinisation-claims.md) | ❌ **Faux** — South Gaza Plant (EU/UNICEF) ~9-12× plus grande ; HA dit elle-même que sa plant est fermée depuis mai 2024 |
 
 ### Contexte et questionnements
 
@@ -87,7 +88,8 @@ enquete-human-appeal-gaza/
 │   ├── 03-evolution-cluster-2022-2025.md     61 → 77 partenaires
 │   ├── 04-ranking-2eme-fournisseur.md        ❌ INFIRMÉ
 │   ├── 05-acronyme-HA-dans-pub.md            ✅ HA = Human Appeal
-│   └── 07-volume-cumule-100M-litres.md       ❌ Claim « 100M+ litres » non démontré (180× le record cluster)
+│   ├── 07-volume-cumule-100M-litres.md       ❌ « 100M+ litres » non démontré (180× le record cluster)
+│   └── 08-plant-desalinisation-claims.md     ❌ « Largest in southern Gaza » faux ; plant fermée depuis mai 2024
 │
 ├── sources/                    description critique des sources primaires et tierces
 │   ├── README.md
@@ -108,7 +110,8 @@ enquete-human-appeal-gaza/
 │   ├── liste-partenaires-2022.md
 │   ├── HA-feedback-feb2024.md           ← HA self-report Feb 2024 (avant le claim 100M)
 │   ├── HA-gaza-emergency-feedback-feb2024.pdf
-│   └── claims-water-cumulatif-2026.md   ← claims « 100M+ litres » mai 2026
+│   ├── claims-water-cumulatif-2026.md   ← claims « 100M+ litres » mai 2026
+│   └── HA-palestine-country-page.md     ← page pays HA (admet plant shut down mai 2024)
 │
 ├── dashboard-scrape/           données extraites du dashboard Power BI
 │   ├── README.md               méthodologie de l'extraction
