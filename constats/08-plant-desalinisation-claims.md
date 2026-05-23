@@ -19,10 +19,22 @@ Les deux affirmations sont des **positionnements superlatifs/de statut** qui ne 
 | USA news 13 mai 2026 | *« 52,000 litres of clean water per hour »* |
 | PDF Feb 2024 | *« Our desalination plant, the largest in southern Gaza is back up and running, providing 52,000 liters of water per hour »* |
 | **humanappeal.fr appels-aux-dons** (FR) | *« Human Appeal a mis en place une usine de dessalement d'eau à Rafah, offrant quotidiennement **2 400 m³ d'eau potable** à la communauté »* (= **100 m³/h en moyenne 24h**, soit ~2× la capacité revendiquée en anglais) |
+| **humanappeal.fr faire-un-don/projets/eau-potable/eau-potable-gaza** (FR, page de collecte) | *« Cette usine de grande envergure est **finalisée et nous continuerons de faire appel à votre générosité pour continuer à l'entretenir** »* (= opérationnelle, demande de dons pour l'entretien) |
 
 Le claim « largest in southern Gaza » apparaît explicitement dans le PDF de février 2024 et est implicite dans les pages d'appel qui désignent la plant comme **la** plant HA (singulier, défini).
 
-À noter : entre les pages HA anglaises (52 m³/h, soit ~1,25 M L/jour à 24h) et la page HA française (2 400 m³/jour, soit 100 m³/h en moyenne), **la capacité revendiquée varie d'un facteur ~2** pour la même infrastructure. La page country (HA USA) précise par ailleurs une capacité « nominale » à **80 m³/h** et opérationnelle à **52 m³/h** (Oct 2023 – mai 2024 uniquement, à 6 h/jour). **Trois capacités différentes pour la même plant** selon le site HA consulté.
+### Quatre statuts opérationnels incompatibles pour la même plant
+
+| Page HA | Statut opérationnel revendiqué |
+|---|---|
+| Fundraising UK (`appeals/water-for-gaza`, `gaza-water-desalination-plant-fund`) | *« providing 52,000 litres of water per hour »* (présent — en production) |
+| Fundraising FR (`appels-aux-dons/eau-potable-gaza`) | *« offrant quotidiennement 2 400 m³ d'eau potable »* (présent — en production) |
+| **Fundraising FR (`faire-un-don/projets/eau-potable/eau-potable-gaza`)** | *« **usine finalisée — continuer à l'entretenir** »* (collecte active pour l'entretien) |
+| **Country page USA (`our-work-by-country/middle-east/palestine`)** | *« May 2024: **Plant shut down** due to Rafah invasion »* (arrêtée depuis 24 mois) |
+
+**Trois capacités différentes** (52 m³/h, 100 m³/h équivalent, 80 m³/h nominal) et **deux statuts opérationnels actuels contradictoires** (« en production » vs « shut down ») coexistent en mai 2026 sur les sites de la même organisation.
+
+À noter le cas le plus problématique : la page FR `faire-un-don/projets/eau-potable/eau-potable-gaza` est une **page de collecte de dons** qui sollicite explicitement le donateur pour *« continuer à l'entretenir »*. Si la déclaration country HA *« plant shut down since May 2024 »* est exacte, la page de collecte demande des dons pour entretenir une infrastructure qu'HA elle-même décrit comme inactive depuis 24 mois.
 
 ---
 

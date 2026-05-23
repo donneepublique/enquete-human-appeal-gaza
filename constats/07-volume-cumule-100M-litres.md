@@ -137,37 +137,64 @@ Ce rapport publie pour décembre 2025 **6 040 000 litres d'eau potable distribu�
 
 **HA revendique en un seul mois ~36× le cumul que le cluster lui attribue sur les 9 mois précédents.** Annualisé, 6 040 × 12 = **72 480 m³/an** = **48 % du volume du cluster entier 2025** (152 390 m³ pour 62 partenaires combinés).
 
-### Confrontation à la capacité physique HA elle-même
+### Que mesure exactement le dashboard WASH Cluster ?
 
-Selon la propre [page country HA Palestine](../extraits/HA-palestine-country-page.md) :
+Le chart de la page Water du dashboard est intitulé *« **Water quantity (m³) delivered** by Governorate »*. Pas *« produced »*, pas *« captured »* — **« delivered »**. La source est *« Partners reporting »* (système 5W : chaque partenaire rapporte ce qu'il a fait).
 
-- Plant Rafah : **shut down depuis mai 2024** → contribution 0 L à décembre 2025
-- Water trucks : 36 500 L/jour × 31 jours = **1,13 M L max en décembre**
+**Le 5W collecte exactement ce que HA appelle « distribué »** :
+- water trucking (volumes truckés par chaque partenaire)
+- water points opérés
+- plant de désalinisation
+- distributions ponctuelles d'eau
 
-**Pour atteindre 6,04 M L en décembre 2025, il faut ~5,3× la capacité truck annoncée**. Soit :
-- HA opère plusieurs camions en parallèle (plausible, jamais quantifié)
-- L'eau provient de tiers (CMWU, plants UNICEF, PWA) que HA transporte uniquement (= rôle de **distribution logistique**, pas de production)
-- Le chiffre est gonflé
+C'est-à-dire que **lorsque HA trucke de l'eau depuis CMWU ou une plant UNICEF vers ses propres citernes de distribution**, ce volume doit normalement apparaître dans le 5W de HA pour le cluster (standard humanitaire d'attribution : le partenaire qui exécute la dernière livraison la déclare).
 
-### Distribuer ≠ produire — le verrou sémantique
+Donc le cluster et la communication HA mesurent **la même chose** : l'eau livrée aux bénéficiaires par chaque partenaire.
 
-Le mot consistent dans la communication HA est **« distribué »** (FR) / **« delivered »** (UK/USA). Pas « produit » ni « extrait ».
+### Conséquence : HA et le cluster mesurent la même chose mais donnent des chiffres incompatibles
 
-Si HA achète/reçoit l'eau de **CMWU, plants UNICEF, ou municipalités** et la transporte dans ses camions vers les points de distribution, elle peut techniquement compter ces litres comme « distribués ». Dans ce cas :
+| Référence | Volume | Période | Rate mensuel |
+|---|---|---|---|
+| Rapport HA décembre 2025 | **6 040 m³** (6,04 M L) | 1 mois | **6 040 000 L/mois** |
+| Dashboard WASH Cluster pour HA | **169 m³** | 9,1 mois (Jan-Nov 2025) | **~18 600 L/mois** |
+| Rapport hebdomadaire moyen HA (déc 2025) | ~1,5 M L/semaine | 1 semaine | équivaut à ~6 M L/mois |
 
-- HA est un **opérateur logistique** (transport, citernes de stockage, points de distribution).
-- HA n'est **pas** un **producteur** d'eau au sens infrastructurel.
-- La caution « rapport WASH Cluster » qu'HA invoque mesure ce que le cluster **attribue** à chaque partenaire dans son 5W — pas ce qu'un partenaire transporte d'eau produite par un tiers.
+**HA s'auto-déclare au cluster à ~18 600 L/mois** en moyenne sur 2025, et **annonce aux donateurs ~6 040 000 L pour décembre 2025**. Soit un écart de **~325× sur la même métrique**.
 
-Les **photos du rapport décembre 2025** confirment ce rôle : grandes citernes blanches de stockage avec bannière *« WATER DISTRIBUTION GAZA EMERGENCY 2025 »*, queues à des points de distribution, banderoles *« MAKESHIFT »* (improvisé) sur les cliniques et écoles. **Aucune photo de plant de désalinisation HA en activité** dans les 13 pages — cohérent avec la déclaration HA que sa plant est *« shut down »* depuis mai 2024.
+Trois explications possibles, toutes problématiques :
 
-**Conséquence pour le donateur** : quand HA dit *« 154 millions de litres distribués »* et *« 2ᵉ organisation mondiale qui distribue l'eau à Gaza selon le rapport WASH Cluster »*, le donateur comprend que HA **apporte** cette eau via sa propre infrastructure productive. Or :
+1. **HA a vraiment multiplié son activité par 325 en décembre 2025** — donc le dashboard cluster va exploser à la prochaine mise à jour. Vérifiable empiriquement ; à surveiller.
+2. **HA ne reporte pas au cluster ce qu'elle communique aux donateurs** — alors la phrase *« selon le dernier rapport WASH Cluster »* qu'HA met en avant dans son discours public est sans support, puisque le cluster ne reflète pas son activité réelle.
+3. **HA gonfle pour les donateurs ce qu'elle ne reporte pas au cluster** — pour la même raison, la caution cluster invoquée publiquement ne soutient pas le chiffre donateur.
 
-1. La plant est fermée depuis 24 mois ;
-2. Les volumes annoncés dépassent ce que les trucks HA peuvent porter seuls ;
-3. La métrique du cluster (où HA est rang 42/62) est précisément la métrique qui mesure ce que chaque partenaire **apporte effectivement** au système.
+Dans les deux dernières options, le claim *« 2ᵉ organisation mondiale qui distribue de l'eau à Gaza selon le dernier rapport WASH Cluster »* est en porte-à-faux.
 
-Le décalage entre ces faits et le récit publicitaire est le verrou central de ce constat.
+### État de l'infrastructure productive HA en mai 2026
+
+Tous les éléments documentés par HA elle-même :
+
+| Infrastructure | Statut (HA) |
+|---|---|
+| Plant Rafah (80 m³/h nominale, 52 m³/h opérationnel) | **Shut down depuis mai 2024** (page country) |
+| Plant Al-Aqsa University (15 000 personnes) | Mentionnée comme passée, statut actuel non documenté |
+| **5 stations AIOCP** (20 000 L/jour × 5 = 100 000 L/jour) | **Projet en cours de financement** (collecte 250 000 €). Pas construites. Source : [`humanappeal.fr/faire-un-don/projets/eau-potable/stations-eau-gaza`](https://humanappeal.fr/faire-un-don/projets/eau-potable/stations-eau-gaza) |
+| Water tanker trucks (36 500 L/jour, par camion) | Opérationnels (nombre non précisé) |
+
+**HA ne produit pas d'eau en mai 2026.** Toute l'eau qu'elle « distribue » vient nécessairement de tiers : CMWU, South Gaza Plant (EU/UNICEF), 15 plants désalinisation contractées par UNICEF, PWA, Mekorot, ou UAE plants côté Égypte.
+
+Cela ne diminue pas la valeur du travail logistique (organiser le transport et la distribution d'eau en zone de guerre est une opération réelle, utile, et coûteuse). Mais cela précise le **rôle** : HA est en mai 2026 un **opérateur logistique** sur le secteur eau, **pas un producteur**.
+
+Les **photos du rapport décembre 2025** confirment ce rôle : grandes citernes blanches de stockage avec bannière *« WATER DISTRIBUTION GAZA EMERGENCY 2025 »*, queues à des points de distribution, banderoles *« MAKESHIFT »* sur les cliniques et écoles. **Aucune photo de plant de désalinisation HA en activité** dans les 13 pages.
+
+### Conséquence pour le donateur
+
+Quand HA invoque le *« dernier rapport WASH Cluster »* pour étayer un statut de *« 2ᵉ organisation mondiale »* et un volume cumulé de *« 154 millions de litres distribués »* :
+
+1. Le cluster utilise effectivement le mot « delivered » — donc le cadre métrologique se recoupe avec celui d'HA ;
+2. Mais sur cette même métrique, le cluster enregistre HA à 169 m³ sur 9,1 mois (rang 42/62), tandis qu'HA dit aux donateurs 6 040 m³ pour décembre seul ;
+3. Les deux ne sont pas conciliables sans soit une explosion d'activité non documentée, soit un décalage entre ce qu'HA reporte au cluster et ce qu'elle dit aux donateurs.
+
+Dans les deux cas, **la caution « WASH Cluster » que HA met en avant publiquement n'est pas soutenue par les chiffres du WASH Cluster.**
 
 ---
 

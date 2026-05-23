@@ -137,9 +137,32 @@ Google note explicitement *« Termes manquants : 2ᵉ fournisseur »* — cette 
 |---|---|
 | **52 000 L/h** (= 52 m³/h) | HA UK fundraising, PDF Feb 2024, HA USA fundraising |
 | **80 m³/h** nominale, 52 m³/h opérationnel (6h/jour, fermée mai 2024) | HA USA country page |
-| **2 400 m³/jour** (= 100 m³/h moyenne) | HA France |
+| **2 400 m³/jour** (= 100 m³/h moyenne) | HA France `appels-aux-dons/eau-potable-gaza` |
 
 Cinq formulations différentes pour la même infrastructure selon la page consultée.
+
+## Synthèse — quatre statuts opérationnels incompatibles pour la même plant
+
+| Page HA | Statut actuel revendiqué |
+|---|---|
+| Fundraising UK (`appeals/water-for-gaza`, `gaza-water-desalination-plant-fund`) | *« providing 52,000 litres per hour »* (présent — opérationnelle) |
+| Fundraising FR (`appels-aux-dons/eau-potable-gaza`) | *« offrant quotidiennement 2 400 m³ »* (présent — opérationnelle) |
+| **Fundraising FR (`faire-un-don/projets/eau-potable/eau-potable-gaza`)** | *« usine **finalisée** — continuer à l'**entretenir** »* (collecte de fonds active) |
+| **Country page USA (`our-work-by-country/middle-east/palestine`)** | *« May 2024: **Plant shut down** due to Rafah invasion »* (arrêtée depuis 24 mois) |
+
+La page de collecte FR `faire-un-don/projets/eau-potable/eau-potable-gaza` est la plus problématique : elle sollicite des dons pour « entretenir » une infrastructure que HA elle-même qualifie de *« shut down »* sur sa page country.
+
+## Synthèse — les 5 stations AIOCP (projet en cours de financement)
+
+Source : `humanappeal.fr/faire-un-don/projets/eau-potable/stations-eau-gaza`
+
+> *« Human Appeal, en partenariat avec l'AIOCP, lance un projet structurant : installer 5 stations de dessalement d'eau de mer dans des centres de santé clés. Chaque station, d'un coût de 50 000 €, produira 20 000 litres d'eau potable par jour, soit environ 4 000 personnes servies quotidiennement. Ensemble, elles fourniront 100 000 litres par jour à plus de 20 000 bénéficiaires »*
+
+> *« Notre objectif de collecte est de 250 000 € pour financer ces 5 stations vitales. »*
+
+**Statut : projet à financer, pas construit.** Capacité prévue totale : 100 000 L/jour = 4,17 m³/h pour 5 stations combinées. À comparer à la plant unique Rafah qui revendique 52 000 L/h = ~12× plus pour une seule station. Cohérent avec le fait que les 5 stations sont « légères » (filtration avancée, 50 000 € chacune) destinées à des centres de santé, et que la plant Rafah est une infrastructure plus lourde.
+
+À noter : AIOCP figure dans la slicer du dashboard WASH Cluster (62 partenaires Gaza). AIOCP est donc lui aussi membre du cluster — la métrique commune s'applique.
 
 ---
 
