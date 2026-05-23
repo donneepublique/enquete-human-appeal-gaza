@@ -4,8 +4,9 @@
 
 **Sources :**
 - Profil HA signé pour le WASH Cluster, juillet 2022 — voir [extrait page 35](../extraits/page-35-profil-human-appeal.md)
+- Charity Commission UK : [fiche n° 1005733 (« HUMAN APPEAL INTERNATIONAL », trust 1991-2014)](https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1005733/full-print) + [fiche n° 1154288 (entité actuelle, depuis 2013)](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5038915/full-print)
+- Companies House UK : [société n° 08553893](https://find-and-update.company-information.service.gov.uk/company/08553893)
 - Wikipedia, page Human Appeal
-- Charity Commission UK, registre statutaire n° 1154288
 - Toutes les pages HA UK / USA / Canada (mai 2026)
 - Compilation verbatim : [extraits/claims-dates-presence-gaza.md](../extraits/claims-dates-presence-gaza.md)
 
@@ -28,26 +29,39 @@ La formule **« since 1991 »** apparaît dans la communication HA au sujet de G
 
 ## Les trois faits distincts que cette formule fusionne
 
-### Fait 1 — Fondation de l'organisation : 1991, Manchester
+### Fait 1 — Fondation de l'organisation : 1991, comme charity UK
+
+**Source primaire indépendante (UK Charity Commission)** :
+
+| Étape | Date | Source |
+|---|---|---|
+| Trust deed signé | **7 août 1991** | Charity Commission UK, fiche n° 1005733, document gouvernant |
+| Enregistrement statutaire de la charity « HUMAN APPEAL INTERNATIONAL » (n° 1005733) | **7 novembre 1991** | Charity Commission UK, registre public |
+| Forme juridique à l'époque | Trust | Charity Commission UK |
+| Removal (transfert des fonds vers la nouvelle entité 1154288) | 26 février 2014 | Charity Commission UK |
+
+URL fiche statutaire : https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1005733/full-print
+
+**Source HA (auto-déclaration)** :
 
 > *« Our journey at Human Appeal began in a small apartment in Manchester in 1991 »* (HA USA About Us)
 
 > *« Human Appeal was established in 1991 »* (Wikipedia)
 
-Il s'agit d'une **initiative volontaire informelle** à Manchester, sans entité légale à l'époque (la première registration formelle comme *company limited by guarantee* date de 2004, selon HA USA).
+La date 1991 est donc **corroborée par une autorité statutaire indépendante** (UK Charity Commission), pas seulement par la narrative HA. Le Trust a été formellement constitué le 7 août 1991 et enregistré le 7 novembre 1991 — il s'agit dès le départ d'une entité juridique opposable, pas d'une simple initiative bénévole.
 
-### Fait 2 — Entité légale actuelle : créée en 2013-2014
+### Fait 2 — Restructuration vers l'entité actuelle : 2013-2014
 
-D'après le **Charity Commission UK** (registre statutaire) :
+D'après le **Charity Commission UK** (registre statutaire) et **Companies House UK** :
 
-| Étape | Date |
-|---|---|
-| Memorandum incorporé | 3 juin 2013 |
-| Enregistrement charity (n° 1154288) | 21 octobre 2013 |
-| Transfert des fonds depuis la charity précédente (n° 1005733 « HUMAN APPEAL INTERNATIONAL ») | 26 février 2014 |
-| Changement de nom de l'entité | 1ᵉʳ octobre 2016 |
+| Étape | Date | Source |
+|---|---|---|
+| Incorporation de la société (Companies House n° 08553893) | 3 juin 2013 | Companies House |
+| Enregistrement de la nouvelle charity (n° 1154288) | 21 octobre 2013 | Charity Commission |
+| Transfert des fonds depuis la charity 1991 (n° 1005733) | 26 février 2014 | Charity Commission |
+| Changement de nom (de « Human Appeal International » à « Human Appeal ») | 1ᵉʳ octobre 2016 | Companies House |
 
-Donc **la charity actuelle a 12 ans** (depuis 2013), pas 35. Wikipedia note : *« the charity was known as Human Appeal International but was rebranded in 2018 »*.
+La continuité juridique entre la charity 1991 et l'actuelle est donc **réelle** (transfert formel des fonds). Le **« 35 years »** au sens d'« organisation continue depuis 1991 » est défendable comme indication d'ancienneté organisationnelle. Ce qui pose problème, c'est l'extension de cette ancienneté à la présence opérationnelle locale à Gaza (Fait 3).
 
 ### Fait 3 — Présence opérationnelle à Gaza/Palestine : 2016 (bureau) ou 2018 (« operational »)
 
@@ -93,10 +107,10 @@ Présenter « 35 ans à Gaza » suggère :
 - des réseaux locaux établis sur plusieurs générations,
 - un savoir-faire opérationnel éprouvé sur le terrain.
 
-La réalité — telle que HA elle-même la déclare officiellement — est plus modeste :
-- L'organisation HA existe depuis 1991 (à Manchester).
-- L'entité légale actuelle existe depuis 2013.
-- L'opération sur le terrain en Palestine date de **2018** par déclaration HA, ou de **2016** par mise en service d'un bureau.
+La réalité — corroborée par les registres statutaires et les déclarations HA elle-même — est plus modeste :
+- La charity « HUMAN APPEAL INTERNATIONAL » est enregistrée au UK Charity Commission depuis le 7 novembre 1991 (trust deed 7 août 1991, n° 1005733) — fait statutaire indépendant.
+- L'entité actuelle (n° 1154288) existe depuis 2013, avec transfert formel des fonds depuis l'entité 1991 en février 2014.
+- L'opération sur le terrain en Palestine date de **2018** par déclaration HA au cluster ONU, ou de **2016** par mise en service d'un bureau.
 
 Soit ~8 à 10 ans de présence opérationnelle locale au moment des claims (2026). C'est **significatif** et **respectable** — pas marginal — mais ce n'est pas 35 ans, et ce n'est pas ce que les pages d'appel suggèrent.
 
@@ -121,17 +135,17 @@ Dans chaque cas, **la véracité littérale est défendable mot par mot**, mais 
 
 | Question | Réponse |
 |---|---|
-| HA existe-t-elle depuis 1991 ? | **Oui**, comme initiative volontaire informelle à Manchester. |
-| L'entité charity HA actuelle (n° 1154288) existe-t-elle depuis 1991 ? | **Non**, elle est enregistrée depuis octobre 2013. |
+| HA existe-t-elle depuis 1991 ? | **Oui**, **corroboré par le Charity Commission UK** : trust « HUMAN APPEAL INTERNATIONAL » n° 1005733, trust deed du 7 août 1991, enregistré le 7 novembre 1991. Pas seulement la narrative HA. |
+| L'entité charity HA actuelle (n° 1154288) existe-t-elle depuis 1991 ? | **Non**, elle est enregistrée depuis octobre 2013. Mais la continuité juridique avec la charity 1991 est attestée par le transfert formel des fonds en février 2014. |
 | HA est-elle « operational in Palestine » depuis 1991 ? | **Non**, par déclaration HA elle-même au cluster ONU (2022) : « since 2018 ». |
 | HA a-t-elle un bureau à Gaza depuis 1991 ? | **Non**, le bureau a ouvert en 2016 par déclaration HA elle-même. |
-| Le claim « 35 years of delivering your mercy in Palestine » est-il défendable ? | Au sens strict (= 35 ans = âge de l'organisation), oui. Au sens **induit** (= 35 ans de présence à Gaza), **non**. |
+| Le claim « 35 years of delivering your mercy in Palestine » est-il défendable ? | Au sens strict (= 35 ans = âge de l'organisation, statutairement vérifié), oui. Au sens **induit** (= 35 ans de présence à Gaza), **non**. |
 
 ---
 
 ## Implication pour le donateur
 
-HA est une organisation humanitaire **établie** (depuis 1991 globalement, depuis 2013 sous la forme légale actuelle) avec une **présence opérationnelle locale à Gaza/Palestine de l'ordre de 8 à 10 ans** (selon que l'on retient 2016 = ouverture bureau ou 2018 = « operational » au cluster). C'est une trajectoire respectable. La présenter comme « 35 ans à Gaza » fait passer pour ancien ce qui est relativement récent — et utilise la longévité organisationnelle globale pour suggérer une expertise terrain locale que HA elle-même ne revendique pas auprès des autorités onusiennes.
+HA est une organisation humanitaire **établie depuis 1991** (forme charity statutairement enregistrée au UK depuis novembre 1991, restructurée en 2013-2014 avec continuité des fonds), avec une **présence opérationnelle locale à Gaza/Palestine de l'ordre de 8 à 10 ans** (selon que l'on retient 2016 = ouverture bureau ou 2018 = « operational » au cluster). C'est une trajectoire respectable. La présenter comme « 35 ans à Gaza » fait passer pour ancien sur le terrain ce qui est récent sur le terrain — et utilise la longévité organisationnelle globale (statutairement vraie) pour suggérer une expertise locale à Gaza que HA elle-même ne revendique pas auprès des autorités onusiennes.
 
 ---
 
@@ -140,7 +154,9 @@ HA est une organisation humanitaire **établie** (depuis 1991 globalement, depui
 - [Extrait — compilation verbatim des dates](../extraits/claims-dates-presence-gaza.md)
 - [Extrait — page 35 du Partners' Profile WASH Cluster 2022 (« since 2018 »)](../extraits/page-35-profil-human-appeal.md)
 - [Extrait — page country HA Palestine](../extraits/HA-palestine-country-page.md)
-- [Source — Charity Commission UK n° 1154288](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5038915/full-print)
+- [Source — Charity Commission UK n° 1005733 (trust 1991-2014, preuve indépendante de la date de fondation)](https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/1005733/full-print)
+- [Source — Charity Commission UK n° 1154288 (entité actuelle, depuis 2013)](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5038915/full-print)
+- [Source — Companies House UK n° 08553893 (société de l'entité actuelle)](https://find-and-update.company-information.service.gov.uk/company/08553893)
 - [Constat 4 — ranking « 2ᵉ » infirmé](04-ranking-2eme-fournisseur.md)
 - [Constat 7 — « 100M+ litres » non démontré](07-volume-cumule-100M-litres.md)
 - [Constat 8 — claims plant désalinisation](08-plant-desalinisation-claims.md)
