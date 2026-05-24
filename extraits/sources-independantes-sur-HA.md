@@ -200,7 +200,111 @@ Note : l'affaire concerne **HA USA** (entité distincte, EIN 87-2410117). Elle n
 
 ---
 
-## 7. Mentions presse mainstream et trade press
+## 7. Critique sociologique du secteur — Dr William Barylo (mars 2026)
+
+Source primaire : [Dr William Barylo — *The Muslim Charity Industry is ROTTEN*, YouTube, 3 mars 2026](https://www.youtube.com/watch?v=T0ScrFiewNo) (12 min, 24 545 vues au 2026-05-24, chaîne non monétisée).
+
+### Qualification de l'auteur
+
+Dr William Barylo — sociologue, ex-University of Warwick (UK). Auteur de :
+- *British Muslims in the Neoliberal Empire*, **Oxford University Press**, avril 2025 ;
+- *Young Muslim Change-Makers: Grassroots Charities Rethinking Modern Societies*, **Routledge** (Islamic Studies Series) ;
+- Projet de recherche *Muslims in the Neoliberal Empire* (https://mne.williambarylo.com/), bourse British Academy (~£355–366 k).
+
+Contributeur Middle East Eye, The Conversation, The Times, Huffington Post UK. 15 ans de recherche déclarés sur le secteur caritatif musulman.
+
+### Contenu pertinent — Human Appeal nommée explicitement
+
+La vidéo s'ouvre sur l'extrait d'une vidéo virale tournée en Syrie par un travailleur caritatif britannique (vraisemblablement **Tauqir Sharif**, [profil Middle East Eye](https://www.middleeasteye.net/news/british-aid-worker-tauqir-sharif-syria-idlib-hts-arrest)) montrant un *« ghost village »* construit par Human Appeal il y a ~15 ans, désormais inhabité, branding HA encore visible sur les maisons.
+
+Caractérisation Barylo du pattern :
+
+> *« What we're seeing here is at worse a vanity project just for the charity to pump up their numbers in their end-of-year report, or at the very best a very maladapted project completely maladapted to the needs of the local population, the geographic and cultural, social and economic context. »*
+
+Position publique :
+
+> *« You should not give to any of these big multi-million pound or multi-million dollar multinational charities. »*
+
+Référence directe à la controverse Beydoun documentée en section 6 :
+
+> *« Not mentioning influencers paid thousands if not millions of pounds like we saw with Khaled Beydoun recently for participating in these fundraisers. »*
+
+### Statut probatoire pour cette enquête
+
+**Non utilisé comme preuve** sur les claims Gaza-eau (Constats 4, 7, 8) — les sources primaires onusiennes (dashboard WASH Cluster, Partners' Profile, OCHA Updates) suffisent à elles seules.
+
+**Versé au dossier comme cadre interprétatif académique** : le *type* de claim publicitaire infirmé par cette enquête (« 2ᵉ fournisseur d'eau », « 100 M+ litres », « largest plant ») correspond à un pattern décrit par Barylo de claims agrégés gonflés pour reporting annuel. La position Barylo *« you should not give to any of these big charities »* est **plus large** que la conclusion de cette enquête, qui se limite à infirmer un claim publicitaire précis.
+
+→ Extrait détaillé + transcript intégral : [`barylo-muslim-charity-2026-03-03.md`](barylo-muslim-charity-2026-03-03.md)
+
+---
+
+## 8. Direction et gouvernance actuelles (mai 2026)
+
+Sources : pages institutionnelles HA UK / HA France / HA USA (auto-publiées mais sur l'identité du leadership), Wikipedia, LinkedIn, Charity Times, CB Insights.
+
+### Direction exécutive du Group
+
+| Rôle | Personne | Depuis |
+|---|---|---|
+| CEO Group | **Dr Mohamed Ashmawey** | Avril 2019 |
+| Deputy CEO | **Owais Khan** | Septembre 2014 |
+
+**Mohamed Ashmawey** — carrière dans le secteur charity musulman :
+- Ex-CEO **Islamic Relief Worldwide** (~4 ans jusqu'en 2016)
+- Ex-CEO Islamic Relief USA
+- Membre du World Economic Forum Civil Society Advisory Team
+- Boards : Mercy International, Islamic Society of North America
+
+Il a pris HA en avril 2019 — quelques mois après le dismissal de Moqbel (mai 2018) et l'ouverture de l'enquête statutaire (avril 2018). C'est le CEO actuel pendant la controverse Beydoun (fiscal year 2024) et pendant les campagnes Gaza 2025-2026 que cette enquête examine.
+
+**Owais Khan** — Deputy CEO depuis sept 2014, donc en place avant, pendant et après l'enquête statutaire 2018-2021.
+
+### Board of Trustees HA UK
+
+Source : [humanappeal.org.uk/about-us/meet-the-board-of-trustees](https://humanappeal.org.uk/about-us/meet-the-board-of-trustees)
+
+| Personne | Rôle | Notes |
+|---|---|---|
+| **Prof. Kamil Omoteso** | **Chair** | Chair depuis **2017** ; Professeur Accounting and Governance, University of Derby. Présent comme Chair pendant l'enquête statutaire 2018-2021 ; toujours Chair en 2026. |
+| Dr Omar Mashjari | Trustee | « Youngest-ever trustee » ; sous-comité Gouvernance HA France depuis 2019. La page HA UK le qualifie de « President of Human Appeal France » mais cette mention est obsolète (cf. board HA France ci-dessous) |
+| Dr Ken Baldwin | Trustee | Depuis déc 2020 — Oxford physique + PhD finance islamique Loughborough |
+| Dr Abdulrahman Alhefny | Trustee | Emergency medicine specialist FRCEM |
+| Ms Bilkis Shittu | Trustee | Depuis oct 2024 — BSc Accounting + MBA Manchester |
+| Dr Rajnaara Chowdhury Akhtar | Trustee | Depuis oct 2024 — Associate Prof Law, Warwick |
+
+**Lecture clé** : Omoteso est Chair depuis 2017, donc **présent comme Chair avant, pendant et après l'enquête statutaire 2018-2021** qui a conclu à *« misconduct and/or mismanagement »* par les trustees. La Commission a noté en 2021 *« the current trustees have made significant improvements »* — il est resté à son poste à travers cette période.
+
+### Conseil d'administration HA France
+
+Source : [humanappeal.fr/conseil-administration](https://humanappeal.fr/conseil-administration)
+
+| Personne | Rôle | Notes |
+|---|---|---|
+| **Mohamed Chahtane** | **Président** | Depuis **janvier 2026** ; concurrent **International Supply Chain Director au sein du groupe HA** (depuis 2022) — cumul d'une responsabilité opérationnelle groupe et de la présidence du board français |
+| Pr Kamil Omoteso | Membre | Ancien président du CA HA France (nommé 2017) — c'est le même Omoteso que la HA UK Chair |
+| Dr Omar Mashjari | Membre | Sous-comité Gouvernance et Stratégie depuis 2019 |
+| Dr Ken Baldwin | Membre | Depuis déc 2020 — même profil que HA UK |
+| Adam Messai | Membre | Depuis juin 2023 — C-suite executive, ex-DG Global Health |
+
+**Lecture structurelle** : le board HA France partage **plusieurs administrateurs avec le board HA UK** (Omoteso, Mashjari, Baldwin). Le groupe est gouverné en réseau croisé. Le Président actuel HA France n'est **pas** une figure externe indépendante : c'est un cadre opérationnel du groupe HA (Chahtane, Supply Chain Director groupe), placé à la présidence du board français **en janvier 2026** — soit ~4 mois avant les campagnes Gaza eau dont cette enquête examine les claims.
+
+### HA USA — direction sous la controverse Beydoun
+
+Ashmawey (CEO Group) + Owais Khan (Deputy CEO Group) supervisent HA USA. La controverse Beydoun ($2 040 887 en commission, fiscal year 2024 — voir section 6) s'est produite sous leur direction.
+
+### Implications structurelles
+
+| Question | Élément factuel |
+|---|---|
+| Le CEO en place pendant les claims Gaza 2025-2026 est-il post-crise ? | **Oui** — Ashmawey, en place depuis avril 2019 (post-Moqbel) |
+| Le Chair UK a-t-il changé après l'enquête statutaire 2018-2021 ? | **Non** — Omoteso est Chair depuis 2017, à travers et après l'enquête |
+| Le Président HA France est-il indépendant ? | **Non** — Chahtane cumule présidence et fonction opérationnelle groupe (Supply Chain Director) |
+| Les boards UK et France sont-ils indépendants ? | **Partiellement chevauchants** — plusieurs administrateurs communs (Omoteso, Mashjari, Baldwin) |
+
+---
+
+## 9. Mentions presse mainstream et trade press
 
 Sources documentées :
 
@@ -231,6 +335,9 @@ Sources documentées :
 - **HA USA a payé $2 040 887 à Khaled Beydoun (commission 28,7 % sur LaunchGood)** dans son Form 990 fiscal year 2024 — controversé, présenté comme « clerical error », non résolu publiquement.
 - HA reconnaît elle-même (févr. 2026) des erreurs sur son Form 990 interim, en cours de rectification.
 
+**Cadre académique** :
+- Dr William Barylo (sociologue, OUP 2025) qualifie en mars 2026 le pattern HA de *« vanity project to pump up end-of-year report numbers »* / *« maladapted projects »* et appelle publiquement à ne pas donner aux grandes ONG multinationales caritatives musulmanes — non utilisé comme preuve, retenu comme cadre interprétatif sectoriel.
+
 **Périmètre** : ces faits concernent la gouvernance et la transparence générales de HA. Ils sont **indépendants de la question précise de cette enquête** (le claim « 2ᵉ fournisseur d'eau à Gaza »), mais contextualisent la lecture des claims HA pour un donateur qui voudrait évaluer l'organisation.
 
 ---
@@ -248,6 +355,7 @@ Il diffère de l'ancien Constat 6 (retiré) en ce qu'il :
 
 ## Voir aussi
 
+- [Barylo — *Muslim Charity Industry is ROTTEN* (transcript + extrait détaillé)](barylo-muslim-charity-2026-03-03.md)
 - [Sources tierces — précautions méthodologiques](../sources/sources-tierces.md)
 - [Constat 4 — ranking 2ᵉ](../constats/04-ranking-2eme-fournisseur.md)
 - [Constat 7 — volume cumulé](../constats/07-volume-cumule-100M-litres.md)
