@@ -121,7 +121,8 @@ enquete-human-appeal-gaza/
 │   ├── google-search-2eme-fournisseur.png             ← recherche Google « 2ᵉ fournisseur »
 │   ├── humanappeal-fr-100000-litres-par-jour.png      ← page « 100 000 litres / jour » (5 stations AIOCP)
 │   ├── HA-rapport-decembre-2025.md                    ← analyse rapport HA déc 2025 (6 M L mois vs 169 m³ cluster 9 mois)
-│   └── HA-rapport-gaza-decembre-2025.pdf              ← PDF original (13 pages, auteur : HA Hauts-de-France)
+│   ├── HA-rapport-gaza-decembre-2025.pdf              ← PDF original (13 pages, auteur : HA Hauts-de-France)
+│   └── sources-independantes-sur-HA.md                ← compilation sources non-HA (Charity Commission, presse, watchdogs)
 │
 ├── dashboard-scrape/           données extraites du dashboard Power BI
 │   ├── README.md               méthodologie de l'extraction
