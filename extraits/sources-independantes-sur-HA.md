@@ -12,6 +12,8 @@ Source : [gov.uk — New Charity Investigation: Human Appeal](https://www.gov.uk
 
 L'enquête a été ouverte à la suite d'un *« serious incident report »* déposé par Human Appeal elle-même en **décembre 2017**.
 
+**En parallèle, Greater Manchester Police a ouvert une enquête criminelle** sur HA. La police a confirmé en 2020 à *The National* que cette enquête criminelle était **close** (*« had closed a criminal inquiry into the activity at the charity »*), mais qu'elle pouvait potentiellement reprendre selon les conclusions de la Charity Commission. À la conclusion de l'enquête Charity Commission en 2021 (constat civil de misconduct/mismanagement, pas pénal), **aucune charge criminelle n'a été retenue** et l'enquête police est restée close.
+
 Quatre axes d'investigation :
 1. *« Whether or not the trustees have complied with and fulfilled their duties and responsibilities as trustees under charity law »*
 2. La gestion par les trustees des relations avec donateurs et partenaires
@@ -129,17 +131,72 @@ Cet épisode est documenté comme **un cas où HA a obtenu réparation** d'allé
 
 ---
 
-## 6. HA USA — Statement on Transparency (février 2026)
+## 6. HA USA — Affaire Khaled Beydoun (février 2026, encore active)
 
-Source : [humanappealusa.org/news/2026/2/statement-from-human-appeal](https://humanappealusa.org/news/2026/2/statement-from-human-appeal) (auto-publié par HA mais répondant à des concerns externes)
+C'est la controverse de transparence la plus directement liée au fundraising Gaza de HA. Faits documentés par le **Form 990 public** d'HA USA (fiscal year 2024), et couverts par presse communautaire (5Pillars, MuslimMatters, Understanding Islam, Roya News, Dawn) ainsi que par analyse indépendante (substack Ahmed Shaikh).
 
-HA USA répond à trois allégations en circulation :
+### Faits chiffrés (sources : Form 990 HA USA)
 
-1. **Form 990 errors** : *« an interim 990 form was filed on behalf of Human Appeal USA that contained errors »* — les calculs erronés seront rectifiés *« in cooperation with external auditors »*.
-2. **Commission à un influenceur** : *« Human Appeal USA did not pay that influencer a 28% commission as alleged »* ; HA précise que les commissions, *« paid for from unrestricted funding and never earmarked donations »*, devaient être donnés en intégralité à l'*Islamophobia Research and Advocacy Center*.
-3. **Contenu généré par IA** : allégation que HA utilise du contenu généré par IA pour le fundraising — la déclaration y répond sans détail spécifique.
+| Élément | Valeur |
+|---|---|
+| Paiement HA USA à Khaled Beydoun (fiscal year ending 2024) | **$2 040 887** |
+| Total levé par Beydoun via LaunchGood pour HA USA | **$7 120 440** |
+| Commission rate | **28,7 %** |
+| Conservé par HA USA | $5 079 553 |
 
-Cette déclaration est **auto-publiée par HA** donc à manier comme telle, mais elle confirme l'existence de **questions externes sur la transparence** suffisamment substantielles pour exiger une réponse formelle.
+Source primaire : [5Pillars (UK), 7 février 2026](https://5pillarsuk.com/2026/02/07/human-appeal-usa-paid-fundraiser-khaled-beydoun-2-million/).
+
+### Décomposition donateur (analyse Ahmed Shaikh / Substack Ehsan)
+
+Source : [ehsan.substack.com — Zakat Sector Report, 3 mars 2026](https://ehsan.substack.com/p/international-zakat-sector-report)
+
+Sur $100 donné via une campagne LaunchGood Beydoun pour HA USA :
+- **$28,70** vers Beydoun (commission)
+- **$28,43** absorbé par les opérations domestiques HA USA
+- **$14,19** retenu par HA USA
+- **$28,68** sortant vers les programmes effectifs
+
+**Seulement ~28,7 % du dollar donateur atteint les programmes externes**. C'est l'inverse du ratio « program expense ratio » habituellement revendiqué dans la communication fundraising.
+
+### Le cadre des dons
+
+Les campagnes LaunchGood Beydoun étaient présentées comme **emergency aid pour Gaza et autres crises humanitaires**. Les donateurs croyaient financer du relief direct.
+
+### Réponse HA USA (auto-publiée)
+
+Source : [Statement on Transparency, février 2026](https://humanappealusa.org/news/2026/2/statement-from-human-appeal)
+
+1. **Form 990 errors** : *« an interim 990 form was filed on behalf of Human Appeal USA that contained errors »* — calculs erronés à rectifier *« in cooperation with external auditors »*.
+2. **Commission Beydoun** : *« Human Appeal USA did not pay that influencer a 28% commission as alleged »* — HA explique que les commissions, *« paid for from unrestricted funding and never earmarked donations »*, étaient destinées à l'*Islamophobia Research and Advocacy Center* (université).
+3. **Contenu généré par IA** : la déclaration mentionne l'allégation sans détail.
+
+### Réponse Beydoun
+
+Source : [Dawn Images / Roya News](https://images.dawn.com/news/1194859/khaled-beydoun-wear-the-peace-and-the-2m-question-around-palestinian-fundraising)
+
+Beydoun **nie avoir reçu personnellement le paiement** et qualifie la mention au Form 990 de *« clerical error »*. Il dit que les fonds étaient destinés à une organisation de recherche sur l'islamophobie.
+
+### Points non résolus à mai 2026
+
+- **Aucune preuve publique** que les fonds ont été transférés à l'*Islamophobia Research and Advocacy Center*
+- **Le Form 990 n'a pas été amendé** pour corriger « l'erreur cléricale »
+- Pas de communication ultérieure sur le montant effectivement reçu par le centre de recherche
+- HA USA a annoncé un *« internal review »* mais pas publié de résultats
+
+### Évaluation par la presse communautaire (sources tierces non-HA)
+
+| Source | Position |
+|---|---|
+| [5Pillars](https://5pillarsuk.com/2026/02/07/human-appeal-usa-paid-fundraiser-khaled-beydoun-2-million/) | Documente les chiffres Form 990, présente les versions HA et Beydoun |
+| [MuslimMatters (Dr. Shafi Lodhi & Mufti Abdullah Nana, 20 fév. 2026)](https://muslimmatters.org/2026/02/20/where-does-your-dollar-go-how-we-can-avoid-another-beydoun-controversy/) | « Falls short of ethical standards » ; viole le code AFP (Association of Fundraising Professionals) ; appelle à des réformes |
+| [Substack Ehsan, Ahmed Shaikh](https://ehsan.substack.com/p/international-zakat-sector-report) | « Marketing-first charity » ; « no zakat policy » ; ne recommande pas pour la zakat |
+| [Dawn Images (Pakistan)](https://images.dawn.com/news/1194859/khaled-beydoun-wear-the-peace-and-the-2m-question-around-palestinian-fundraising) | Pose la question méthodologique sur le fundraising Palestine |
+
+### Pourquoi c'est important pour notre enquête
+
+Cette affaire est **directement liée au sujet** — fundraising Gaza par HA — et illustre concrètement un problème de transparence sur l'allocation des fonds. Contrairement à l'enquête statutaire 2018-2021 (close avec mesures correctives), cette affaire est **active en mai 2026** sans résolution publique.
+
+Note : l'affaire concerne **HA USA** (entité distincte, EIN 87-2410117). Elle n'est pas formellement opposable à **HA France** qui émet la pub *« 2ᵉ fournisseur d'eau »*, mais les entités sont structurellement liées (groupe HA International / nouveau « Human Appeal » post-2018).
 
 ---
 
@@ -163,14 +220,15 @@ Sources documentées :
 ## Synthèse — ce qui est attesté de manière indépendante
 
 **Faits régulatoires établis** :
-- HA a fait l'objet d'une **enquête statutaire de l'UK Charity Commission** d'avril 2018 à octobre 2021.
-- La Commission a **conclu à un constat de *« misconduct and/or mismanagement »*** par les trustees d'alors.
+- HA a fait l'objet d'une **enquête statutaire de l'UK Charity Commission** d'avril 2018 à octobre 2021, qui a conclu à un constat de *« misconduct and/or mismanagement »* par les trustees d'alors.
+- En parallèle, **Greater Manchester Police a ouvert une enquête criminelle** entre 2018 et 2020, ensuite **close sans charges**.
 - HA a **continué d'opérer** sous nouvelle gouvernance après la conclusion.
-- **Aucune enquête statutaire n'est en cours** au moment de cette enquête (mai 2026).
+- **Aucune enquête statutaire (Charity Commission) ni criminelle (GMP) n'est en cours** au moment de cette enquête (mai 2026).
 
 **Faits opérationnels établis (sources tierces)** :
 - Charity Navigator note HA Inc (USA) **3 étoiles sur 4** avec quatre lacunes d'accountability documentées.
 - HA a obtenu réparation d'une allégation 2013 du *Jewish Chronicle* (libel damages payés).
+- **HA USA a payé $2 040 887 à Khaled Beydoun (commission 28,7 % sur LaunchGood)** dans son Form 990 fiscal year 2024 — controversé, présenté comme « clerical error », non résolu publiquement.
 - HA reconnaît elle-même (févr. 2026) des erreurs sur son Form 990 interim, en cours de rectification.
 
 **Périmètre** : ces faits concernent la gouvernance et la transparence générales de HA. Ils sont **indépendants de la question précise de cette enquête** (le claim « 2ᵉ fournisseur d'eau à Gaza »), mais contextualisent la lecture des claims HA pour un donateur qui voudrait évaluer l'organisation.
